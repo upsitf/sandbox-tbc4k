@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>{{ page.title }}Qualitech Industrial and Technical Services</title>
+		<link rel="stylesheet" href="{{site.baseurl}}/public/css/bootstrap.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/public/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/public/css/custom.css">
+	</head>
+	<body id="{{page.body_id}}">
+		{{content}}
+		<section>
+			<div class="row max-1200">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h3>Site Map</h3>
+					<ul>
+						<li>Company Profile</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<h3>Services</h3>
+					<ul>
+						<li>Architectural</li>
+						<li>Industrial</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<h3>Products</h3>
+					<ul>
+						<li>Coating Inspection</li>
+						<li>Coating Inspection Instruments</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<script src="{{site.baseurl}}/public/js/jquery-1.11.1.min.js"></script>
+		<script src="{{site.baseurl}}/public/js/bootstrap.min.js"></script>
+		<script src="{{site.baseurl}}/public/js/flexverticalcenter.js"></script>
+		<script>
+        (function(window, document, undefined) {
+            window.flexVerticalCenter( document.getElementsByClassName('middle-row'));
+        })(window, document);
+    </script>
+	</body>
+</html>
