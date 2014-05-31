@@ -636,7 +636,7 @@ h1.splash-text-main > span.splash-text-slash.last {
 /* DIVISION */
 
 a#panel-services>div>div.container-image, a#panel-products>div>div.container-image {
-	height: 90%;
+	height: 90vh;
 	width: 100%;
 	background-image: url('/public/images/panel-services.jpg');
 	background-size: cover;
@@ -727,7 +727,7 @@ a#panel-services.blur>div>div.container-image, a#panel-products.blur>div>div.con
 
 a#panel-services>div>div.container-title, a#panel-products>div>div.container-title {
 	background-color:#1B1B14;
-	height: 10%;
+	height: 10vw;
 	vertical-align: middle;
 	display: table;
 	width: 100%;
