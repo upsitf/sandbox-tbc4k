@@ -638,7 +638,7 @@ h1.splash-text-main > span.splash-text-slash.last {
 a#panel-services>div>div.container-image, a#panel-products>div>div.container-image {
 	height: 90%;
 	width: 100%;
-	background-image: url('/public/images/panel-services.png');
+	background-image: url('/public/images/panel-services.jpg');
 	background-size: cover;
 	background-position: center;
 	display:table;
@@ -716,7 +716,7 @@ a#panel-services.blur>div>div.container-image>div, a#panel-products.blur>div>div
 }
 
 a#panel-services.blur>div>div.container-image, a#panel-products.blur>div>div.container-image {
-	background-image: url('/public/images/panel-services-blur.png');
+	background-image: url('/public/images/panel-services-blur.jpg');
 	background-size: cover;
 	background-position: center;
 	-webkit-transition: background 300ms ease-out;
