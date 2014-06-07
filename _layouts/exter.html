@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>{{ page.title }}Qualitech Industrial and Technical Services</title>
+		<link rel="stylesheet" href="/public/css/bootstrap.css">
+		<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/public/css/custom.css">
+	</head>
+	<body id="{{page.body_id}}">
+		{{content}}
+		<section class="eigg-bg sitemap">
+			<div class="row max-1200">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h3>Site Map</h3>
+					<ul>
+						<li>Company Profile</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<h3><a href="{site.baseurl}/services">Services</a></h3>
+					<ul>
+						<li>Architectural</li>
+						<li>Industrial</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<h3>Products</h3>
+					<ul>
+						<li>Coating Inspection</li>
+						<li>Coating Inspection Instruments</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<script src="/public/js/jquery-1.11.1.min.js"></script>
+		<script src="/public/js/bootstrap.min.js"></script>
+		{{ page.js }}
+		<script>
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+				|| location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+						scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
