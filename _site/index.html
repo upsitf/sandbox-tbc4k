@@ -3,40 +3,39 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Home |&nbsp;Qualitech Industrial and Technical Services</title>
+		<title>Qualitech Industrial and Technical Services</title>
 		<link rel="stylesheet" href="/public/css/bootstrap.css">
 		<link rel="stylesheet" href="/public/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/public/css/custom.css">
 	</head>
 	<body id="home">
 		<div class="navbar navbar-default navbar-custom-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="">Qualitech</a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Profile</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="/coating_application">Services</a></li>
-						<li><a href="/coating_inspection">Products</a></li>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Qualitech</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Profile</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">What We Do<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/coating_application">Coating Application</a></li>
+								<li><a href="/coating_inspection">Coating Inspection</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact Us</a></li>
 					</ul>
-				</li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</div><!--/.nav-collapse -->
-	</div>
-</div>
-
-<section class="full-vh full-vh-calc" id="splash">
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<section class="full-vh full-vh-calc" id="splash">
 <div class="row max-800 splash-row">
 	<div class="col-lg-12">
 		<h1 class="splash-text-main">
@@ -168,30 +167,37 @@
 </section>
 		<section class="eigg-bg sitemap">
 			<div class="row max-1200">
-				<div class="col-lg-2 col-lg-offset-1">
+				<div class="col-lg-3 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-3">
 					<h3>Site Map</h3>
 					<ul>
+						<li><a href="/">Home</a></li>
 						<li>Company Profile</li>
 						<li>Contact Us</li>
 					</ul>
 				</div>
-				<div class="col-lg-2">
-					<h3><a href="{site.baseurl}/services">Services</a></h3>
+				<div class="col-lg-3  col-md-2 col-sm-3">
+					<h4><a href="/coating_application">Coating Application</a></h4>
 					<ul>
-						<li>Architectural</li>
-						<li>Industrial</li>
+						<li><a href="/coating_application/architectural">Architectural</a></li>
+						<li><a href="/coating_application/industrial">Industrial</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-2">
-					<h3>Products</h3>
+				<div class="col-lg-3 col-md-2 col-sm-3">
+					<h4><a href="/coating_inspection">Coating Inspection</a></h4>
 					<ul>
-						<li>Coating Inspection</li>
-						<li>Coating Inspection Instruments</li>
+						<li>Instruments</li>
+						<li>Services</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 		<script src="/public/js/jquery-1.11.1.min.js"></script>
+		<script src="/public/js/vendor/fastclick.js"></script>
+		<script src="/public/js/foundation/foundation.js"></script>
+		<script src="/public/js/foundation/foundation.clearing.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
 		<script src="/public/js/bootstrap.min.js"></script>
 		<script src="/public/js/link-image-title.js"></script>
 		<script>

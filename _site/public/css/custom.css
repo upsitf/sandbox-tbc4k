@@ -803,8 +803,33 @@ a#panel-application.blur>div>div.container-title>h1, a#panel-inspection.blur>div
 	padding:0; 
 }
 
-.sitemap h3 {
+.sitemap a {
+	color: #838383;
+	-webkit-transition: color 300ms ease-out;
+	-moz-transition: color 300ms ease-out;
+	-o-transition: color 300ms ease-out;
+	transition: color 300ms ease-out;
+	text-decoration: none;
+}
+
+.sitemap h4 {
+	margin-top:28px;
+}
+
+.sitemap a:hover, .sitemap a:active {
 	color: white;
+	-webkit-transition: color 300ms ease-out;
+	-moz-transition: color 300ms ease-out;
+	-o-transition: color 300ms ease-out;
+	transition: color 300ms ease-out;
+}
+
+.sitemap h3, .sitemap h4 {
+	color: white;
+	-webkit-transition: color 300ms ease-out;
+	-moz-transition: color 300ms ease-out;
+	-o-transition: color 300ms ease-out;
+	transition: color 300ms ease-out;
 }
 
 .sitemap ul li {
@@ -837,6 +862,22 @@ a#panel-application.blur>div>div.container-title>h1, a#panel-inspection.blur>div
 		background: #373737;
 		border:none;
 	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #838383;
+	-webkit-transition: color 300ms ease-out;
+	-moz-transition: color 300ms ease-out;
+	-o-transition: color 300ms ease-out;
+	transition: color 300ms ease-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: white;
+	-webkit-transition: color 300ms ease-out;
+	-moz-transition: color 300ms ease-out;
+	-o-transition: color 300ms ease-out;
+	transition: color 300ms ease-out;
 }
 
 /* SERVICES */
