@@ -1108,3 +1108,53 @@ div.panel.panel-example.panel-example-extra {
 	padding-bottom:15px;
 	margin-bottom: 0;
 }
+
+div.panel.panel-param {
+	margin-bottom: 15px;
+	border-radius: 0;
+	border:none;
+}
+
+@media (max-width:524px) {
+	div.row.margin-top>div.col-lg-3 {
+		padding:0;
+	}
+	div.panel.panel-param>.row {
+		margin-left:0px;
+		margin-right:0px;
+	}
+	div.panel.panel-param>.row>div.col-lg-12 {
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
+div.panel.panel-param h4 {
+	margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+	.col-lg-offset-1pt5 {
+		margin-left: 12.5%;
+	}
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+	.col-md-offset-1pt5 {
+		margin-left: 12.5%;
+	}
+}
+
+@media (min-width: 524px) and (max-width:768px) {
+	.col-smxs-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-smxs-offset-3 {
+		margin-left: 25%;
+	}
+}
+
+div.row.margin-top {
+	margin-top: 15px;
+}

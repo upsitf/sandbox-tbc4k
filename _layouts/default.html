@@ -4,9 +4,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>{{page.title}}Qualitech Industrial and Technical Services</title>
+		<link rel="stylesheet" href="/public/css/foundation.css">
 		<link rel="stylesheet" href="/public/css/bootstrap.css">
 		<link rel="stylesheet" href="/public/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/public/css/custom.css">
+		<script src="/public/js/vendor/modernizr.js"></script>
 	</head>
 	<body id="{{page.body_id}}">
 		<div class="navbar navbar-default {{page.navbar}}" role="navigation">
@@ -56,8 +58,8 @@
 				<div class="col-lg-3 col-md-2 col-sm-3">
 					<h4><a href="{{site.baseurl}}/coating_inspection">Coating Inspection</a></h4>
 					<ul>
-						<li>Instruments</li>
-						<li>Services</li>
+						<li><a href="{{site.baseurl}}/coating_inspection/instruments">Instruments</a></li>
+						<li><a href="{{site.baseurl}}/coating_inspection/services">Services</a></li>
 					</ul>
 				</div>
 			</div>
@@ -79,7 +81,7 @@
 					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 					if (target.length) {
 						$('html,body').animate({
-						scrollTop: target.offset().top
+						scrollTop: target.offset().top{{page.anchor}}
 						}, 1000);
 						return false;
 					}
