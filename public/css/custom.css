@@ -1072,6 +1072,14 @@ h2.text-divide {
 	text-transform: uppercase;
 }
 
+div.set-misc:first-of-type {
+	padding-top: 10px;	
+}
+
+div.set-misc:last-of-type {
+	padding-bottom: 10px;	
+}
+
 div.set-misc>div {
 	display:inline-block;
 }
@@ -1119,18 +1127,26 @@ div.panel.panel-param {
 	div.row.margin-top>div.col-lg-3 {
 		padding:0;
 	}
-	div.panel.panel-param>.row {
-		margin-left:0px;
-		margin-right:0px;
-	}
-	div.panel.panel-param>.row>div.col-lg-12 {
-		padding-left:0;
-		padding-right:0;
-	}
+
+}
+
+div.panel.panel-param>a>.row {
+	margin-left:0px;
+	margin-right:0px;
+}
+div.panel.panel-param>a>.row>div.col-lg-12 {
+	padding-left:0;
+	padding-right:0;
 }
 
 div.panel.panel-param h4 {
 	margin-top: 10px;
+	text-decoration: none;
+	color: #373737;
+}
+
+div.panel.panel-param h4:hover, div.panel.panel-param>a:hover * {
+	text-decoration: none;
 }
 
 @media (min-width: 1200px) {
@@ -1157,4 +1173,45 @@ div.panel.panel-param h4 {
 
 div.row.margin-top {
 	margin-top: 15px;
+}
+
+div.row.products {
+	background: #373737;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+
+}
+
+div.row.products>div img {
+	margin-left: -10px;
+	margin-right: -10px;
+	min-width:calc(100% + 20px);
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+.modal {
+	overflow-y: auto;
+}
+
+.anchor-offset { 
+  margin-top: -50px;        /* Size of fixed header */
+  padding-bottom: 50px; 
+  display: block; 
+}
+
+.anchor-offset+div.row>div>h3 { 
+  margin-top: 0px;
+}
+
+.modal-body {
+	padding-bottom: 5px;
+}
+
+.modal-body p {
+	margin-top: 10px;
+	margin-bottom: 0;
 }
