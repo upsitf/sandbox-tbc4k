@@ -1139,6 +1139,8 @@ div.panel.panel-param>a>.row>div.col-lg-12 {
 	padding-right:0;
 }
 
+
+
 div.panel.panel-param h4 {
 	margin-top: 10px;
 	text-decoration: none;
@@ -1266,4 +1268,8 @@ img.full {
 			rgba(255,255,255,0) 100%
 		); 
 	}
+}
+
+div.panel.panel-param>a, div.panel.panel-param>a *, div.panel.panel-param>a:hover *, div.panel.panel-param>a:focus * {
+	text-decoration: none !important;
 }
