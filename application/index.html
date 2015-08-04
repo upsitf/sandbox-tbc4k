@@ -4,6 +4,26 @@ crumbs:
 thumb:
 title: Application
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+projects1_size: 3
+projects1_photo:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
+projects1_title:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+
+projects2_size: 3
+projects2_photo:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
+projects2_title:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
 ---
 
 <section>
@@ -14,38 +34,26 @@ description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
 	<section>
 		<h2>Architectural</h2>
 		<ul class="list-flex">
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
 
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
+			{% for i in (1..page.projects1_size) %}
+				<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-mid.html %}
+				{{ page.projects1_title[forloop.index0] }}
+				<!--title--><!--/li-->{% include item-foot.html %}
+			{% endfor %}
 
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
-
-			<!-- other items -->
 		</ul>
 	</section>
 
 	<section>
 		<h2>Industrial</h2>
 		<ul class="list-flex">
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
 
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
+			{% for i in (1..page.projects2_size) %}
+				<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.projects2_photo[forloop.index0] }}{% include item-mid.html %}
+				{{ page.projects2_title[forloop.index0] }}
+				<!--title--><!--/li-->{% include item-foot.html %}
+			{% endfor %}
 
-			<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
-
-			<!-- other items -->
 		</ul>
 	</section>
 

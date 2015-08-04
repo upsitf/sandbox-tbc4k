@@ -1,0 +1,89 @@
+---
+layout: internal
+
+tab1: clients
+tab2: products
+---
+
+{% include tabs.html %}
+
+<section id="{{ page.tab1 }}">
+<div class="row">
+<div class="col-lg-12">
+	<h1>{{ page.tab1 | capitalize }}</h1>
+	
+		
+			{% assign count1 = '' %}
+			{% assign count1_2 = '' %}
+			{% for i in (1..page.clients1_size) %}
+				{% for j in (1..page.clients1_sizes[forloop.index0]) %}
+					{% assign indexfix = count1.size %}
+
+					{% if j == 1 %}
+						<section>
+						<div class="row"><div class="col-lg-12">
+							<h3>
+							{{ page.clients1_categories[count1_2.size] }}
+							</h3>
+						</div></div>
+						<ul class="list-flex">
+					{% endif %}
+
+					<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.clients1_photo[indexfix] }}{% include item-mid.html %}
+					{{ page.clients1_title[indexfix] }}{{ indexfix }}
+					<!--title--><!--/li-->{% include item-foot.html %}
+
+					{% capture temp %}{{ count1 }}*{% endcapture %}
+					{% assign count1 = temp %}
+				{% endfor %}
+				{% capture temp %}{{ count1_2 }}*{% endcapture %}
+				{% assign count1_2 = temp %}
+				</ul></section>
+			{% endfor %}
+		
+	
+</div>
+</section>
+
+<section id="{{ page.tab2 }}">
+<div class="row">
+<div class="col-lg-12">
+	<h1>{{ page.tab2 | capitalize }}</h1>
+
+
+
+		
+			{% assign count2 = '' %}
+			{% assign count2_2 = '' %}
+			{% for i in (1..page.products1_size) %}
+				{% for j in (1..page.products1_sizes[forloop.index0]) %}
+					{% assign indexfix = count2.size %}
+
+					{% if j == 1 %}
+						<section>
+						<div class="row"><div class="col-lg-12">
+							<h3>
+							{{ page.products1_categories[count2_2.size] }}
+							</h3>
+						</div></div>
+						<ul class="list-flex">
+					{% endif %}
+
+					<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.products1_photo[indexfix] }}{% include item-mid.html %}
+					{{ page.products1_title[indexfix] }}{{ indexfix }}
+					<!--title-->{% include item-product-mid1.html %}
+					{{ page.products1_description[indexfix] }}
+					{% include item-product-mid2.html %}{{ page.products1_url[indexfix] }}
+					<!--/li-->{% include item-product-foot.html %}
+
+					{% capture temp %}{{ count2 }}*{% endcapture %}
+					{% assign count2 = temp %}
+				{% endfor %}
+				{% capture temp %}{{ count2_2 }}*{% endcapture %}
+				{% assign count2_2 = temp %}
+				</ul></section>
+			{% endfor %}
+		
+
+</div>
+</section>

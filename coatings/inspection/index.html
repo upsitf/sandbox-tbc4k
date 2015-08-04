@@ -4,4 +4,79 @@ crumbs:
 thumb:
 title: Coating Inspection
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+tab1: instruments
+tab2: projects
+
+list1:
+  - Elcometer&#8482; 219 Dewmeter
+  - Elcometer&#8482; 456 FNF DFT Gage
+  - PosiTector&#8482; 200 UT DFT Gage
+  - Elcometer&#8482; 224 Surface Profile
+  - Elcometer&#8482; 125 Surface Comparator
+  - Elcometer&#8482; 112 WFT Gage
+  - Elcometer&#8482; 266 Hi-Voltage Holiday Det.
+  - Elcometer&#8482; 270 Wet Sponge Pinhole Det.
+  - Elcometer&#8482; 214L IR Surface Temp.
+  - Elcometer&#8482; 106 Pull Adhesion Tester Sc. 1
+  - Elcometer&#8482; 106 Pull Adhesion Tester Sc. 2
+  - Elcometer&#8482; 7420 Moisture Tester
+
+projects1_size: 3
+projects1_photo:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
+projects1_title:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+
+list2:
+  - Project List Item 1
+  - Project List Item 2
+  - Project List Item 3
+  - Project List Item 4
+  - Project List Item 5
+  - Project List Item 6
+  - Project List Item 7
+  - Project List Item 8
 ---
+
+{% include tabs.html %}
+
+<section id="{{ page.tab1 }}">
+<div class="row">
+<div class="col-lg-12">
+	<h1>{{ page.tab1 | capitalize }}</h1>
+	
+	<ul class="list-break list-break-lg-6 list-break-xs-12">
+		{% for item in page.list1 %}
+			<li>{{ item }}</li>
+		{% endfor %}
+	</ul>
+	
+</div>
+</section>
+
+<section id="{{ page.tab2 }}">
+<div class="row">
+<div class="col-lg-12">
+	<h1>{{ page.tab2 | capitalize }}</h1>
+
+		<ul class="list-flex">
+			{% for i in (1..page.projects1_size) %}
+				<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-mid.html %}
+				{{ page.projects1_title[forloop.index0] }}
+				<!--title--><!--/li-->{% include item-foot.html %}
+			{% endfor %}
+		</ul>
+
+	<ul class="list-break list-break-lg-6 list-break-xs-12">
+		{% for item in page.list2 %}
+			<li>{{ item }}</li>
+		{% endfor %}
+	</ul>
+
+</div>
+</section>

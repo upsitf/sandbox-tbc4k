@@ -4,6 +4,16 @@ crumbs:
 thumb:
 title: Calibration &amp; Services
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+library1_size: 3
+library1_photo:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
+library1_title:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
 ---
 
 
@@ -15,19 +25,13 @@ description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
 
 	<section>
 		<ul class="list-flex">
-			<!--li--><!--photo url-->{% include item-library-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
 
-			<!--li--><!--photo url-->{% include item-library-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
+			{% for i in (1..page.library1_size) %}
+				<!--li--><!--photo url-->{% include item-library-head.html %}{{ site.baseurl }}{{ page.library1_photo[forloop.index0] }}{% include item-mid.html %}
+				{{ page.library1_title[forloop.index0] }}
+				<!--title--><!--/li-->{% include item-foot.html %}
+			{% endfor %}
 
-			<!--li--><!--photo url-->{% include item-library-head.html %}{{ site.baseurl }}/images/filler.jpg{% include item-mid.html %}
-			Lorem ipsum dolor
-			<!--title--><!--/li-->{% include item-foot.html %}
-
-			<!-- other items -->
 		</ul>
 	</section>
 

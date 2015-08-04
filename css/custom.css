@@ -322,3 +322,24 @@ html, body {
 		padding-bottom: 69%;
 	}
 }
+
+/* Multicolumn List MAGIC! */
+ul.list-break {
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+ul.list-break>li{
+	text-align: center;
+	line-height: 1.5em;
+	float: left;
+	display: inline;
+}
+ul.list-break.list-break-lg-6>li {
+	width: 50%;
+}
+@media (max-width: 767px) {
+	ul.list-break.list-break-xs-12>li {
+		width: 100%;
+	}
+}

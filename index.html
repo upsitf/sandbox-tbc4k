@@ -1,5 +1,7 @@
 ---
 layout: main
+tab1: coatings
+tab2: application
 ---
 
 <!--BEGIN Jumbotron-->
@@ -9,9 +11,11 @@ layout: main
 </section>
 <!--END Jumbotron-->
 
+{% include tabs.html %}
+
 <!--BEGIN Coatings-->
-<section>
-<h1>Coatings</h1>
+<section class="panel-wide" id="{{ page.tab1 }}">
+<h1>{{ page.tab1 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
 <section>
@@ -24,8 +28,8 @@ layout: main
 <!--END Coatings-->
 
 <!--BEGIN Application-->
-<section>
-<h1>Application</h1>
+<section class="panel-wide" id="{{ page.tab2 }}">
+<h1>{{ page.tab2 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </section>
 <!--END Application-->
