@@ -1,0 +1,22 @@
+<script>
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+
+function toggle() {
+  var navbar_menu = document.getElementById('navbar-menu');
+  if (hasClass(navbar_menu,'active')) {
+    navbar_menu.classList.remove('active');
+  }
+  else {
+    navbar_menu.classList.add('active');
+  }
+}
+
+$(document).on('click', function(event) {
+  if ((!$(event.target).closest('.navbar-menu').length) && (!$(event.target).closest('.navbar-toggle').length)) {
+    //alert('clicked outside nav controls');
+    $('.navbar-menu').removeClass('active');
+  }
+});
+</script>

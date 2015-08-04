@@ -1,3 +1,8 @@
-markdown: rdiscount
-highlighter: pygments
-baseurl: 'http://qualitech.github.io'
+# Site settings
+title: Qualitech Industrial and Technical Services
+#baseurl: http://localhost:4000
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+# baseurl: 

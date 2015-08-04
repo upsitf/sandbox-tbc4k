@@ -1,0 +1,25 @@
+<script>
+
+function doOnScroll() {
+    didScroll = true;
+    jumbotron_bcr = jumbotron.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (!(hasClass(navbar,'colorize'))) {
+        navbar.classList.add('colorize');
+      }
+    }
+    else {
+      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
+        navbar.classList.remove('colorize');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+
+</script>

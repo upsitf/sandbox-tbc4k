@@ -1,0 +1,14 @@
+<header id="navbar" class="navbar navbar-default {% if page.headerclass %}{{ page.headerclass }}{% endif %}" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Qualitech</a>
+    </div>
+    <div class="navbar-toggle">
+      <a onclick="toggle()">&#xf0c9;</a>
+    </div>
+    <div class="navbar-menu" id="navbar-menu">
+      <a onclick="toggle()">&#xf00d;</a>
+      {% include sitemap.html %}
+    </div>
+  </div>
+</header>
