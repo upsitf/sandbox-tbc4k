@@ -1,8 +1,16 @@
 <script>
 
+var didScroll = false;
+
+var jumbotron = document.getElementById("jumbotron");
+var jumbotron_bcr = jumbotron.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
 function doOnScroll() {
     didScroll = true;
-    jumbotron = document.getElementsByClassName("jumbotron");
+    
     jumbotron_bcr = jumbotron.getBoundingClientRect();
     navbar_bcr = navbar.getBoundingClientRect();
     if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
