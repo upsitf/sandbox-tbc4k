@@ -11,8 +11,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/custom.css">
-	<script src="/js/jquery-1.11.1.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+	
 </head>
 
     <body>
@@ -20,7 +19,7 @@
 		<header id="navbar" class="navbar navbar-default " role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Qualitech</a>
+      <a class="navbar-brand" href="/">Qualitech</a>
     </div>
     <div class="navbar-toggle">
       <a onclick="toggle()">&#xf0c9;</a>
@@ -28,21 +27,21 @@
     <div class="navbar-menu" id="navbar-menu">
       <a onclick="toggle()">&#xf00d;</a>
       <ul>
-<li><a href="">Home</a></li>
+<li><a href="/">Home</a></li>
 <li>Coatings
 <ul>
 <li><a href="/coatings/instruments">Inspection Instruments</a>
 <ul>
 <li><a href="/coatings/instruments/owners">Owners &amp; Contractors</a></li>
 <li><a href="/coatings/instruments/galvanizers">Galvanizers &amp; Platers</a></li>
-<li><a href="/coatings/instrument/manufacturers">Manufacturers</a></li>
+<li><a href="/coatings/instruments/manufacturing">Manufacturing</a></li>
 </ul>
 </li>
-<li><a href="/coatings/calibration>">Calibration &amp; Services</a></li>
+<li><a href="/coatings/calibration">Calibration &amp; Services</a></li>
 <li><a href="/coatings/inspection">Coating Inspection</a></li>
 </ul>
 </li>
-<li><a href="">Application</a></li>
+<li><a href="/application">Application</a></li>
 </ul>
     </div>
   </div>
@@ -51,32 +50,37 @@
 		<section class="page-content">
 
 		<!--BEGIN Jumbotron-->
-<section>
+<section class="jumbotron">
 <h1>Quality Service // Never Compromised</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </section>
 <!--END Jumbotron-->
 
-<section>
+<section class="button-tabs">
 <div class="row">
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<a href="#coatings">Coatings</a>
+<a class="btn btn-lg btn-block btn-default" href="#coatings">Coatings</a>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<a href="#application">Application</a>
+<a class="btn btn-lg btn-block btn-default" href="#application">Application</a>
 </div>
 </div>
 </section>
 
 <!--BEGIN Coatings-->
-<section class="panel-wide" id="coatings">
+<section class="panel-wide panel-wide-subpaneled" id="coatings">
 <h1>Coatings</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
-<section>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Inspection Instruments</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Calibration &amp; Services</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Coating Inspection</div>
+<section class="panel-wide-subpanel">
+<ul class="list-flex">
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Inspection Instruments</a></li>
+</li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Calibration &amp; Services</a></li>
+</li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Coating Inspection</a></li>
+</li>
+</ul>
 </section>
 <!--END Coatings Subs-->
 </section>
@@ -86,6 +90,7 @@
 <section class="panel-wide" id="application">
 <h1>Application</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<a class="btn btn-default btn-learn" href="">Learn more</a>
 </section>
 <!--END Application-->
 
@@ -94,21 +99,21 @@
 		<footer>
 
 <ul>
-<li><a href="">Home</a></li>
+<li><a href="/">Home</a></li>
 <li>Coatings
 <ul>
 <li><a href="/coatings/instruments">Inspection Instruments</a>
 <ul>
 <li><a href="/coatings/instruments/owners">Owners &amp; Contractors</a></li>
 <li><a href="/coatings/instruments/galvanizers">Galvanizers &amp; Platers</a></li>
-<li><a href="/coatings/instrument/manufacturers">Manufacturers</a></li>
+<li><a href="/coatings/instruments/manufacturing">Manufacturing</a></li>
 </ul>
 </li>
-<li><a href="/coatings/calibration>">Calibration &amp; Services</a></li>
+<li><a href="/coatings/calibration">Calibration &amp; Services</a></li>
 <li><a href="/coatings/inspection">Coating Inspection</a></li>
 </ul>
 </li>
-<li><a href="">Application</a></li>
+<li><a href="/application">Application</a></li>
 </ul>
 
 </footer>
@@ -136,7 +141,7 @@ $(document).on('click', function(event) {
 });
 </script>
 		<script>
-	$('a[href*=#]:not([href=#])').click(function() {
+	$('a[href*=#]:not([href=#]):not(.carousel-control)').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 		|| location.hostname == this.hostname) {
 			var target = $(this.hash);

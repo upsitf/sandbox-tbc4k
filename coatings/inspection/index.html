@@ -64,19 +64,23 @@ list2:
 <div class="col-lg-12">
 	<h1>{{ page.tab2 | capitalize }}</h1>
 
-		<ul class="list-flex">
-			{% for i in (1..page.projects1_size) %}
-				<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-mid.html %}
-				{{ page.projects1_title[forloop.index0] }}
-				<!--title--><!--/li-->{% include item-foot.html %}
-			{% endfor %}
-		</ul>
+    {% include carousel-prelim.html %}
 
-	<ul class="list-break list-break-lg-6 list-break-xs-12">
-		{% for item in page.list2 %}
-			<li>{{ item }}</li>
-		{% endfor %}
-	</ul>
+    {% include carousel-head.html %}
+        {% for i in (1..page.projects1_size) %}
+          {% include carousel-mid1.html %}
+        {% endfor %}
+      {% include carousel-mid2.html %}
+        {% for i in (1..page.projects1_size) %}
+          {% include item-carousel-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-carousel-mid.html %}{{ page.projects1_title[forloop.index0] }}{% include item-carousel-foot.html %}
+        {% endfor %}
+    {% include carousel-foot.html %}
+
+    <ul class="list-break list-break-lg-6 list-break-xs-12">
+    	{% for item in page.list2 %}
+    		<li>{{ item }}</li>
+    	{% endfor %}
+    </ul>
 
 </div>
 </section>

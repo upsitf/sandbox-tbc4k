@@ -171,8 +171,6 @@ html, body {
 	float: left;
 }
 
-
-
 .navbar-menu {
 	background-color: #F36523;
 	position: fixed;
@@ -342,4 +340,206 @@ ul.list-break.list-break-lg-6>li {
 	ul.list-break.list-break-xs-12>li {
 		width: 100%;
 	}
+}
+
+/* Button Tabs */
+section.button-tabs>div.row>div {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+section.button-tabs>div.row>div>a {
+	border-style: none;
+	border-radius: 0;
+	color: white;
+}
+
+section.button-tabs>div.row>div:first-of-type>a {
+	background-color: blue;
+}
+
+section.button-tabs>div.row>div:last-of-type>a {
+	background-color: orange;
+}
+
+/* Frontpage */
+/* Jumbotron */
+section.jumbotron {
+	margin-bottom: 0;
+	background-color: gray;
+	background-image: url('images/filler.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section.jumbotron>h1 {
+	text-align: center;
+}
+
+section.jumbotron>p {
+	
+}
+
+/* Introductory panels */
+section.panel-wide {
+	padding-top: 75px;
+	padding-bottom: 60px;
+	background-color: gray;
+	background-image: url('images/filler.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section.panel-wide.panel-wide-subpaneled {
+	padding-bottom: 0;
+}
+
+section.panel-wide>h1, section.panel-wide>div.row>div>h1 {
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 90%;
+    max-width: 768px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-size: 4em;
+    
+    word-wrap: break-all;
+    -webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+@media (max-width: 767px) {
+	section.panel-wide>h1, section.panel-wide>div.row>div>h1  {
+	    font-size: 2.75em;
+	}
+}
+
+section.panel-wide>p, section.panel-wide>div.row>div>p  {
+	font-size: 1.25em;
+	width: 90%;
+    max-width: 768px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+
+section.panel-wide>div.row>div>h4  {
+	
+	width: 90%;
+    max-width: 768px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+
+}
+
+section.panel-wide>section.panel-wide-subpanel {
+	padding-top: 60px;
+}
+
+
+section.panel-wide>section.panel-wide-subpanel>ul.list-flex {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+section.panel-wide>section.panel-wide-subpanel>ul.list-flex>li.list-flex-item>a {
+	font-size: 3em;	
+    line-height: 1.1em;
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: orange;
+	background-image: url('images/filler.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* LEARN MORE Button */
+a.btn.btn-default.btn-learn {
+    display: table;
+    margin: auto;
+    border-radius: 0;
+    font-size: 2em;
+    padding: 10px 25px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+/* Fluid Logo Container MAGIC! */
+
+.list-fluid{
+	text-align: center;
+}
+.list-fluid>.list-fluid-item {
+	max-height: 85px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* Carousel Sizing */
+div.carousel-default>div.carousel-inner>div.item {
+	width: 100%;
+	padding-bottom: 30%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Fading Carousel MAGIC! */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: darkred;
+}
+.item:nth-child(2) {
+  background: red;
+}
+.item:nth-child(3) {
+  background: orange;
 }

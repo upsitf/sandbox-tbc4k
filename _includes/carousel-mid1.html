@@ -1,0 +1,9 @@
+{% assign carousel_item_id = count2.size %}
+          <li data-target="#carousel{{ carousel_id }}" data-slide-to="{{ carousel_item_id }}"
+          {% if i == 1 %}
+            class="active"
+          {% endif %}
+          ></li>
+
+          {% capture temp %}{{ count2 }}*{% endcapture %}
+          {% assign count2 = temp %}

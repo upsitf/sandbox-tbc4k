@@ -26,19 +26,19 @@ tab2: products
 							{{ page.clients1_categories[count1_2.size] }}
 							</h3>
 						</div></div>
-						<div class="list-fluid">
+						<ul class="list-flex">
 					{% endif %}
 
-					<!--li--><!--photo url-->{% include item-fluid-head.html %}{{ site.baseurl }}{{ page.clients1_photo[indexfix] }}{% include item-fluid-mid.html %}
+					<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.clients1_photo[indexfix] }}{% include item-mid.html %}
 					{{ page.clients1_title[indexfix] }}{{ indexfix }}
-					<!--title--><!--/li-->{% include item-fluid-foot.html %}
+					<!--title--><!--/li-->{% include item-foot.html %}
 
 					{% capture temp %}{{ count1 }}*{% endcapture %}
 					{% assign count1 = temp %}
 				{% endfor %}
 				{% capture temp %}{{ count1_2 }}*{% endcapture %}
 				{% assign count1_2 = temp %}
-				</div></section>
+				</ul></section>
 			{% endfor %}
 		
 	

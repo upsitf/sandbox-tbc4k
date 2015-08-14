@@ -5,7 +5,7 @@ tab2: application
 ---
 
 <!--BEGIN Jumbotron-->
-<section>
+<section class="jumbotron">
 <h1>Quality Service // Never Compromised</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </section>
@@ -14,14 +14,19 @@ tab2: application
 {% include tabs.html %}
 
 <!--BEGIN Coatings-->
-<section class="panel-wide" id="{{ page.tab1 }}">
+<section class="panel-wide panel-wide-subpaneled" id="{{ page.tab1 }}">
 <h1>{{ page.tab1 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
-<section>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Inspection Instruments</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Calibration &amp; Services</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Coating Inspection</div>
+<section class="panel-wide-subpanel">
+<ul class="list-flex">
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Inspection Instruments</a></li>
+</li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Calibration &amp; Services</a></li>
+</li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Coating Inspection</a></li>
+</li>
+</ul>
 </section>
 <!--END Coatings Subs-->
 </section>
@@ -31,5 +36,6 @@ tab2: application
 <section class="panel-wide" id="{{ page.tab2 }}">
 <h1>{{ page.tab2 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+{% include learn-head.html %}{% include learn-foot.html %}
 </section>
 <!--END Application-->

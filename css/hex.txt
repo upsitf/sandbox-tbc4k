@@ -1,0 +1,14 @@
+Yellow
+#FFEF38
+
+Orange
+#F7A41A
+
+Terracota
+#DC700E
+
+Dull Blue
+#275D79
+
+Blue
+#001547
