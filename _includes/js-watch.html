@@ -2,6 +2,7 @@
 
 function doOnScroll() {
     didScroll = true;
+    jumbotron = document.getElementsByClassName("jumbotron");
     jumbotron_bcr = jumbotron.getBoundingClientRect();
     navbar_bcr = navbar.getBoundingClientRect();
     if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {

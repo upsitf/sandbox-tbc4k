@@ -50,9 +50,11 @@
 		<section class="page-content">
 
 		<!--BEGIN Jumbotron-->
-<section class="jumbotron">
-<h1>Quality Service // Never Compromised</h1>
+<section class="jumbotron" style="background-image: url('/images/filler.jpg');">
+	<!--div class="row"><div class="col-lg-12"-->
+<h1>Quality<br class="visible-xs"/> Service<br class="visible-lg visible-md visible-xs"/> // <br class="visible-lg visible-md visible-xs"/>Never<br class="visible-xs"/> Compromised</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<!--/div></div-->
 </section>
 <!--END Jumbotron-->
 
@@ -68,17 +70,17 @@
 </section>
 
 <!--BEGIN Coatings-->
-<section class="panel-wide panel-wide-subpaneled" id="coatings">
+<section class="panel-wide panel-wide-subpaneled" id="coatings" style="background-image: url('/images/filler.jpg');">
 <h1>Coatings</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
 <section class="panel-wide-subpanel">
 <ul class="list-flex">
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Inspection Instruments</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('/images/filler.jpg');">Inspection Instruments</a></li>
 </li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Calibration &amp; Services</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('/images/filler.jpg');">Calibration &amp; Services</a></li>
 </li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Coating Inspection</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('/images/filler.jpg');">Coating Inspection</a></li>
 </li>
 </ul>
 </section>
@@ -87,7 +89,7 @@
 <!--END Coatings-->
 
 <!--BEGIN Application-->
-<section class="panel-wide" id="application">
+<section class="panel-wide" id="application" style="background-image: url('/images/filler.jpg');">
 <h1>Application</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <a class="btn btn-default btn-learn" href="">Learn more</a>
@@ -118,6 +120,8 @@
 
 </footer>
 
+		<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 		<script>
 function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
@@ -154,6 +158,32 @@ $(document).on('click', function(event) {
 			}
 		}
 	});
+</script>
+		<script>
+
+function doOnScroll() {
+    didScroll = true;
+    jumbotron = document.getElementsByClassName("jumbotron");
+    jumbotron_bcr = jumbotron.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (!(hasClass(navbar,'colorize'))) {
+        navbar.classList.add('colorize');
+      }
+    }
+    else {
+      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
+        navbar.classList.remove('colorize');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+
 </script>
 		
 	</body>

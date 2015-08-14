@@ -164,6 +164,7 @@ html, body {
 
 .navbar-brand.navbar-brand {
 	color: white;
+	font-family: Hind;
 }
 
 .navbar-header {
@@ -186,6 +187,50 @@ html, body {
 .navbar-menu.active {
 	right: 0px;
 	transition: all 0.5s;
+}
+
+.navbar-menu>ul li, .navbar-menu>ul li>a {
+	font-family: Hind;
+	color: white;
+}
+
+.navbar-menu>ul li>a:link,
+.navbar-menu>ul li>a:active,
+.navbar-menu>ul li>a:focus,
+.navbar-menu>ul li>a:hover,
+.navbar-menu>ul li>a:visited  {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-menu>ul li>a:active,
+.navbar-menu>ul li>a:focus,
+.navbar-menu>ul li>a:hover {
+	text-shadow: 0 0 5px #fff;
+}
+
+.navbar-menu>ul li>a {
+	display: block;
+	padding-right: 35px;
+	margin-right: -35px;
+}
+
+.navbar-menu>ul>li>a {
+	width: calc(100% + 70px);
+	margin-left: -35px;
+	padding-left: 35px;
+}
+
+.navbar-menu>ul>li>ul>li>a {
+    margin-left: -75px;
+    width: calc(100% + 110px);
+    padding-left: 75px;
+}
+
+.navbar-menu>ul>li>ul>li>ul>li>a {
+    margin-left: -115px;
+    width: calc(100% + 150px);
+    padding-left: 115px;
 }
 
 @media (max-width: 767px) {
@@ -249,6 +294,7 @@ html, body {
 
 .list-flex{
 	overflow: hidden; /* just clearing floats */
+	padding: 0;
 }
 .list-flex>.list-flex-item {
 	float: left;
@@ -352,6 +398,11 @@ section.button-tabs>div.row>div>a {
 	border-style: none;
 	border-radius: 0;
 	color: white;
+	font-family: Hind;
+    padding-top: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 section.button-tabs>div.row>div:first-of-type>a {
@@ -367,18 +418,52 @@ section.button-tabs>div.row>div:last-of-type>a {
 section.jumbotron {
 	margin-bottom: 0;
 	background-color: gray;
-	background-image: url('images/filler.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) {
+	section.jumbotron {
+		height: 100vw;
+	    max-height: calc(640px - 50px);
+		padding-top: 10%;
+		padding-bottom: 6%;
+	}
+}
+
+
 section.jumbotron>h1 {
 	text-align: center;
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+	section.jumbotron>h1 {
+		max-width: 10.5em;
+	    font-size: 6em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	section.jumbotron>h1 {
+		max-width: 10.5em;
+	    font-size: 5em;
+	}
+}
+
+@media (max-width: 768px) {
+	section.jumbotron>h1 {
+		max-width: 10.5em;
+	    font-size: 5em;
+	}
 }
 
 section.jumbotron>p {
-	
+	padding-left: 15px;
+    padding-right: 15px;
+	max-width: 768px;
+    margin: auto;
 }
 
 /* Introductory panels */
@@ -504,42 +589,47 @@ div.carousel-default>div.carousel-inner>div.item {
 
 /* Fading Carousel MAGIC! */
 .carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
 }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
-  opacity: 0;
+	opacity: 0;
 }
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
+	opacity: 1;
 }
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 .carousel-fade .carousel-control {
-  z-index: 2;
+	z-index: 2;
 }
 
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-  height: 100%;
+	height: 100%;
 }
 .item:nth-child(1) {
-  background: darkred;
+	background: darkred;
 }
 .item:nth-child(2) {
-  background: red;
+	background: red;
 }
 .item:nth-child(3) {
-  background: orange;
+	background: orange;
+}
+/* Row Limiter */
+div.row.row-limit {
+	max-width: 1024px;
+	margin: auto;
 }

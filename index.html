@@ -5,26 +5,28 @@ tab2: application
 ---
 
 <!--BEGIN Jumbotron-->
-<section class="jumbotron">
-<h1>Quality Service // Never Compromised</h1>
+<section class="jumbotron" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+	<!--div class="row"><div class="col-lg-12"-->
+<h1>Quality<br class="visible-xs"/> Service<br class="visible-lg visible-md visible-xs"/> // <br class="visible-lg visible-md visible-xs"/>Never<br class="visible-xs"/> Compromised</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<!--/div></div-->
 </section>
 <!--END Jumbotron-->
 
 {% include tabs.html %}
 
 <!--BEGIN Coatings-->
-<section class="panel-wide panel-wide-subpaneled" id="{{ page.tab1 }}">
+<section class="panel-wide panel-wide-subpaneled" id="{{ page.tab1 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab1 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
 <section class="panel-wide-subpanel">
 <ul class="list-flex">
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Inspection Instruments</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Inspection Instruments</a></li>
 </li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Calibration &amp; Services</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Calibration &amp; Services</a></li>
 </li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a>Coating Inspection</a></li>
+<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Coating Inspection</a></li>
 </li>
 </ul>
 </section>
@@ -33,7 +35,7 @@ tab2: application
 <!--END Coatings-->
 
 <!--BEGIN Application-->
-<section class="panel-wide" id="{{ page.tab2 }}">
+<section class="panel-wide" id="{{ page.tab2 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab2 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 {% include learn-head.html %}{% include learn-foot.html %}
