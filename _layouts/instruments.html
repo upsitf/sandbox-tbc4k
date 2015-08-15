@@ -8,7 +8,7 @@ tab2: products
 {% include tabs.html %}
 
 <section id="{{ page.tab1 }}">
-<div class="row">
+<div class="row row-limit">
 <div class="col-lg-12">
 	<h1>{{ page.tab1 | capitalize }}</h1>
 	
@@ -46,11 +46,11 @@ tab2: products
 </section>
 
 <section id="{{ page.tab2 }}">
-<div class="row">
+<div class="row row-limit">
 <div class="col-lg-12">
 	<h1>{{ page.tab2 | capitalize }}</h1>
 
-		<ul class="list-flex">
+		<ul class="list-flex list-flex-wide">
 
 			{% assign count2 = '' %}
 			{% for i in (1..page.products1_size) %}
