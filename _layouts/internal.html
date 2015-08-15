@@ -13,7 +13,7 @@ headerclass: colorize
 
     <section class="page-content">
 
-    <section class="info">
+    <section class="info" style="background-image:url('{{ site.baseurl }}{{ page.masthead }}')">
     <!--div class="row row-limit"><div class="col-lg-12">
    	  {{ page.crumbs }}
    	</div></div-->
@@ -25,7 +25,7 @@ headerclass: colorize
       <div class="aligner-item-text">
         <ul>
         {% for i in page.crumbs %}
-        <li>{{ i }}</li>
+        <li>{{ i }}</li><i class="fa fa-chevron-right"></i>
         {% endfor %}
         </ul>
         <h1>{{ page.title }}</h1>

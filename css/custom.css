@@ -739,14 +739,43 @@ footer>ul li>a:visited {
 	text-decoration: none;
 }
 
+section.info {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 section.info>div.aligner {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1024px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
 }
 
 section.info>div.aligner>.aligner-item-text {
   width: calc(100% - 300px);
+}
+
+section.info>div.aligner>.aligner-item-text>ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+section.info>div.aligner>.aligner-item-text>ul>li {
+  display: inline;
+  font-family: Montserrat;
+}
+
+section.info>div.aligner>.aligner-item-text>ul>i.fa.fa-chevron-right {
+	padding-left: 6px;
+    padding-right: 3px;
+}
+
+section.info>div.aligner>.aligner-item-text>h1 {
+	margin-top: 0;
 }
 
 section.info>div.aligner>.aligner-item-thumb.after {
