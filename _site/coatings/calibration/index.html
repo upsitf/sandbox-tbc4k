@@ -14,7 +14,9 @@
 	
 </head>
 
-    <body style="padding-top:50px">
+    <body class="" style="padding-top:50px">
+
+      <div id="preloader"></div>
 
     <header id="navbar" class="navbar navbar-default colorize" role="navigation">
   <div class="container">
@@ -198,6 +200,18 @@ $(document).on('click', function(event) {
 		}
 	});
 </script>
+
+<script>
+		jQuery(window).load(function () {
+			var body = document.body;
+			var preloader = document.getElementById('preloader');
+			body.className = body.className + " loaded"
+			preloader.className = preloader.className + " loaded"
+			setTimeout(function(){
+				preloader.className = preloader.className + " none";
+			}, 1000);
+		});
+		</script>
 
     </body>
 </html>

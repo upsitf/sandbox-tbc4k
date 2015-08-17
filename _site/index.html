@@ -14,7 +14,9 @@
 	
 </head>
 
-    <body>
+    <body class="">
+
+    	<div id="preloader"></div>
 
 		<header id="navbar" class="navbar navbar-default " role="navigation">
   <div class="container">
@@ -196,9 +198,15 @@ setInterval(function() {
 
 		<script>
 		jQuery(window).load(function () {
-			alert('page is loaded');
+			var body = document.body;
+			var preloader = document.getElementById('preloader');
+			body.className = body.className + " loaded"
+			preloader.className = preloader.className + " loaded"
+			setTimeout(function(){
+				preloader.className = preloader.className + " none";
+			}, 1000);
 		});
-		</script>
+		</script>		
 		
 	</body>
 </html>

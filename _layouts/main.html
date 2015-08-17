@@ -3,7 +3,9 @@
 
   {% include head.html %}
 
-    <body>
+    <body class="">
+
+    	{% include preloader-dom.html %}
 
 		{% include header.html %}
 
@@ -20,11 +22,7 @@
 		{% include js-scroll.html %}
 		{% include js-watch.html %}
 
-		<script>
-		jQuery(window).load(function () {
-			alert('page is loaded');
-		});
-		</script>
+		{% include js-preloader.html %}		
 		
 	</body>
 </html>

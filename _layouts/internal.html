@@ -7,7 +7,9 @@ headerclass: colorize
 
   {% include head.html %}
 
-    <body style="padding-top:50px">
+    <body class="" style="padding-top:50px">
+
+      {% include preloader-dom.html %}
 
     {% include header.html %}
 
@@ -62,6 +64,8 @@ headerclass: colorize
     {% include foot.html %}
     {% include js-header.html %}
 {% include js-scroll.html %}
+
+{% include js-preloader.html %}
 
     </body>
 </html>

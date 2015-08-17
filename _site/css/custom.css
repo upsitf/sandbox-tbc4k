@@ -383,12 +383,14 @@ a.navbar-brand.navbar-brand:visited {
     margin-right: -10px;
 }
 
+/*
 @media (max-width: 768px) {
 	.panel-project a {
 		bottom: 0;
 		position: absolute
 	}
 }
+*/
 
 @media (max-width: 767px) {
 	.img-project {
@@ -680,12 +682,24 @@ a.btn.btn-default.btn-learn {
 }
 
 /* Carousel Sizing */
+div.carousel-default {
+	max-width: 1200px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
 div.carousel-default>div.carousel-inner>div.item {
 	width: 100%;
 	padding-bottom: 30%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+	div.carousel-default>div.carousel-inner>div.item {
+		padding-bottom: 60%;
+	}
 }
 
 /* Fading Carousel MAGIC! */
@@ -860,4 +874,66 @@ section.info>div.aligner>.aligner-item-thumb>img {
 		padding-bottom: 15px;
 	}
 
+}
+
+/* Preloader MAGIC! */
+body {
+	max-height: 100vh;
+	overflow-y: hidden;
+}
+
+body.loaded {
+	max-height: 2500vh;
+	/* overflow-y: initial; */
+	transition: max-height 1s;
+}
+
+#preloader {
+	width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,1.0);
+    position: absolute;
+    top:0;
+    z-index: 1031;
+}
+
+#preloader.loaded {
+	background-color: rgba(255,255,255,0);
+	transition: background-color 0.7s;
+}
+
+#preloader.loaded.none {
+	display: none;
+}
+
+/* Elcometer Button */
+.btn.btn-default.btn-elco {
+	padding: 10px 10px 7px 10px;
+	border-radius: 0;
+	border-style: none;
+	background-color: #DC700E;
+	color: white;
+	font-family: Hind;
+}
+
+@media (min-width: 768px) {
+	.btn.btn-default.btn-elco {
+		bottom: 0;
+	    position: absolute;
+	    display: block;
+	    width: 100%;
+	    margin-left: -10px;
+	    margin-right: -10px;
+	}
+
+	.panel-project {
+		padding-bottom: calc(10px + 37px); 
+	}
+}
+
+section.anchored:before {
+  content:"";
+  display:block;
+  height:50px; /* fixed header height*/
+  margin:-50px 0 0; /* negative fixed header height */
 }

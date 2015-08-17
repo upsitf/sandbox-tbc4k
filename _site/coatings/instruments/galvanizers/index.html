@@ -14,7 +14,9 @@
 	
 </head>
 
-    <body style="padding-top:50px">
+    <body class="" style="padding-top:50px">
+
+      <div id="preloader"></div>
 
     <header id="navbar" class="navbar navbar-default colorize" role="navigation">
   <div class="container">
@@ -102,7 +104,7 @@
 </div>
 </section>
 
-<section id="clients">
+<section id="clients" class="anchored">
 <div class="row row-limit">
 <div class="col-lg-12">
 	<h1>Clients</h1>
@@ -256,7 +258,7 @@
 </div>
 </section>
 
-<section id="instruments">
+<section id="instruments" class="anchored">
 <div class="row row-limit">
 <div class="col-lg-12">
 	<h1>Instruments</h1>
@@ -276,7 +278,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -295,7 +297,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -314,7 +316,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -333,7 +335,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -352,7 +354,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -371,7 +373,7 @@
 <p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 				</p>
-<a href="
+<a class="btn btn-default btn-block btn-elco" href="
 				<!--/li-->">Go to Elcometer&#8482; page</a>
 </div>
 	</li>
@@ -450,6 +452,18 @@ $(document).on('click', function(event) {
 		}
 	});
 </script>
+
+<script>
+		jQuery(window).load(function () {
+			var body = document.body;
+			var preloader = document.getElementById('preloader');
+			body.className = body.className + " loaded"
+			preloader.className = preloader.className + " loaded"
+			setTimeout(function(){
+				preloader.className = preloader.className + " none";
+			}, 1000);
+		});
+		</script>
 
     </body>
 </html>
