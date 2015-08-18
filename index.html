@@ -16,7 +16,7 @@ tab2: application
 {% include tabs.html %}
 
 <!--BEGIN Coatings-->
-<section class="panel-wide panel-wide-subpaneled" id="{{ page.tab1 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+<section class="panel-wide panel-wide-subpaneled anchored" id="{{ page.tab1 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab1 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
@@ -35,7 +35,7 @@ tab2: application
 <!--END Coatings-->
 
 <!--BEGIN Application-->
-<section class="panel-wide" id="{{ page.tab2 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+<section class="panel-wide anchored" id="{{ page.tab2 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab2 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 {% include learn-head.html %}{{ site.baseurl }}/application{% include learn-foot.html %}
