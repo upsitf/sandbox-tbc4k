@@ -799,7 +799,7 @@ section.info>div.aligner {
 }
 
 section.info>div.aligner>.aligner-item-text {
-  width: calc(100% - 300px);
+  width: calc(100% - 350px);
 }
 
 section.info>div.aligner>.aligner-item-text>ul {
