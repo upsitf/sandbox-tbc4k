@@ -856,8 +856,6 @@ section.info .aligner-item-thumb>img {
     border-color: white;
 }
 
-
-
 @media (max-width: 768px) {
 
 	section.info .aligner-item-text,
@@ -872,7 +870,6 @@ section.info .aligner-item-thumb>img {
 		margin: auto;
 	}
 }
-
 
 @media (min-width: 768px) {
 	section.info>div.aligner>.aligner-item-text,
