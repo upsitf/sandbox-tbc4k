@@ -3,7 +3,7 @@ layout: internal
 masthead: /images/masthead/calibration.png
 crumbs:
   - Qualitech
-  - Coatings
+  - Quality Control Monitoring
 thumb: /images/filler-square.jpg
 title: Instrument Test &amp; Calibration
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -17,16 +17,48 @@ library1_title:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
+
+
+library2_size: 3
+library2_photo:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
+library2_title:
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+  - Lorem ipsum dolor sit amet
+library2_cert:
+  - /images/filler.jpg
+  - /images/filler.jpg
+  - /images/filler.jpg
 ---
 
 
 <section>
 <div class="row row-limit">
 <div class="col-lg-12">
-	<h1>Library</h1>
-	<h3>Calibration Standards &amp; Verifiers</h3>
 
 	<section>
+
+		<h5 class="pretitle">in accordance with</h5>
+		<h1 class="pretitled">International Standards</h1>
+
+		<ul class="list-flex">
+
+			{% for i in (1..page.library1_size) %}
+				<!--li--><!--photo url-->{% include item-library-head.html %}{{ site.baseurl }}{{ page.library1_photo[forloop.index0] }}{% include item-mid.html %}
+				{{ page.library1_title[forloop.index0] }}
+				<!--title--><!--/li-->{% include item-foot.html %}
+			{% endfor %}
+
+		</ul>
+	</section>
+
+	<section>
+		<h5 class="pretitle">certified</h5>
+		<h1 class="pretitled">Calibration Standards &amp; Verifiers</h1>
+		
 		<ul class="list-flex">
 
 			{% for i in (1..page.library1_size) %}

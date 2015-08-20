@@ -4,7 +4,7 @@ masthead: /images/masthead/application.png
 crumbs:
   - Qualitech
 thumb: /images/filler-square.jpg
-title: Application
+title: Surface Preparation &amp; Coating Application
 description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 projects1_size: 3
@@ -17,6 +17,16 @@ projects1_title:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
 
+list1:
+  - Project List Item 1
+  - Project List Item 2
+  - Project List Item 3
+  - Project List Item 4
+  - Project List Item 5
+  - Project List Item 6
+  - Project List Item 7
+  - Project List Item 8
+
 projects2_size: 3
 projects2_photo:
   - /images/filler.jpg
@@ -26,6 +36,16 @@ projects2_title:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
+
+list2:
+  - Project List Item 1
+  - Project List Item 2
+  - Project List Item 3
+  - Project List Item 4
+  - Project List Item 5
+  - Project List Item 6
+  - Project List Item 7
+  - Project List Item 8
 ---
 
 <section>
@@ -48,6 +68,12 @@ projects2_title:
 		    {% endfor %}
 		{% include carousel-foot.html %}
 
+		<ul class="list-break list-break-lg-6 list-break-xs-12">
+	    	{% for item in page.list1 %}
+	    		<li>{{ item }}</li>
+	    	{% endfor %}
+	    </ul>
+
 	</section>
 
 	<section>
@@ -62,6 +88,12 @@ projects2_title:
 		      {% include item-carousel-head.html %}{{ site.baseurl }}{{ page.projects2_photo[forloop.index0] }}{% include item-carousel-mid.html %}{{ page.projects2_title[forloop.index0] }}{% include item-carousel-foot.html %}
 		    {% endfor %}
 		{% include carousel-foot.html %}
+
+		<ul class="list-break list-break-lg-6 list-break-xs-12">
+	    	{% for item in page.list2 %}
+	    		<li>{{ item }}</li>
+	    	{% endfor %}
+	    </ul>
 
 	</section>
 

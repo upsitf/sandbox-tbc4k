@@ -1,18 +1,18 @@
 ---
 layout: internal
 
-tab1: clients
-tab2: instruments used
+tab1: Clients
+tab2: Instruments Used
 ---
 
 <!--
 {% include tabs.html %}
 -->
 
-<section id="{{ page.tab1 }}">
+<section>
 <div class="row row-limit">
 <div class="col-lg-12">
-	<h1>{{ page.tab1 | capitalize }}</h1>
+	<h1>{{ page.tab1 }}</h1>
 	
 		
 			{% assign count1 = '' %}
@@ -47,10 +47,10 @@ tab2: instruments used
 </div>
 </section>
 
-<section id="{{ page.tab2 }}">
+<section>
 <div class="row row-limit">
 <div class="col-lg-12">
-	<h1>{{ page.tab2 | capitalize }}</h1>
+	<h1>{{ page.tab2 }}</h1>
 
 		<ul class="list-flex list-flex-wide">
 
@@ -58,12 +58,7 @@ tab2: instruments used
 			{% for i in (1..page.products1_size) %}
 				{% assign indexfix = count2.size %}
 
-				<!--li--><!--photo url-->{% include item-project-head.html %}{{ site.baseurl }}{{ page.products1_photo[indexfix] }}{% include item-mid.html %}
-				{{ page.products1_categories[indexfix] }}
-				<!--title-->{% include item-product-mid1.html %}
-				{{ page.products1_description[indexfix] }}
-				{% include item-product-mid2.html %}{{ page.products1_url[indexfix] }}
-				<!--/li-->{% include item-product-foot.html %}
+				{% include item-project-head.html %}{{ site.baseurl }}{{ page.products1_photo[indexfix] }}{% include item-mid.html %}{{ page.products1_categories[indexfix] }}{% include item-product-mid1.html %}{{ page.products1_description[indexfix] }}{% include item-product-mid2.html %}{{ page.products1_url[indexfix] }}{% include item-product-foot.html %}
 
 				{% capture temp %}{{ count2 }}*{% endcapture %}
 				{% assign count2 = temp %}

@@ -417,17 +417,30 @@ a.navbar-brand.navbar-brand:visited {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.panel-library>h5 {
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 @media (max-width: 767px) {
 	.img-library {
 		width: 92%;
 		padding-bottom: 69%;
 	}
+	.panel-library>h5 {
+		width: 92%;
+	}
 }
 
 /* Multicolumn List MAGIC! */
 ul.list-break {
 	width: 100%;
+	max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
 	margin-bottom: 20px;
 	overflow: hidden;
 	padding-left: 15px;
@@ -438,13 +451,16 @@ ul.list-break>li{
 	line-height: 1.5em;
 	float: left;
 	display: inline;
+	font-family: Hind;
 }
 ul.list-break.list-break-lg-6>li {
 	width: 50%;
+	font-size: 1.1em;
 }
 @media (max-width: 767px) {
 	ul.list-break.list-break-xs-12>li {
 		width: 100%;
+		font-size: 0.9em;
 	}
 }
 
@@ -581,8 +597,14 @@ section.panel-wide>h1, section.panel-wide>div.row>div>h1 {
 }
 
 @media (max-width: 767px) {
-	section.panel-wide>h1, section.panel-wide>div.row>div>h1  {
+	section.panel-wide>h1, section.panel-wide>div.row>div>h1 {
 	    font-size: 2.75em;
+	}
+	section.panel-wide>h1.resize, section.panel-wide>div.row>div>h1.resize {
+	    font-size: 2em;
+	}
+	section.panel-wide>h4.resize, section.panel-wide>div.row>div>h4.resize {
+	    font-size: 1.20em;
 	}
 }
 
