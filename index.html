@@ -1,11 +1,13 @@
 ---
 layout: main
 tab1: Quality Control Monitoring
-tab2: Surface Preparation &amp; Coating Application
+tab1_id: monitoring
+tab2: Surface Preparation &amp; Application
+tab2_id: application
 ---
 
 <!--BEGIN Jumbotron-->
-<section id="jumbotron" class="jumbotron" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+<section id="jumbotron" class="jumbotron" style="background-image: url('{{ site.baseurl }}/images/splash-bg.jpg');">
 	<!--div class="row"><div class="col-lg-12"-->
 <h1>Quality<br class="visible-xs"/> Service<br class="visible-lg visible-md visible-xs"/> <span class="hidden-xs">//</span> <br class="visible-lg visible-md"/><span class="jumbotron-h1-adjuster">Never<!--br class="visible-xs"/--> Compromised</span></h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -18,7 +20,7 @@ tab2: Surface Preparation &amp; Coating Application
 -->
 
 <!--BEGIN Coatings-->
-<section class="panel-wide panel-wide-subpaneled anchored" id="{{ page.tab1 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+<section class="panel-wide panel-wide-subpaneled anchored" id="{{ page.tab1_id }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab1 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <!--BEGIN Coatings Subs-->
@@ -37,7 +39,7 @@ tab2: Surface Preparation &amp; Coating Application
 <!--END Coatings-->
 
 <!--BEGIN Application-->
-<section class="panel-wide anchored" id="{{ page.tab2 }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
+<section class="panel-wide anchored" id="{{ page.tab2_id }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
 <h1>{{ page.tab2 | capitalize }}</h1>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 {% include learn-head.html %}{{ site.baseurl }}/application{% include learn-foot.html %}

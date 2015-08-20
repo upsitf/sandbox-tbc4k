@@ -406,6 +406,18 @@ a.navbar-brand.navbar-brand:visited {
 	}
 }
 
+h5.pretitle {
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+}
+
+h1.pretitled {
+	margin-top: 0;
+}
+
 .panel-library {
 	width: 100%;
 }
@@ -696,6 +708,7 @@ a.btn.btn-default.btn-learn {
 .page-content-dynamic h2,
 .page-content-dynamic h3 {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* Fluid Logo Container MAGIC! */

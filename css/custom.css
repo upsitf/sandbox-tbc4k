@@ -708,6 +708,7 @@ a.btn.btn-default.btn-learn {
 .page-content-dynamic h2,
 .page-content-dynamic h3 {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* Fluid Logo Container MAGIC! */
