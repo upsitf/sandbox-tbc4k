@@ -79,14 +79,15 @@ headerclass: colorize
 
     </section>
 
-    
+
+
     {% include footer.html %}
 
     {% include foot.html %}
     {% include js-header.html %}
-{% include js-scroll.html %}
-
-{% include js-preloader.html %}
+    {% include js-scroll.html %}
+    {{ page.addscript }}
+    {% include js-preloader.html %}
 
     </body>
 </html>

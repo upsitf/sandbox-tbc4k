@@ -16,7 +16,12 @@
 
     <body class="" style="padding-top:50px">
 
-      <div id="preloader"></div>
+      <div id="preloader">
+	<span>
+		Loading...&nbsp;
+		<i class="fa fa-spinner fa-pulse"></i>
+	</span>
+</div>
 
     <header id="navbar" class="navbar navbar-default colorize" role="navigation">
   <div class="container">
@@ -130,8 +135,8 @@
 	<div class="panel-library">
 	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
 	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
+				International standard 1</h5>
+<a target="_blank" href="/images/filler.jpg"><i class="fa fa-external-link"></i>&nbsp;Open preview</a>
 </div>
 	</li>
 			
@@ -139,8 +144,8 @@
 	<div class="panel-library">
 	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
 	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
+				International standard 2</h5>
+<a target="_blank" href="/images/filler.jpg"><i class="fa fa-external-link"></i>&nbsp;Open preview</a>
 </div>
 	</li>
 			
@@ -148,8 +153,8 @@
 	<div class="panel-library">
 	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
 	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
+				International standard 3</h5>
+<a target="_blank" href="/images/filler.jpg"><i class="fa fa-external-link"></i>&nbsp;Open preview</a>
 </div>
 	</li>
 			
@@ -161,47 +166,82 @@
 		<h5 class="pretitle">certified</h5>
 		<h1 class="pretitled">Calibration Standards &amp; Verifiers</h1>
 		
-		<ul class="list-flex">
+		<ul class="list-flex list-flex-wide">
 
 			
-				<!--li--><!--photo url--><li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
-	<div class="panel-library">
-	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
-	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
-</div>
-	</li>
 			
-				<!--li--><!--photo url--><li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
-	<div class="panel-library">
-	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
-	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
+				
+
+				<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
+	<div class="panel-project">
+	<div class="img-project" style="background-image:url('/images/filler.jpg');"></div>
+	<h5>Calibration standard 1</h5>
+<p>Lorem ipsum dolor sit amet</p>
+<a class="btn btn-default btn-block btn-elco" id="huehue" target="_blank" data-toggle="modal" data-target="#certModal">View calibration certificate<div class="content" style="display:none"><img src="/images/filler.jpg"></div></a>
 </div>
 	</li>
+
+				
+				
 			
-				<!--li--><!--photo url--><li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
-	<div class="panel-library">
-	<div class="img-library" style="background-image:url('/images/filler.jpg');"></div>
-	<h5>
-				Lorem ipsum dolor sit amet
-				<!--title--><!--/li--></h5>
+				
+
+				<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
+	<div class="panel-project">
+	<div class="img-project" style="background-image:url('/images/filler.jpg');"></div>
+	<h5>Calibration standard 2</h5>
+<p>Lorem ipsum dolor sit amet</p>
+<a class="btn btn-default btn-block btn-elco" id="huehue" target="_blank" data-toggle="modal" data-target="#certModal">View calibration certificate<div class="content" style="display:none"><img src="/images/filler.jpg"></div></a>
 </div>
 	</li>
+
+				
+				
+			
+				
+
+				<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
+	<div class="panel-project">
+	<div class="img-project" style="background-image:url('/images/filler.jpg');"></div>
+	<h5>Calibration standard 3</h5>
+<p>Lorem ipsum dolor sit amet</p>
+<a class="btn btn-default btn-block btn-elco" id="huehue" target="_blank" data-toggle="modal" data-target="#certModal">View calibration certificate<div class="content" style="display:none"><img src="/images/filler.jpg"></div></a>
+</div>
+	</li>
+
+				
+				
 			
 
 		</ul>
 	</section>
 
 </div>
-</section> 
+</section>
+
+<div class="modal fade" id="certModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <!--div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div-->
+    </div>
+  </div>
+</div>
   	</section>
 
     </section>
 
-    
+
+
     <footer>
 
 <ul>
@@ -248,7 +288,7 @@ $(document).on('click', function(event) {
   }
 });
 </script>
-<script>
+    <script>
 	$('a[href*=#]:not([href=#]):not(.carousel-control)').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 		|| location.hostname == this.hostname) {
@@ -263,8 +303,8 @@ $(document).on('click', function(event) {
 		}
 	});
 </script>
-
-<script>
+    <script src="/js/modal-cert.js"></script>
+    <script>
 		jQuery(window).load(function () {
 			var body = document.body;
 			var preloader = document.getElementById('preloader');
@@ -272,6 +312,7 @@ $(document).on('click', function(event) {
 			preloader.className = preloader.className + " loaded"
 			setTimeout(function(){
 				preloader.className = preloader.className + " none";
+				body.className = body.className + " reset"
 			}, 1000);
 		});
 		</script>

@@ -16,7 +16,12 @@
 
     <body class="" style="padding-top:50px">
 
-      <div id="preloader"></div>
+      <div id="preloader">
+	<span>
+		Loading...&nbsp;
+		<i class="fa fa-spinner fa-pulse"></i>
+	</span>
+</div>
 
     <header id="navbar" class="navbar navbar-default colorize" role="navigation">
   <div class="container">
@@ -354,7 +359,7 @@
 
 				<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12">
 	<div class="panel-project">
-	<div class="img-project" style="background-image:url('/images/product/filler.jpg');"></div>
+	<div class="img-project" style="background-image:url('/images/product/washability.png');"></div>
 	<h5>Drying &amp; Washability</h5>
 <p>Linear Drying Time Recorder, Washability &amp; Abrasion Tester, for paints and coatings</p>
 <a class="btn btn-default btn-block btn-elco" target="_blank" href="http://elcometer.com/en/physical-test-equipment/washability-abrasion.html">Go to Elcometer&#8482; page</a>
@@ -401,7 +406,8 @@
 
     </section>
 
-    
+
+
     <footer>
 
 <ul>
@@ -448,7 +454,7 @@ $(document).on('click', function(event) {
   }
 });
 </script>
-<script>
+    <script>
 	$('a[href*=#]:not([href=#]):not(.carousel-control)').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 		|| location.hostname == this.hostname) {
@@ -463,8 +469,8 @@ $(document).on('click', function(event) {
 		}
 	});
 </script>
-
-<script>
+    
+    <script>
 		jQuery(window).load(function () {
 			var body = document.body;
 			var preloader = document.getElementById('preloader');
@@ -472,6 +478,7 @@ $(document).on('click', function(event) {
 			preloader.className = preloader.className + " loaded"
 			setTimeout(function(){
 				preloader.className = preloader.className + " none";
+				body.className = body.className + " reset"
 			}, 1000);
 		});
 		</script>
