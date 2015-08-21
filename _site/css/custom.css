@@ -581,6 +581,9 @@ section.jumbotron>p {
 @media (max-width: 768px) {
 	section.jumbotron>p {
 		font-size: 1.25em;
+		margin-top: 1em;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
