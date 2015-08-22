@@ -14,7 +14,7 @@
 	
 </head>
 
-    <body class="">
+    <body class="notloaded">
 
     	<div id="preloader">
 	<span>
@@ -207,11 +207,13 @@ setInterval(function() {
 		jQuery(window).load(function () {
 			var body = document.body;
 			var preloader = document.getElementById('preloader');
-			body.className = body.className + " loaded"
-			preloader.className = preloader.className + " loaded"
+			//body.className = body.className + " loaded"
+			$(body).removeClass("notloaded");
+			preloader.className = preloader.className + " loaded";
 			setTimeout(function(){
 				preloader.className = preloader.className + " none";
-				body.className = body.className + " reset"
+				//body.className = body.className + " reset"
+				//$(body).removeClass("loaded");
 			}, 1000);
 		});
 		</script>		
