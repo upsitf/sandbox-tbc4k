@@ -66,6 +66,7 @@ list2:
 		    {% for i in (1..page.projects1_size) %}
 		      {% include item-carousel-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-carousel-mid.html %}{{ page.projects1_title[forloop.index0] }}{% include item-carousel-foot.html %}
 		    {% endfor %}
+		{% include carousel-mid3.html %}
 		{% include carousel-foot.html %}
 
 		<ul class="list-break list-break-lg-6 list-break-xs-12">
@@ -87,6 +88,7 @@ list2:
 		    {% for i in (1..page.projects2_size) %}
 		      {% include item-carousel-head.html %}{{ site.baseurl }}{{ page.projects2_photo[forloop.index0] }}{% include item-carousel-mid.html %}{{ page.projects2_title[forloop.index0] }}{% include item-carousel-foot.html %}
 		    {% endfor %}
+		{% include carousel-mid3.html %}
 		{% include carousel-foot.html %}
 
 		<ul class="list-break list-break-lg-6 list-break-xs-12">

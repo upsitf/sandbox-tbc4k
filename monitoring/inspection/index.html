@@ -34,11 +34,11 @@ projects1_photo:
   - /images/inspection/marikina.png
   - /images/inspection/naia3.png
 projects1_photo_offset1y:
-  - 15%
   - 30%
-  - 10%
-  - 5%
-  - 0%
+  - 35%
+  - 30%
+  - 20%
+  - 30%
   - center
 projects1_photo_offset2x:
   - 0%
@@ -49,11 +49,11 @@ projects1_photo_offset2x:
   - center
 projects1_photo_offset3x:
   - 5%
-  - 10%
   - 20%
-  - 30%
-  - 45%
+  - 20%
   - 40%
+  - 80%
+  - 65%
 projects1_title:
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
@@ -106,6 +106,34 @@ list2:
         {% for i in (1..page.projects1_size) %}
           {% include item-carousel-head.html %}{{ site.baseurl }}{{ page.projects1_photo[forloop.index0] }}{% include item-carousel-mid.html %}{{ page.projects1_title[forloop.index0] }}{% include item-carousel-foot.html %}
         {% endfor %}
+    {% include carousel-mid3.html %}
+
+    <style>
+      @media (min-width: 768px) {
+        {% for i in (1..page.projects1_size) %}
+        div#carousel{{ carousel_id }}>div.carousel-inner>div.item:nth-of-type({{ forloop.index }}) {
+          background-position-y: {{ page.projects1_photo_offset1y[forloop.index0] }};
+        }
+        {% endfor %}
+      }
+
+      @media (min-width: 504px) and (max-width: 768px){
+        {% for i in (1..page.projects1_size) %}
+        div#carousel{{ carousel_id }}>div.carousel-inner>div.item:nth-of-type({{ forloop.index }}) {
+          background-position-x: {{ page.projects1_photo_offset2x[forloop.index0] }};
+        }
+        {% endfor %}
+      }
+
+      @media (max-width: 504px) {
+        {% for i in (1..page.projects1_size) %}
+        div#carousel{{ carousel_id }}>div.carousel-inner>div.item:nth-of-type({{ forloop.index }}) {
+          background-position-x: {{ page.projects1_photo_offset3x[forloop.index0] }};
+        }
+        {% endfor %}
+      }
+    </style>
+
     {% include carousel-foot.html %}
 
     <ul class="list-break list-break-lg-6 list-break-xs-12">
