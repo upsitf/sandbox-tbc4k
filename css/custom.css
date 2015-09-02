@@ -746,6 +746,13 @@ div.carousel-default {
     margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+	div.carousel-default {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
 div.carousel-default>div.carousel-inner>div.item {
 	width: 100%;
 	padding-bottom: 30%;
@@ -757,6 +764,12 @@ div.carousel-default>div.carousel-inner>div.item {
 @media (max-width: 768px) {
 	div.carousel-default>div.carousel-inner>div.item {
 		padding-bottom: 60%;
+	}
+}
+
+@media (max-width: 504px) {
+	div.carousel-default>div.carousel-inner>div.item {
+		padding-bottom: 120%;
 	}
 }
 
@@ -803,6 +816,11 @@ div.carousel-default>div.carousel-inner>div.item {
 }
 
 /* Row Limiter */
+div.row.prob {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
 div.row.row-limit, .row-limit {
 	max-width: 1024px;
 	margin: auto;

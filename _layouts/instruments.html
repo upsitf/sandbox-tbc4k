@@ -31,9 +31,7 @@ tab2: Instruments Used
 						<div class="list-fluid">
 					{% endif %}
 
-					<!--li--><!--photo url-->{% include item-fluid-head.html %}{{ site.baseurl }}{{ page.clients1_photo[indexfix] }}{% include item-fluid-mid.html %}
-					{{ page.clients1_title[indexfix] }}
-					<!--title--><!--/li-->{% include item-fluid-foot.html %}
+					{% include item-fluid-head.html %}{{ site.baseurl }}{{ page.clients1_photo[indexfix] }}{% include item-fluid-mid1.html %}{{ page.clients1_title[indexfix] }}{% include item-fluid-mid2.html %}{{ page.clients1_title[indexfix] }}{% include item-fluid-foot.html %}
 
 					{% capture temp %}{{ count1 }}*{% endcapture %}
 					{% assign count1 = temp %}
