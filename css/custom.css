@@ -961,8 +961,8 @@ section.info .aligner-item-thumb>img {
 	section.info>div.aligner>.aligner-item-thumb.after,
 	section.info .aligner-item-text,
 	section.info .aligner-item-thumb.after {
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 }
