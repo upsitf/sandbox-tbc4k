@@ -615,11 +615,13 @@ section.panel-wide>h1, section.panel-wide>div.row>div>h1 {
     font-size: 4em;
     color: #fff;
     
+    /*
     word-wrap: break-all;
     -webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+	*/
 }
 
 @media (max-width: 767px) {
@@ -726,6 +728,8 @@ a.btn.btn-default.btn-learn {
 	margin-bottom: 20px;
 }
 
+.page-content-dynamic h1.underlined,
+.page-content-dynamic h2.underlined,
 .page-content-dynamic h3.underlined {
 	margin-bottom: 10px;
 }
