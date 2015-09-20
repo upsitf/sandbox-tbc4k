@@ -1,6 +1,6 @@
 # Site settings
-title: Qualitech Industrial and Technical Services
-#baseurl: http://localhost:4000
+title: St. Therese Educational Foundation Tacloban, Inc.
+baseurl: http://klmendoza.github.io/sandbox-stefti
 
 # Build settings
 markdown: kramdown
