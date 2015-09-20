@@ -1,14 +1,17 @@
-Yellow
-#FFEF38
-
-Orange
-#F7A41A
-
-Terracota
-#DC700E
-
-Dull Blue
-#275D79
-
 Blue
-#001547
+#2b3389
+
+Light Gray
+#f1f1f1
+
+Dark Gray
+#e4e4e4
+
+Yellow
+#de9a18
+
+Main Text Gray
+#464646
+
+Paragraph Text Gray
+#7d7d7d

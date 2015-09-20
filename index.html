@@ -1,47 +1,126 @@
 ---
 layout: main
-tab1: Quality Control Monitoring
-tab1_id: monitoring
-tab2: Surface Preparation &amp; Application
-tab2_id: application
 ---
 
-<!--BEGIN Jumbotron-->
-<section id="jumbotron" class="jumbotron" style="background-image: url('{{ site.baseurl }}/images/splash-bg.jpg');">
-	<!--div class="row"><div class="col-lg-12"-->
-<h1>Quality<br class="visible-xs"/> Service<br class="visible-lg visible-md visible-xs"/> <span class="hidden-xs">//</span> <br class="visible-lg visible-md"/><span class="jumbotron-h1-adjuster">Never<!--br class="visible-xs"/--> Compromised</span></h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-<!--/div></div-->
-</section>
-<!--END Jumbotron-->
+<section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 no-pad">
+  <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
 
-<!--
-{% include tabs.html %}
--->
 
-<!--BEGIN Coatings-->
-<section class="panel-wide panel-wide-subpaneled anchored" id="{{ page.tab1_id }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
-<h1>{{ page.tab1 | capitalize }}</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-<!--BEGIN Coatings Subs-->
-<section class="panel-wide-subpanel">
-<ul class="list-flex">
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a href="{{ site.baseurl }}/monitoring/instruments" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Inspection Instruments</a></li>
-</li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a href="{{ site.baseurl }}/monitoring/calibration" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Instrument Test &amp; Calibration</a></li>
-</li>
-<li class="list-flex-item list-flex-item-lg-4 list-flex-item-xs-12"><a href="{{ site.baseurl }}/monitoring/inspection" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">Coating Inspection</a></li>
-</li>
-</ul>
-</section>
-<!--END Coatings Subs-->
-</section>
-<!--END Coatings-->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/filler.jpg" alt="...">
+        <div class="carousel-caption">
+          Something one
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/filler.jpg" alt="...">
+        <div class="carousel-caption">
+          Something two
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/filler.jpg" alt="...">
+        <div class="carousel-caption">
+          Something three
+        </div>
+      </div>
+    </div>
 
-<!--BEGIN Application-->
-<section class="panel-wide anchored" id="{{ page.tab2_id }}" style="background-image: url('{{ site.baseurl }}/images/filler.jpg');">
-<h1>{{ page.tab2 | capitalize }}</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-{% include learn-head.html %}{{ site.baseurl }}/application{% include learn-foot.html %}
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Controls -->
+    <!--a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a-->
+  </div>
+</div>
+</div>
+</div>
 </section>
-<!--END Application-->
+
+<section class="bg-dg">
+<div class="container-fluid container-limit">
+<div class="row">
+<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+  <h3>News and Announcements</h3>
+  <div class="container-fluid container-news">
+    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
+    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+  </div>
+  <div class="container-fluid container-news">
+    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
+    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+  <h3>Events</h3>
+  <div class="container-fluid container-events">
+    <div class="container-fluid container-event">
+      <h5>21 Sep 2015</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+    <div class="container-fluid container-event">
+      <h5>21 Sep 2015</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+    <div class="container-fluid container-event">
+      <h5>21 Sep 2015</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-lg">
+<div class="container-fluid container-limit">
+<div class="row">
+  <div class="col-lg-12">
+    <h3>Studying at STEFTI</h3>
+  </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div class="container-fluid container-sectionbox">
+    <img class="img-responsive" src="{{ site.baseurl }}/images/filler.jpg"/>
+    <h4>Early Education</h4>
+  </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div class="container-fluid container-sectionbox">
+    <img class="img-responsive" src="{{ site.baseurl }}/images/filler.jpg"/>
+    <h4>Grade School</h4>
+  </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div class="container-fluid container-sectionbox">
+    <img class="img-responsive" src="{{ site.baseurl }}/images/filler.jpg"/>
+    <h4>High School</h4>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 no-pad">
+</div>
+</div>
+</div>
+</section>
