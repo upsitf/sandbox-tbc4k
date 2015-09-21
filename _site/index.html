@@ -4,7 +4,25 @@
   <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="/img/favicon.ico" rel="icon" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>St. Therese Educational Foundation Tacloban, Inc.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,7 +47,19 @@
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/"><span>St. Therese</span><br/><span>Educational Foundation of Tacloban</span></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png"/>
+        <div>
+        <span>St. Therese</span><br/>
+        <span>Educational Foundation of Tacloban</span>
+        </div>
+      </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -68,21 +98,21 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/filler.jpg" alt="...">
+        <img src="/images/carousel-1.jpg" alt="...">
         <div class="carousel-caption">
-          Something one
+          Lorem ipsum dolor sit amet
         </div>
       </div>
       <div class="item">
-        <img src="images/filler.jpg" alt="...">
+        <img src="/images/carousel-2.jpg" alt="...">
         <div class="carousel-caption">
-          Something two
+          Lorem ipsum dolor sit amet
         </div>
       </div>
       <div class="item">
-        <img src="images/filler.jpg" alt="...">
+        <img src="/images/carousel-3.jpg" alt="...">
         <div class="carousel-caption">
-          Something three
+          Lorem ipsum dolor sit amet
         </div>
       </div>
     </div>
@@ -151,19 +181,19 @@
   </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="container-fluid container-sectionbox">
-    <img class="img-responsive" src="/images/filler.jpg"/>
+    <img class="img-responsive" src="/images/admissions-1.jpg"/>
     <h4>Early Education</h4>
   </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="container-fluid container-sectionbox">
-    <img class="img-responsive" src="/images/filler.jpg"/>
+    <img class="img-responsive" src="/images/admissions-2.jpg"/>
     <h4>Grade School</h4>
   </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
   <div class="container-fluid container-sectionbox">
-    <img class="img-responsive" src="/images/filler.jpg"/>
+    <img class="img-responsive" src="/images/admissions-3.jpg"/>
     <h4>High School</h4>
   </div>
 </div>
@@ -171,10 +201,14 @@
 </div>
 </section>
 
-<section>
+<section class="section-fader" style="
+background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 50%,rgba(222,154,24,0) 75%,rgba(222,154,24,0) 100%), url('/images/fader-landing.jpg') no-repeat;
+">
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-12 no-pad">
+<div class="col-lg-5 col-lg-offset-1 section-fader-text">
+  <h1>Where heart and mind grow best</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
 </div>
 </div>
@@ -186,22 +220,13 @@
 		<footer>
 
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="/#monitoring">Quality Control Monitoring</a>
-<ul>
-<li><a href="/monitoring/instruments">Inspection Instruments</a>
-<ul>
-<li><a href="/monitoring/instruments/owners">Owners &amp; Contractors</a></li>
-<li><a href="/monitoring/instruments/galvanizers">Galvanizers &amp; Powder Coaters</a></li>
-<li><a href="/monitoring/instruments/research">Production &amp; Research</a></li>
+<li><a>News</a></li>
+<li><a>About</a></li>
+<li><a>Admissions</a></li>
+<li><a>Facilities</a></li>
+<li><a>Faculty &amp; Staff</a></li>
 </ul>
-</li>
-<li><a href="/monitoring/calibration">Instrument Test &amp; Calibration</a></li>
-<li><a href="/monitoring/inspection">Coating Inspection</a></li>
-</ul>
-</li>
-<li><a href="/application">Surface Preparation &amp; Application</a></li>
-</ul>
+
 
 </footer>
 
