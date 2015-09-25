@@ -1,6 +1,9 @@
 Blue
 #2b3389
 
+Dark Blue
+#232A73
+
 Light Gray
 #f1f1f1
 
