@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+  {% include head.html %}
+
+    <body>
+
+{{content}}
+
+<script>
+  var toggle = document.getElementById("dropdown-{{ page.subsection }}").getElementsByTagName("a")[0];
+  toggle.className = toggle.className + " dropdown-active";
+  var dropdown = document.getElementById("dropdown-{{ page.subsection }}").getElementsByTagName("ul")[0];
+  dropdown.className = dropdown.className + " visible-xs";
+  var subheader_list = document.getElementsByClassName("navbar-drill")[0].getElementsByTagName("li");
+  for (index = 0; index < subheader_list.length; index++) {
+      subheader_list[index].className = subheader_list[index].className + " hidden-xs";
+      // subheader_list[index].id = "subheader-" + subheader_list[index].getAttribute("name");
+  }
+
+  {% if page.subpage %}
+    var subpage = document.getElementsByName("{{ page.subpage }}")[0];
+    subpage.className = subpage.className + " subheader-active";
+    subpage.getElementsByTagName("a")[0].removeAttribute("href");
+  {% endif %}
+
+</script>
+
+
+
+{% include footer.html %}
+
+{% include foot.html %}
+
+</body>
+</html>

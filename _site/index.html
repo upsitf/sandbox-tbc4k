@@ -42,7 +42,7 @@
 </head>
 
 
-    <body class="notloaded">
+    <body>
 
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -63,24 +63,25 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
+        <li class="dropdown" id="dropdown-admissions">
+          <a href="/admissions/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/admissions/">Why STEFTI</a></li>
-            <li><a href="/admissions/early-education">Early Education</a></li>
-            <li><a href="/admissions/grade-school">Grade School</a></li>
-            <li><a href="/admissions/high-school">High School</a></li>
+            <li name="early-education"><a href="/admissions/early-education">Early Education</a></li>
+<li name="grade-school"><a href="/admissions/grade-school">Grade School</a></li>
+<li name="high-school"><a href="/admissions/high-school">High School</a></li>
+
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
+        <li class="dropdown" id="dropdown-about">
+          <a href="/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/about/">The School</a></li>
-            <li><a href="/about/history">History</a></li>
-            <li><a href="/about/mission-vision">Mission-Vision</a></li>
-            <li><a href="/about/philosophy">Philosophy</a></li>
-            <li><a href="/about/hymn-logo">Hymn and Logo</a></li>
-            <li><a href="/about/campus">The Campus</a></li>
+            <li name="history"><a href="/about/history">History</a></li>
+<li name="mission-vision"><a href="/about/mission-vision">Mission-Vision</a></li>
+<li name="philosophy"><a href="/about/philosophy">Philosophy</a></li>
+<li name="hymn-logo"><a href="/about/hymn-logo">Hymn and Logo</a></li>
+<li name="facilities"><a href="/about/facilities">Facilities</a></li>
+<li name="faculty"><a href="/about/faculty">Faculty and Staff</a></li>
+
           </ul>
         </li>
         <li><a href="#">News</a></li>
@@ -192,22 +193,28 @@
     <h3>Studying at STEFTI</h3>
   </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <a href="/admissions/early-education">
   <div class="container-fluid container-sectionbox">
     <img class="img-responsive" src="/images/admissions-1.jpg"/>
     <h4>Early Education</h4>
   </div>
+  </a>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <a href="/admissions/grade-school">
   <div class="container-fluid container-sectionbox">
     <img class="img-responsive" src="/images/admissions-2.jpg"/>
     <h4>Grade School</h4>
   </div>
+  </a>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <a href="/admissions/high-school">
   <div class="container-fluid container-sectionbox">
     <img class="img-responsive" src="/images/admissions-3.jpg"/>
     <h4>High School</h4>
   </div>
+  </a>
 </div>
 </div>
 </div>
@@ -238,18 +245,20 @@ background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 5
     <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
       <h3>Quick Links</h3>
       <ul class="list-col-3">
-<li><a>News</a></li>
-<li><a>About/History</a></li>
-<li><a>Vission, Mission &amp; Goals</li></a>
-<li><a>Philosophy</li></a>
-<li><a>Core Values</li></a>
-<li><a>Logo &amp; Hymn</li></a>
-<li><a>Admissions/Why STEFTI</a></li>
-<li><a>Early Education</li></a>
-<li><a>Grade School</li></a>
-<li><a>High School</li></a>
-<li><a>Facilities</a></li>
-<li><a>Faculty &amp; Staff</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/about">About</a></li>
+<li name="history"><a href="/about/history">History</a></li>
+<li name="mission-vision"><a href="/about/mission-vision">Mission-Vision</a></li>
+<li name="philosophy"><a href="/about/philosophy">Philosophy</a></li>
+<li name="hymn-logo"><a href="/about/hymn-logo">Hymn and Logo</a></li>
+<li name="facilities"><a href="/about/facilities">Facilities</a></li>
+<li name="faculty"><a href="/about/faculty">Faculty and Staff</a></li>
+
+<li><a href="/admissions">Admissions</a></li>
+<li name="early-education"><a href="/admissions/early-education">Early Education</a></li>
+<li name="grade-school"><a href="/admissions/grade-school">Grade School</a></li>
+<li name="high-school"><a href="/admissions/high-school">High School</a></li>
+
 </ul>
 
     </div>

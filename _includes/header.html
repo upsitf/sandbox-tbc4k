@@ -17,24 +17,16 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
+        <li class="dropdown" id="dropdown-admissions">
+          <a href="{{ site.baseurl }}/admissions/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/admissions/">Why STEFTI</a></li>
-            <li><a href="{{ site.baseurl }}/admissions/early-education">Early Education</a></li>
-            <li><a href="{{ site.baseurl }}/admissions/grade-school">Grade School</a></li>
-            <li><a href="{{ site.baseurl }}/admissions/high-school">High School</a></li>
+            {% include sitemap-admissions.html %}
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
+        <li class="dropdown" id="dropdown-about">
+          <a href="{{ site.baseurl }}/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/about/">The School</a></li>
-            <li><a href="{{ site.baseurl }}/about/history">History</a></li>
-            <li><a href="{{ site.baseurl }}/about/mission-vision">Mission-Vision</a></li>
-            <li><a href="{{ site.baseurl }}/about/philosophy">Philosophy</a></li>
-            <li><a href="{{ site.baseurl }}/about/hymn-logo">Hymn and Logo</a></li>
-            <li><a href="{{ site.baseurl }}/about/campus">The Campus</a></li>
+            {% include sitemap-about.html %}
           </ul>
         </li>
         <li><a href="#">News</a></li>

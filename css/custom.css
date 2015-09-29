@@ -30,10 +30,15 @@ header.navbar {
 
 header.navbar a.dropdown-toggle, header.navbar .navbar-nav>li>a {
 	color: white !important;
-	background-color: rgba(0,0,0,0) !important;
+	/*background-color: rgba(0,0,0,0) !important;*/
 	padding-top: 26px;
-  padding-bottom: 27px;
+	padding-bottom: 0;
+  min-height: 73px;
 	font-size: 1.25em
+}
+
+header.navbar a.dropdown-toggle.dropdown-active {
+	background-color: #232A73;
 }
 
 header.navbar ul.dropdown-menu {
@@ -44,6 +49,31 @@ header.navbar ul.dropdown-menu {
 	background-color: #232A73;
 }
 
+.dropdown-menu {
+	top: calc(100% - 15px);
+}
+
+@media (min-width: 768px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.nav li.dropdown > ul.dropdown-menu {
+		display: block;
+		position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/*
 @media (min-width: 768px) {
 	header.navbar ul.dropdown-menu {
 		position: fixed;
@@ -63,6 +93,7 @@ header.navbar ul.dropdown-menu {
 		padding-top: 15px;
 	}
 }
+*/
 
 header.navbar ul.dropdown-menu li>a {
 	color: white;
@@ -93,6 +124,40 @@ a.navbar-brand>div>span:first-of-type {
 
 a.navbar-brand>div>span:last-of-type {
 	font-size: 0.75em;
+}
+
+header.navbar.navbar-drill {
+	top: 73px;
+	min-height: initial;
+	max-height: initial;
+	background-color: #232A73;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+header.navbar.navbar-drill ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+header.navbar.navbar-drill ul li {
+	display: inline-block;
+	color: white;
+	font-family: Copperplate;
+	font-size: 1.2em;
+}
+
+header.navbar.navbar-drill ul li a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 10px 0 10px;
+  min-height: 44px;
+}
+
+header.navbar.navbar-drill ul li.subheader-active a {
+	border-width: 0 0 2px 0;
+  border-style: solid;
 }
 
 section.page-content {
@@ -359,7 +424,7 @@ section.section-fader.section-fader-white h1, section.section-fader.section-fade
 }
 
 section.section-masthead {
-	height: 200px;
+	height: 300px;
 	background-size: cover;
 }
 
