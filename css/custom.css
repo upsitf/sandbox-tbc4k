@@ -311,9 +311,19 @@ section.section-fader div.section-fader-text {
 	border-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%) 1 100%
 }
 
+section.section-fader.section-fader-white div.section-fader-text {
+	border-image: linear-gradient(to bottom, rgba(43,51,137,0) 0%,rgba(43,51,137,1) 25%,rgba(43,51,137,1) 75%,rgba(43,51,137,0) 100%) 1 100%
+}
+
+
 section.section-fader h1, section.section-fader p {
 	text-align: right;
 	color: white;
+}
+
+section.section-fader.section-fader-white h1, section.section-fader.section-fader-white p {
+	text-align: right;
+	color: #2b3389;
 }
 
 section.section-masthead {
@@ -386,6 +396,19 @@ footer ul>li{
 	}
 	footer ul>li{
 		width:33.333%;
+	}
+	ul.list-col-2 {
+		column-count:2;
+		-webkit-column-count:2;
+		-webkit-column-gap:30px;
+		column-gap:30px;
+	}
+	ul.list-col-2>li{
+		margin:0;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid-column;
+		/*display:table;*/
 	}
 }
 
