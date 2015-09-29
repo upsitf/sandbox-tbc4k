@@ -466,6 +466,32 @@ button.btn-default.btn-block.btn-question {
 }
 }
 
+@media (min-width: 768px) {
+form.form-navbar-search {
+	margin-top: 20px;
+}
+
+form.form-navbar-search .btn {
+	margin-left: -3px;
+}
+
+form.form-navbar-search input {
+	max-width: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	-webkit-transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out; /* Safari */
+  transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+}
+
+form.form-navbar-search input.search-active {
+	max-width: 180px;
+	padding-left: 12px;
+	padding-right: 12px;
+	-webkit-transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out; /* Safari */
+  transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+
 form.form-inline-search {
 	margin-bottom: 30px;
 }
@@ -474,7 +500,7 @@ form.form-inline-search h3 {
 	margin-bottom: 0;
 }
 
-form.form-inline-search input {
+form.form-inline-search input, form.form-navbar-search input {
 	border-radius: 0;
 	border-style: none;
 }
@@ -485,10 +511,12 @@ form.form-inline-search div.input-group-addon {
 	margin: 0;
 }
 
-form.form-inline-search div.input-group-addon .btn {
+form.form-inline-search div.input-group-addon .btn, form.form-navbar-search .btn {
 	border-style: none;
 	border-radius: 0;
 	font-family: FontAwesome;
+	padding-top: 7px;
+padding-bottom: 7px;
 }
 
 footer {
