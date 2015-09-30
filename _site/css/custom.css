@@ -284,11 +284,11 @@ div.col-lg-12>h3:not(:first-child)
 
 /* Downloads */
 
-.container-fluid.container-dl {
+.container-fluid.container-dl, .container-fluid.container-core {
 
 }
 
-.container-fluid.container-dl>div {
+.container-fluid.container-dl>div, .container-fluid.container-core>div {
 	display: inline-block;
 }
 
@@ -300,9 +300,19 @@ div.col-lg-12>h3:not(:first-child)
 	font-size: 2em;
 }
 
+.container-fluid.container-core>div.initial {
+	text-align: center;
+	padding: 8px;
+	padding-left: 14px;
+	padding-right: 14px;
+	font-size: 3em;
+	font-family: Copperplate;
+	margin-top: -15px;
+	min-width: 1.4em;
+}
 
 
-.container-fluid.container-dl>div.body {
+.container-fluid.container-dl>div.body, .container-fluid.container-core>div.body {
 	vertical-align: top;
 	width: calc(100% - 80px);
   margin-left: 15px;
@@ -315,16 +325,18 @@ div.col-lg-12>h3:not(:first-child)
 }
 
 .container-fluid.container-dl>div.body>h4,
-.container-fluid.container-dl>div.body>h4>small {
+.container-fluid.container-dl>div.body>h4>small,
+.container-fluid.container-core>div.body>h4,
+.container-fluid.container-core>div.body>h4>small {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container-fluid.container-dl:last-of-type>div.body {
+.container-fluid.container-dl:last-of-type>div.body, .container-fluid.container-core:last-of-type>div.body {
 	border-style: none;
 	padding-bottom: 0;
 }
 
-.container-fluid.container-dl>div.body>p {
+.container-fluid.container-dl>div.body>p, .container-fluid.container-core>div.body>p {
 	margin-bottom: 0;
 }
 
@@ -435,19 +447,34 @@ section.section-masthead>div.container-fluid {
 
 section.section-masthead>div.container-fluid>div.row {
 	position: absolute;
-	bottom: 0;
+	bottom: 30px;
 }
 
 section.section-masthead>div.container-fluid>div.row h1 {
 	color: #e4e4e4;
 	margin: 0;
 	font-size: 3.5em;
-	line-height: 0.5em;
+	line-height: 0.8em;
+	background-color: rgba(43,51,137,1);
+	padding: 10px 10px 10px 12px;
+}
+
+section.section-masthead>div.container-fluid>div.row h1 small {
+	color: #e4e4e4;
 }
 
 @media (min-width: 768px) {
 	img.float-right { width: 240px; height:auto; float: right; /*clear: left;*/ margin: 0 0 0 10px;}
 	img.float-left { width: 240px; height:auto; float: left; /*clear: right;*/ margin: 0 10px 0 0;}
+}
+
+ul.list-spaced {
+	list-style: none;
+	padding: 0;
+}
+
+ul.list-col-2.list-spaced>li, ul.list-spaced>li {
+	padding-bottom: 30px;
 }
 
 button.btn-default.btn-block.btn-question {
