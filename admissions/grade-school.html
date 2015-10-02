@@ -1,19 +1,33 @@
 ---
-layout: admissions
+layout: subheadered
+drill: admissions
 subpage: grade-school
 ---
 
-
-<section class="section-fader section-fader-white" style="background: linear-gradient(to right, rgba(228,228,228,1) 0%,rgba(228,228,228,1) 50%,rgba(228,228,228,0) 75%,rgba(228,228,228,0) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;">
+<section id="fader-title" class="section-fader section-fader-white">
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-5 col-lg-offset-1 section-fader-text">
+<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-12 section-fader-text">
   <h1>Grade School</h1>
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
 </div>
 </div>
 </section>
+
+<style>
+#fader-title {
+  background: linear-gradient(to right, rgba(228,228,228,0.75) 0%,rgba(228,228,228,0.75) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+  background-size: cover !important;
+  background-position: right !important;
+}
+
+@media (min-width: 768px) {
+  #fader-title {
+    background: linear-gradient(to right, rgba(228,228,228,1) 0%,rgba(228,228,228,1) 50%,rgba(228,228,228,0) 75%,rgba(228,228,228,0) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+  }
+}
+</style>
 
 <section class="bg-dg">
   <div class="container-fluid container-limit">
@@ -71,7 +85,7 @@ subpage: grade-school
           <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
         </div>
         {% include btn-question.html %}
-        
+
       </div>
     </div>
 

@@ -1,0 +1,176 @@
+header.custom-header {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b3389;
+  height: 90px;
+  z-index: 16;
+}
+
+header.custom-header>div.custom-header-content {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand>a>img {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 90px;
+  vertical-align: top;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand>a>div {
+  display: inline-block;
+  position: relative;
+  top: 27px;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h1 {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h1.visible-xs {
+  position: relative;
+  top: 7px;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h3 {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-toggle {
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-toggle>a>div:first-of-type {
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-toggle>a>div:nth-of-type(2) {
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-toggle>a>div:last-of-type {
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items {
+  display: inline-block;
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill {
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul {
+  display: block;
+  position: relative;
+  top: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul {
+  top: 0;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li {
+  display: inline-block;
+  position: relative;
+
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  font-family: Copperplate;
+  font-size: 1.25em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a>span {
+  font-family: FontAwesome;
+  font-size: 0.75em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a {
+  font-size: 1em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a>span {
+  font-size: 0.75em;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>ul {
+  position: absolute;
+  display: block;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 150px;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a~ul {
+  max-height: 100vh;
+  transition: 0.5s ease-in-out;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>ul>li {
+  display: block;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>ul>li>a {
+  display: block;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill {
+  display: block;
+  position: relative;
+  float: right;
+  max-width: 495px;
+  margin-top: -5px;
+  text-align: right;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li {
+  display: inline-block;
+}
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a {
+  display: block;
+  position: relative;
+  padding: 0 10px;
+  font-family: Copperplate;
+  font-size: 1.25em;
+  line-height: 1.1em;
+}

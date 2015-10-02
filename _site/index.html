@@ -30,6 +30,7 @@
 	<link rel="stylesheet" href="/css/carousel-fade.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/brew.css">
 	<style>
 @font-face {
 	font-family: 'Copperplate';
@@ -44,115 +45,57 @@
 
     <body>
 
-		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo-min.png"/>
+		<header class="custom-header">
+  <div class="custom-header-content">
+    <div class="custom-header-brand">
+      <a href="/">
+        <image src="/images/logo-min.png">
         <div>
-        <span>St. Therese</span><br/>
-        <span>Educational Foundation of Tacloban</span>
+          <h1 class="visible-xs visible-sm">STEFTI</h1>
+          <h1 class="hidden-xs hidden-sm">St. Therese</h1>
+          <h3 class="hidden-xs hidden-sm">Educational Foundation of Tacloban</h3>
         </div>
       </a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right form-navbar-search" role="search">
-        <div class="form-group">
-          <input id="navbar-search" required="true" type="text" class="form-control" placeholder="Search STEFTI">
-        </div>
-        <button name="search-true" type="submit" class="btn btn-default btn-danger hide">&#xf002;</button>
-        <button name="search-faux" class="btn btn-default btn-primary">&#xf002;</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" id="dropdown-admissions">
-          <a href="/admissions/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li name="early-education"><a href="/admissions/early-education">Early Education</a></li>
+    <div class="custom-header-toggle">
+
+    </div>
+    <div class="custom-header-items">
+      <ul>
+        <li id="dropdown-admissions">
+          <a href="/admissions/">Admissions <span>&#xf054;</span></a>
+          <ul>
+            <li name="why-stefti"><a href="/admissions/why-stefti">Why STEFTI?</a></li>
+<li name="vocational-school"><a href="/admissions/vocational-school">Vocational School</a></li>
+<li name="early-education"><a href="/admissions/early-education">Early Education</a></li>
 <li name="grade-school"><a href="/admissions/grade-school">Grade School</a></li>
 <li name="high-school"><a href="/admissions/high-school">High School</a></li>
 
           </ul>
         </li>
-        <li class="dropdown" id="dropdown-about">
-          <a href="/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+        <li id="dropdown-about">
+          <a href="/about/">About <span>&#xf054;</span></a>
+          <ul>
             <li name="history"><a href="/about/history">History</a></li>
 <li name="mission-vision"><a href="/about/mission-vision">Mission-Vision</a></li>
 <li name="philosophy"><a href="/about/philosophy">Philosophy</a></li>
 <li name="hymn-logo"><a href="/about/hymn-logo">Hymn and Logo</a></li>
 <li name="facilities"><a href="/about/facilities">Facilities</a></li>
-<li name="faculty"><a href="/about/faculty">Faculty and Staff</a></li>
+<li name="faculty"><a href="/about/faculty">Faculty</a></li>
 
           </ul>
         </li>
-        <li><a href="#">News</a></li>
+        <li>
+          <a href="/news">News</a>
+        </li>
       </ul>
 
+
+    
     </div>
+
   </div>
 </header>
-
-<script>
-  var navbar_search = document.getElementById("navbar-search");
-  var search_true = document.getElementsByName("search-true")[0];
-  var search_faux = document.getElementsByName("search-faux")[0];
-
-  navbar_search.oninput = function(){
-    if (navbar_search.value.length > 0) {
-      search_true.className = "btn btn-default btn-danger";
-      search_faux.className = "btn btn-default btn-primary hide";
-    }
-    else {
-      search_true.className = "btn btn-default btn-danger hide";
-      search_faux.className = "btn btn-default btn-primary";
-    }
-  }
-
-
-  navbar_search.onblur = function(){
-    if (navbar_search.value.length > 0) {
-      navbar_search.className = "form-control search-active";
-      search_true.className = "btn btn-default btn-danger";
-      search_faux.className = "btn btn-default btn-primary hide";
-    }
-    else {
-      navbar_search.className = "form-control";
-      search_true.className = "btn btn-default btn-danger hide";
-      search_faux.className = "btn btn-default btn-primary";
-    }
-  }
-
-  search_faux.onmousedown = function(event){
-    event.preventDefault();
-    if (navbar_search.className != "form-control search-active") {
-      navbar_search.className = "form-control search-active";
-    }
-    else {
-      navbar_search.className = "form-control search-active to-close";
-    }
-  }
-
-  search_faux.onmouseup = function(event) {
-    event.preventDefault();
-    if (navbar_search.className == "form-control search-active") {
-      navbar_search.focus();
-    }
-    else if (navbar_search.className == "form-control search-active to-close") {
-      navbar_search.className = "form-control";
-    }
-  }
-
-  search_faux.onclick = function(event) {
-    event.preventDefault();
-  }
-
-</script>
 
 
 		<section class="page-content">
@@ -214,13 +157,15 @@
 <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
   <h3>News and Announcements</h3>
   <div class="container-fluid container-news">
-    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
-    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
-  </div>
+  <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
+  <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+</div>
+
   <div class="container-fluid container-news">
-    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
-    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
-  </div>
+  <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
+  <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+</div>
+
 </div>
 <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
   <h3>Events</h3>
@@ -277,12 +222,10 @@
 </div>
 </section>
 
-<section class="section-fader" style="
-background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 50%,rgba(222,154,24,0) 75%,rgba(222,154,24,0) 100%), url('/images/fader-landing.jpg') no-repeat;
-">
+<section class="section-fader" id="fader-tagline">
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-5 col-lg-offset-1 section-fader-text">
+<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-12 section-fader-text">
   <h1>Where heart and mind grow best</h1>
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
@@ -290,13 +233,28 @@ background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 5
 </div>
 </section>
 
+<style>
+#fader-tagline {
+  background: linear-gradient(to right, rgba(222,154,24,0.75) 0%,rgba(222,154,24,0.75) 100%), url('/images/fader-landing.jpg') no-repeat;
+  background-size: cover !important;
+  background-position: right !important;
+}
+
+@media (min-width: 768px) {
+  #fader-tagline {
+    background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 50%,rgba(222,154,24,0) 75%,rgba(222,154,24,0) 100%), url('/images/fader-landing.jpg') no-repeat;
+    background-size: contain !important;
+  }
+}
+</style>
+
 
 		</section>
 
 		<footer>
 <div class="container container-fluid">
   <div class="row">
-    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
       <img class="img-responsive" src="/images/logo-min.png"/>
     </div>
     <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
@@ -309,9 +267,11 @@ background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 5
 <li name="philosophy"><a href="/about/philosophy">Philosophy</a></li>
 <li name="hymn-logo"><a href="/about/hymn-logo">Hymn and Logo</a></li>
 <li name="facilities"><a href="/about/facilities">Facilities</a></li>
-<li name="faculty"><a href="/about/faculty">Faculty and Staff</a></li>
+<li name="faculty"><a href="/about/faculty">Faculty</a></li>
 
 <li><a href="/admissions">Admissions</a></li>
+<li name="why-stefti"><a href="/admissions/why-stefti">Why STEFTI?</a></li>
+<li name="vocational-school"><a href="/admissions/vocational-school">Vocational School</a></li>
 <li name="early-education"><a href="/admissions/early-education">Early Education</a></li>
 <li name="grade-school"><a href="/admissions/grade-school">Grade School</a></li>
 <li name="high-school"><a href="/admissions/high-school">High School</a></li>
@@ -319,7 +279,24 @@ background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 5
 </ul>
 
     </div>
-</div></div>
+  </div>
+</div>
+</footer>
+
+<footer>
+<div class="container container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>&copy; STEFTI 2015</h4>
+      <ul>
+        <li><a>Contact Us</a></li>
+        <li><a>About This Site</a></li>
+        <li><a>Privacy Policy</a></li>
+        <li><a>Cookie Statement</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 </footer>
 
 

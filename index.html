@@ -58,14 +58,8 @@ layout: main
 <div class="row">
 <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
   <h3>News and Announcements</h3>
-  <div class="container-fluid container-news">
-    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
-    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
-  </div>
-  <div class="container-fluid container-news">
-    <div class="date"><span class="day">21</span><br/><span class="month">Sep</span></div>
-    <div class="body"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
-  </div>
+  {% include item-news.html %}
+  {% include item-news.html %}
 </div>
 <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
   <h3>Events</h3>
@@ -122,15 +116,28 @@ layout: main
 </div>
 </section>
 
-<section class="section-fader" style="
-background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 50%,rgba(222,154,24,0) 75%,rgba(222,154,24,0) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
-">
+<section class="section-fader" id="fader-tagline">
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-5 col-lg-offset-1 section-fader-text">
+<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-12 section-fader-text">
   <h1>Where heart and mind grow best</h1>
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
 </div>
 </div>
 </section>
+
+<style>
+#fader-tagline {
+  background: linear-gradient(to right, rgba(222,154,24,0.75) 0%,rgba(222,154,24,0.75) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+  background-size: cover !important;
+  background-position: right !important;
+}
+
+@media (min-width: 768px) {
+  #fader-tagline {
+    background: linear-gradient(to right, rgba(222,154,24,1) 0%,rgba(222,154,24,1) 50%,rgba(222,154,24,0) 75%,rgba(222,154,24,0) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+    background-size: contain !important;
+  }
+}
+</style>

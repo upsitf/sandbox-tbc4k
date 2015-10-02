@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Copperplate;
 }
 
+header.navbar a.dropdown-toggle, header.navbar .navbar-nav>li>a {
+	font-family: Copperplate;
+	font-weight: 100;
+}
+
 header.navbar {
 	background-color: #2b3389;
 	border: 0;
@@ -37,8 +42,25 @@ header.navbar a.dropdown-toggle, header.navbar .navbar-nav>li>a {
 	font-size: 1.25em
 }
 
-header.navbar a.dropdown-toggle.dropdown-active {
+header.navbar a.dropdown-toggle.dropdown-active,
+header.navbar a.dropdown-active {
 	background-color: #232A73;
+}
+
+header.navbar a.dropdown-toggle:hover,
+header.navbar a.dropdown-toggle:focus,
+header.navbar a:hover,
+header.navbar a:focus {
+	background: linear-gradient(to bottom, rgba(43,51,137,1) 0%, rgba(35,42,115,1) 100%);
+	-webkit-transition: 0.5s ease-in-out; /* Safari */
+  transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+
+header.navbar a.dropdown-toggle.dropdown-active:hover,
+header.navbar a.dropdown-toggle.dropdown-active:focus,
+header.navbar a.dropdown-active:hover,
+header.navbar a.dropdown-active:focus {
+	background: linear-gradient(to bottom, rgba(43,51,137,1) 0%, rgba(35,42,115,1) 100%);
 }
 
 header.navbar ul.dropdown-menu {
@@ -101,6 +123,8 @@ header.navbar ul.dropdown-menu li>a {
 
 a.navbar-brand {
 	height: initial;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 a.navbar-brand>img {
@@ -144,6 +168,7 @@ header.navbar.navbar-drill ul li {
 	display: inline-block;
 	color: white;
 	font-family: Copperplate;
+	font-weight: 100;
 	font-size: 1.2em;
 }
 
@@ -153,6 +178,7 @@ header.navbar.navbar-drill ul li a {
 	text-decoration: none;
 	padding: 10px 10px 0 10px;
   min-height: 44px;
+	font-size: 0.9em;
 }
 
 header.navbar.navbar-drill ul li.subheader-active a {
@@ -161,7 +187,7 @@ header.navbar.navbar-drill ul li.subheader-active a {
 }
 
 section.page-content {
-	padding-top: 72px;
+	padding-top: 90px;
 }
 
 div.carousel-caption {
@@ -253,7 +279,8 @@ div.col-lg-12>h3:not(:first-child)
 
 .container-fluid.container-news>div.date>span {
 	color: white;
-	font-family: Copperplate
+	font-family: Copperplate;
+	font-weight: 100;
 }
 
 .container-fluid.container-news>div.date>span:last-of-type {
@@ -279,6 +306,10 @@ div.col-lg-12>h3:not(:first-child)
 }
 
 .container-fluid.container-news>div.body>p {
+	margin-bottom: 15px;
+}
+
+.container-fluid.container-news>div.body>p:last-of-type {
 	margin-bottom: 0;
 }
 
@@ -379,6 +410,14 @@ div.col-lg-12>h3:not(:first-child)
 	margin-bottom: 0;
 }
 
+.container-fluid.container-ease h4 {
+	margin-bottom: 8px;
+}
+
+.container-fluid.container-ease>div:first-of-type>h4 {
+	margin-top: 0;
+}
+
 .container-fluid.container-ease a {
 	display: block;
 }
@@ -456,7 +495,15 @@ section.section-masthead>div.container-fluid>div.row h1 {
 	font-size: 3.5em;
 	line-height: 0.8em;
 	background-color: rgba(43,51,137,1);
-	padding: 10px 10px 10px 12px;
+	padding: 10px 12px 8px 14px;
+}
+
+.container-timeline a {
+	display: block;
+}
+
+.affix {
+	position: fixed !important;
 }
 
 section.section-masthead>div.container-fluid>div.row h1 small {
@@ -546,16 +593,16 @@ form.form-inline-search div.input-group-addon .btn, form.form-navbar-search .btn
 padding-bottom: 7px;
 }
 
-footer {
+footer:first-of-type {
 	background-color: #2b3389;
 }
 
-footer h3 {
+footer:first-of-type h3 {
 	padding-top: 30px;
 	color: white;
 }
 
-footer ul {
+footer:first-of-type ul {
 	margin-bottom: 0;
   margin-bottom:20px;
   overflow:hidden;
@@ -563,7 +610,7 @@ footer ul {
 }
 
 /*
-footer ul>li{
+footer:first-of-type ul>li{
   float:left;
   display:inline;
 	width:100%;
@@ -571,12 +618,12 @@ footer ul>li{
 */
 
 @media (min-width: 768px) {
-	footer ul {
+	footer:first-of-type ul {
 	  max-width: 42em;
 		list-style: none;
 	}
 	/*
-	footer ul>li{
+	footer:first-of-type ul>li{
 		width:33.333%;
 	}
 	*/
@@ -601,8 +648,32 @@ footer ul>li{
 	}
 }
 
-footer ul>li>a{
+footer:first-of-type ul>li>a{
 	color: white;
 	text-decoration: none;
 	font-family: Copperplate;
+	font-weight: 100;
+}
+
+footer:last-of-type {
+	background-color: #232A73;
+}
+
+footer:last-of-type h4,
+footer:last-of-type li a {
+	color: white;
+}
+
+footer:last-of-type h4 {
+	display: inline-block;
+}
+
+footer:last-of-type ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+
+footer:last-of-type li {
+	display: inline-block;
 }

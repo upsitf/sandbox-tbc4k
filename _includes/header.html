@@ -1,100 +1,50 @@
-<header class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/images/logo-min.png"/>
+<header class="custom-header">
+  <div class="custom-header-content">
+    <div class="custom-header-brand">
+      <a href="{{ site.baseurl }}/">
+        <image src="{{ site.baseurl }}/images/logo-min.png">
         <div>
-        <span>St. Therese</span><br/>
-        <span>Educational Foundation of Tacloban</span>
+          <h1 class="visible-xs visible-sm">STEFTI</h1>
+          <h1 class="hidden-xs hidden-sm">St. Therese</h1>
+          <h3 class="hidden-xs hidden-sm">Educational Foundation of Tacloban</h3>
         </div>
       </a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right form-navbar-search" role="search">
-        <div class="form-group">
-          <input id="navbar-search" required="true" type="text" class="form-control" placeholder="Search STEFTI">
-        </div>
-        <button name="search-true" type="submit" class="btn btn-default btn-danger hide">&#xf002;</button>
-        <button name="search-faux" class="btn btn-default btn-primary">&#xf002;</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" id="dropdown-admissions">
-          <a href="{{ site.baseurl }}/admissions/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Admissions <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+    <div class="custom-header-toggle">
+
+    </div>
+    <div class="custom-header-items{% if page.drill %} custom-header-items-drill{% endif %}">
+      <ul>
+        <li id="dropdown-admissions">
+          <a href="{{ site.baseurl }}/admissions/">Admissions <span>&#xf054;</span></a>
+          <ul>
             {% include sitemap-admissions.html %}
           </ul>
         </li>
-        <li class="dropdown" id="dropdown-about">
-          <a href="{{ site.baseurl }}/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+        <li id="dropdown-about">
+          <a href="{{ site.baseurl }}/about/">About <span>&#xf054;</span></a>
+          <ul>
             {% include sitemap-about.html %}
           </ul>
         </li>
-        <li><a href="#">News</a></li>
+        <li>
+          <a href="{{ site.baseurl }}/news">News</a>
+        </li>
       </ul>
 
+
+    {% if page.drill %}
+    <div class="custom-header-drill">
+      <ul>
+      {% if page.drill == 'admissions' %}
+        {% include sitemap-admissions.html %}
+      {% else if page.drill == 'about' %}
+        {% include sitemap-about.html %}
+      {% endif %}
+      </ul>
     </div>
+    {% endif %}
+    </div>
+
   </div>
 </header>
-
-<script>
-  var navbar_search = document.getElementById("navbar-search");
-  var search_true = document.getElementsByName("search-true")[0];
-  var search_faux = document.getElementsByName("search-faux")[0];
-
-  navbar_search.oninput = function(){
-    if (navbar_search.value.length > 0) {
-      search_true.className = "btn btn-default btn-danger";
-      search_faux.className = "btn btn-default btn-primary hide";
-    }
-    else {
-      search_true.className = "btn btn-default btn-danger hide";
-      search_faux.className = "btn btn-default btn-primary";
-    }
-  }
-
-
-  navbar_search.onblur = function(){
-    if (navbar_search.value.length > 0) {
-      navbar_search.className = "form-control search-active";
-      search_true.className = "btn btn-default btn-danger";
-      search_faux.className = "btn btn-default btn-primary hide";
-    }
-    else {
-      navbar_search.className = "form-control";
-      search_true.className = "btn btn-default btn-danger hide";
-      search_faux.className = "btn btn-default btn-primary";
-    }
-  }
-
-  search_faux.onmousedown = function(event){
-    event.preventDefault();
-    if (navbar_search.className != "form-control search-active") {
-      navbar_search.className = "form-control search-active";
-    }
-    else {
-      navbar_search.className = "form-control search-active to-close";
-    }
-  }
-
-  search_faux.onmouseup = function(event) {
-    event.preventDefault();
-    if (navbar_search.className == "form-control search-active") {
-      navbar_search.focus();
-    }
-    else if (navbar_search.className == "form-control search-active to-close") {
-      navbar_search.className = "form-control";
-    }
-  }
-
-  search_faux.onclick = function(event) {
-    event.preventDefault();
-  }
-
-</script>
