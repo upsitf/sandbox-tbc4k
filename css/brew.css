@@ -124,14 +124,24 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:l
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a,
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a:link {
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a:link,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a.dropdown-active,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a.dropdown-active:link,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li:hover>a.dropdown-active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li:hover>a.dropdown-active:link {
   color: #464646;
   background-color: white;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:active,
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:hover,
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:focus {
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:hover,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:hover,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:focus {
   color: white;
   background-color: #232A73;
 }
@@ -147,6 +157,11 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
   margin: 7px 0 0;
   /*padding-bottom: 10px;*/
   z-index: 1;
+  /*color: #bdbdbd;*/
+}
+
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active {
+  color: white;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a>span {
@@ -396,4 +411,25 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 
   }
 
+}
+
+ol.custom-breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol.custom-breadcrumbs>li {
+  display: inline-block;
+  color: #464646;
+}
+
+ol.custom-breadcrumbs>li>a {
+  text-decoration: none;
+}
+
+ol.custom-breadcrumbs>li>span {
+  font-family: FontAwesome;
+  font-size: 1em;
+  color: #bdbdbd;
 }

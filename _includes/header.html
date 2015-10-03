@@ -31,7 +31,7 @@
             {% include sitemap-about.html %}
           </ul>
         </li>
-        <li>
+        <li id="nav-news">
           <a href="{{ site.baseurl }}/news">News</a>
         </li>
       </ul>
@@ -42,7 +42,7 @@
       <ul>
       {% if page.drill == 'admissions' %}
         {% include sitemap-admissions.html %}
-      {% else if page.drill == 'about' %}
+      {% elsif page.drill == 'about' %}
         {% include sitemap-about.html %}
       {% endif %}
       </ul>
@@ -54,5 +54,5 @@
 </header>
 
 <script>
-  
+
 </script>
