@@ -419,6 +419,10 @@ ol.custom-breadcrumbs {
   margin: 0;
 }
 
+ol.custom-breadcrumbs.custom-breadcrumbs-inner {
+  padding-bottom: 35px;
+}
+
 ol.custom-breadcrumbs>li {
   display: inline-block;
   color: #464646;

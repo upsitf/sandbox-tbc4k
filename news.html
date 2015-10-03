@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: main-nocrumb
 breadcrumbs:
   - Home
   - News
@@ -13,6 +13,9 @@ breadcrumbs:
   <div class="container-fluid container-limit">
   <div class="row">
     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+
+      {% include breadcrumbs-inner.html %}
+
       <h1>News</h1>
       {% include item-news-more.html %}
       {% include item-news-more.html %}

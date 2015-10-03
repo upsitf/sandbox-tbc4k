@@ -341,6 +341,10 @@ div.col-lg-12>h3:not(:first-child)
 
 }
 
+.container-fluid.container-dl:last-of-type {
+	margin-bottom: 30px;
+}
+
 .container-fluid.container-dl>div, .container-fluid.container-core>div {
 	display: inline-block;
 }
@@ -542,6 +546,16 @@ section.section-masthead>div.container-fluid>div.row h1 small {
 
 img.img-margin-bottom {
 	margin-bottom: 30px;
+}
+
+img.icon {
+	vertical-align: sub;
+}
+
+img.icon.icon-large {
+	width: 15px;
+    display: inline-block;
+    padding-top: 7px;
 }
 
 ul.list-spaced {
