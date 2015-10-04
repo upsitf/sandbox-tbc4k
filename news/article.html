@@ -1,0 +1,50 @@
+---
+layout: main-nocrumb
+breadcrumbs:
+  - Home
+  - News
+  - Lorem ipsum dolor sit amet
+---
+<script>
+  var toggle = document.getElementById("nav-news").getElementsByTagName("a")[0];
+  toggle.className = toggle.className + " dropdown-active";
+</script>
+
+<section class="bg-dg">
+  <div class="container-fluid container-limit">
+  <div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+
+      {% include breadcrumbs-inner.html %}
+
+      <!--h1>News</h1-->
+      {% include item-news-more.html %}
+
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+
+      <h3>Latest News</h3>
+      <div class="container-news-sidebar">
+      {% include item-news.html %}
+      {% include item-news.html %}
+      {% include item-news.html %}
+      </div>
+
+      <h3>Events</h3>
+      <div class="container-fluid container-events">
+        <div class="container-fluid container-event">
+          <h5>21 Sep 2015</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+        <div class="container-fluid container-event">
+          <h5>21 Sep 2015</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+        <div class="container-fluid container-event">
+          <h5>21 Sep 2015</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

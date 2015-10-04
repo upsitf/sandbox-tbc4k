@@ -14,6 +14,8 @@
           <a href="{{ site.baseurl }}/admissions/">
         {% elsif item == 'About' and forloop.last != true %}
           <a href="{{ site.baseurl }}/about/">
+        {% elsif item == 'News' and forloop.last != true %}
+          <a href="{{ site.baseurl }}/news/">
         {% endif %}
           {{ item }}
         {% if forloop.last != true %}

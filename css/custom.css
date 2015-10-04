@@ -287,6 +287,10 @@ div.col-lg-12>h3:not(:first-child)
 	margin-bottom: 40px;
 }
 
+*.container-news-sidebar>.container-fluid.container-news:last-of-type {
+	margin-bottom: 0;
+}
+
 .container-fluid.container-news>div {
 	display: inline-block;
 }
