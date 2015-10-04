@@ -123,12 +123,12 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:l
   color: white;
 }
 
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a,
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a:link,
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a.dropdown-active,
-header.custom-header>div.custom-header-content>div.custom-header-items>ul>li:hover>a.dropdown-active:link,
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li:hover>a.dropdown-active,
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li:hover>a.dropdown-active:link {
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a:link,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a.dropdown-active,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a.dropdown-active:link,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active:link {
   color: #464646;
   background-color: white;
 }
@@ -141,7 +141,16 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:focus,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:active,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:hover,
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:focus {
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:active,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:hover,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:hover,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:active,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:hover,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:focus {
   color: white;
   background-color: #232A73;
 }
@@ -212,7 +221,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   display: block;
   position: relative;
   float: right;
-  max-width: 490px;
+  max-width: 485px;
   margin-top: -2px;
   /*margin-top: -7px;*/
   text-align: right;

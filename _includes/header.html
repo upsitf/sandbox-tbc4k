@@ -19,13 +19,13 @@
     </div>
     <div class="custom-header-items{% if page.drill %} custom-header-items-drill{% endif %}">
       <ul>
-        <li id="dropdown-admissions">
+        <li id="dropdown-admissions" class="dropdown">
           <a href="{{ site.baseurl }}/admissions/">Admissions <span>&#xf0d7;</span></a>
           <ul>
             {% include sitemap-admissions.html %}
           </ul>
         </li>
-        <li id="dropdown-about">
+        <li id="dropdown-about" class="dropdown">
           <a href="{{ site.baseurl }}/about/">About <span>&#xf0d7;</span></a>
           <ul>
             {% include sitemap-about.html %}

@@ -25,7 +25,7 @@
 
   {% if page.subpage %}
     var subpage = document.getElementsByName("{{ page.subpage }}");
-    subpage[1].className = subpage.className + " subheader-active";
+    subpage[1].className = subpage[1].className + " subheader-active";
     subpage[1].getElementsByTagName("a")[0].removeAttribute("href");
   {% endif %}
 
