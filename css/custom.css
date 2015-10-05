@@ -490,7 +490,8 @@ div.col-lg-12>h3:not(:first-child)
 	margin-right: -15px;
 	margin-top: -15px;
 	margin-bottom: 15px;
-	max-width: calc(100% + 30px);
+	max-width: initial;
+  width: calc(100% + 30px);
 }
 
 .container-sectionbox>h4 {

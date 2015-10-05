@@ -246,19 +246,19 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   display: block;
   position: relative;
   padding: 0 2px 0 5px;
-  font-family: Copperplate;
+  font-family: Voldemooort;
   font-weight: 100;
   font-size: 1.25em;
   line-height: 1.1em;
   text-decoration: none;
   color: #BDBDBD;
-
+  text-rendering: geometricPrecision;
 }
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left>a,
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left>a:link {
   border-width: 0 0 0 1px;
   border-style: solid;
-  border-color: white;
+  border-color: rgba(255,255,255,0.1);
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.subheader-active>a,
