@@ -1,2 +1,71 @@
-<script src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-migrate-1.2.1.min.js"></script>
+<!--script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script-->
+
 <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      //slidesToScroll: 1,
+      //arrows: false,
+      fade: true,
+      centerMode: true,
+      swipeToSlide: true,
+      asNavFor: '.slider-nav'
+    //  autoplay: true,
+  //autoplaySpeed: 5000
+    });
+
+    $('.slider-nav').slick({
+      asNavFor: '.slider-for',
+      focusOnSelect: true,
+      variableWidth: true,
+      infinite: false,
+      slidesToShow: 1,
+      centerMode: false,
+      arrows: false
+    });
+
+/*
+    $('.carousel-slick-1').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '.carousel-slick-2'
+    });
+    $('.carousel-slick-2').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     asNavFor: '.carousel-slick-1',
+     dots: true,
+     centerMode: true,
+     focusOnSelect: true
+    });
+*/
+  });
+
+/*
+  $('.slider-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.slider-nav'
+ });
+ $('.slider-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: true,
+   centerMode: true,
+   focusOnSelect: true
+ });
+*/
+
+</script>

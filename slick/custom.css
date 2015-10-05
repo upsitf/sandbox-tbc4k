@@ -1,0 +1,29 @@
+.slick-prev, .slick-next {
+  height: 100%;
+  top: 0;
+  z-index: 1
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slider-for {
+  background-color: #2B3389;
+}
+
+.slider-for img {
+  /*width: 100%;*/
+  margin: auto;
+  max-height: 720px;
+}
+
+.slider-nav div img {
+  max-width: 100px;
+  max-height: 100px;
+  clip: */
+}
