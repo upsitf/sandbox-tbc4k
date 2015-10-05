@@ -12,7 +12,7 @@ header.custom-header {
 header.custom-header>div.custom-header-content {
   padding: 0 15px;
   width: 100%;
-  max-width: 920px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -99,7 +99,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul {
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul {
-  top: 0;
+  top: 8px;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li {
@@ -129,8 +129,10 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dro
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a.dropdown-active:link,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active:link {
-  color: #464646;
-  background-color: white;
+  /*color: #464646;
+  background-color: white;*/
+  color: #FFFFFF;
+    background-color: #F5C56B;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:active,
@@ -152,7 +154,10 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:hover,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:focus {
   color: white;
-  background-color: #232A73;
+  /*background-color: #232A73;*/
+  /*background-color: rgba(255, 255, 255, 0.15);*/
+  /*background-color: #2B3389;*/
+  background-color: #DE9A18;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a>span {
@@ -221,8 +226,8 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   display: block;
   position: relative;
   float: right;
-  max-width: 485px;
-  margin-top: -2px;
+  /*max-width: 485px;*/
+  margin-top: 8px;
   /*margin-top: -7px;*/
   text-align: right;
 }
@@ -240,7 +245,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a:link {
   display: block;
   position: relative;
-  padding: 0 10px;
+  padding: 0 3px 0 4px;
   font-family: Copperplate;
   font-weight: 100;
   font-size: 1.25em;
@@ -266,7 +271,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header.custom-header {
 
   }

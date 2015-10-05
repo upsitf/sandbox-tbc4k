@@ -254,6 +254,10 @@ section.bg-lg.section-text.section-padding-reset {
 	max-width: 920px;
 }
 
+.container-limit {
+	max-width: 920px;
+}
+
 h1 {
 	margin-top: 0;
 	margin-bottom: 25px;
@@ -466,6 +470,19 @@ div.col-lg-12>h3:not(:first-child)
 	padding: 15px;
 	box-shadow: 0 5px 0px rgba(0,0,0,0), 0 1px 20px rgba(0,0,0,0.12);
 	margin-bottom: 30px;
+	/*height: 218px;*/
+}
+
+@media (min-width: 768px) and (max-width: 922px) {
+	.container-fluid.container-sectionbox.container-sectionbox-fixedheight {
+		height: 203px;
+	}
+}
+
+@media (min-width: 922px) {
+	.container-fluid.container-sectionbox.container-sectionbox-fixedheight {
+		height: 218px;
+	}
 }
 
 .container-sectionbox>img.img-responsive {
