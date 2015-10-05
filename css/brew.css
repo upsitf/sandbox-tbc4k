@@ -245,7 +245,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a:link {
   display: block;
   position: relative;
-  padding: 0 3px 0 4px;
+  padding: 0 2px 0 5px;
   font-family: Copperplate;
   font-weight: 100;
   font-size: 1.25em;

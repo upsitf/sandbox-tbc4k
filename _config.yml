@@ -1,6 +1,6 @@
 # Site settings
 title: St. Therese Educational Foundation Tacloban, Inc.
-#baseurl: http://klmendoza1.github.io/sandbox-stefti
+baseurl: http://klmendoza1.github.io/sandbox-stefti
 
 # Build settings
 markdown: kramdown
