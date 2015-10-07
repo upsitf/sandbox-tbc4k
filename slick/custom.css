@@ -13,7 +13,7 @@
 }
 
 .slider-for {
-  background-color: #2B3389;
+  /*background-color: #2B3389;*/
 }
 
 .slider-for img {
@@ -26,4 +26,19 @@
   max-width: 100px;
   max-height: 100px;
   clip: */
+}
+
+.slider-nav:after {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to right,
+     rgba(228,228,228, 1) 0%,
+     rgba(228,228,228, 0) 20%,
+     rgba(228,228,228, 0) 80%,
+     rgba(228,228,228, 1) 100%
+  );
+  pointer-events: none; /* so the text is still selectable */
 }

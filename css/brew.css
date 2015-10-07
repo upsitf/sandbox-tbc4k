@@ -1,3 +1,8 @@
+* {
+  text-rendering: geometricPrecision !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
 header.custom-header {
   position: fixed;
   display: block;
@@ -99,7 +104,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul {
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul {
-  top: 8px;
+  top: 2px;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li {
@@ -227,7 +232,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   position: relative;
   float: right;
   /*max-width: 485px;*/
-  margin-top: 8px;
+  margin-top: 0;
   /*margin-top: -7px;*/
   text-align: right;
 }
@@ -240,12 +245,14 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li {
   display: inline-block;
+  vertical-align: middle;
+  height: 38px;
 }
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a,
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a:link {
   display: block;
   position: relative;
-  padding: 0 2px 0 5px;
+  padding: 0 4px 0 10px;
   font-family: Voldemooort;
   font-weight: 100;
   font-size: 1.25em;
@@ -253,9 +260,10 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   text-decoration: none;
   color: #BDBDBD;
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
-header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left>a,
-header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left>a:link {
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left,
+header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li.lined-left {
   border-width: 0 0 0 1px;
   border-style: solid;
   border-color: rgba(255,255,255,0.1);
@@ -271,7 +279,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   header.custom-header {
 
   }
@@ -458,4 +466,16 @@ ol.custom-breadcrumbs>li>span {
   font-family: FontAwesome;
   font-size: 1em;
   color: #bdbdbd;
+}
+
+div.custom-header-items>ul br.show-on-drill {
+  display: none;
+}
+
+div.custom-header-items>div.custom-header-drill br.show-on-drill {
+  display: initial;
+}
+
+footer br.show-on-drill {
+  display: none;
 }
