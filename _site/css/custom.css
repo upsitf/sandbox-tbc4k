@@ -729,6 +729,25 @@ padding-bottom: 7px;
 	padding-left: 0;
 }
 
+#fader-title {
+	min-height: 400px;
+}
+
+#fader-title>div {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.container-well#link-map p {
+	text-align: center;
+}
+
+.container-well#link-map img {
+	max-width: 140px;
+  margin: auto;
+	margin-bottom: 15px;
+}
+
 footer:first-of-type {
 	padding-top: 30px;
 	background-color: #2b3389;
