@@ -716,6 +716,19 @@ form.form-inline-search div.input-group-addon .btn, form.form-navbar-search .btn
 padding-bottom: 7px;
 }
 
+#mission~p, #vision~p {
+	line-height: 2em;
+}
+
+#vision {
+	margin-top: 25px;
+}
+
+#facilities-list {
+	list-style: none;
+	padding-left: 0;
+}
+
 footer:first-of-type {
 	padding-top: 30px;
 	background-color: #2b3389;
