@@ -644,7 +644,7 @@ ul.list-spaced {
 }
 
 ul.list-col-2.list-spaced>li, ul.list-spaced>li {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 button.btn-default.btn-block.btn-question {
@@ -731,10 +731,17 @@ padding-bottom: 7px;
 
 #faculty-list {
 	list-style: none;
+	padding-left: 0;
+	margin-bottom: 30px;
 }
 
 #faculty-list>li {
 	display: inline-block;
+}
+
+#faculty-list>li>a {
+	padding: 15px;
+
 }
 
 #fader-title {
@@ -886,6 +893,7 @@ footer:last-of-type li a {
 
 footer:last-of-type h4 {
 	display: inline-block;
+	font-size: 1em;
 }
 
 footer:last-of-type ul {

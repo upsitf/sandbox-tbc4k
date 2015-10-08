@@ -51,7 +51,7 @@ breadcrumbs:
 <script>
   function toggle_read_more(toggle_show,target) {
     toggle_show.onclick = function(){
-      $(toggle_show).hide(function(){
+      $(toggle_show).fadeOut(function(){
         $(target).fadeIn();
       });
     };
@@ -60,7 +60,7 @@ breadcrumbs:
   function toggle_show_less(toggle_show,target,toggle_hide) {
     toggle_hide.onclick = function(){
       $(target).fadeOut(function(){
-        $(toggle_show).show();
+        $(toggle_show).fadeIn();
       });
     };
   }
