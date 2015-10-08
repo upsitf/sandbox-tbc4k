@@ -192,7 +192,7 @@
   <div class="custom-header-content">
     <div class="custom-header-brand">
       <a href="/">
-        <image src="/images/logo-min.png">
+        <image src="/images/logo.png">
         <div>
           <h1 class="visible-xs visible-sm">STEFTI</h1>
           <h1 class="hidden-xs hidden-sm">St. Therese</h1>
@@ -213,11 +213,11 @@
           <a href="/admissions/">Admissions <span>&#xf0d7;</span></a>
           <ul>
             <!--li name="why-stefti"><a href="/admissions/why-stefti">Why STEFTI?</a></li-->
-<li name="why-stefti"><a href="/admissions/why-stefti">Why<br class="show-on-drill"/> STEFTI</a></li>
-<li name="early-education" class="lined-left"><a href="/admissions/early-education">Early<br class="show-on-drill"/> Education</a></li>
-<li name="grade-school" class="lined-left"><a href="/admissions/grade-school">Grade<br class="show-on-drill"/> School</a></li>
-<li name="high-school" class="lined-left"><a href="/admissions/high-school">High<br class="show-on-drill"/> School</a></li>
-<li name="vocational-school" class="lined-left"><a href="/admissions/vocational-school">Vocational<br class="show-on-drill"/> School</a></li>
+<li name="why-stefti"><a href="/admissions/why-stefti">Why<!--br class="show-on-drill"/--> STEFTI</a></li>
+<li name="early-education" class="lined-left"><a href="/admissions/early-education">Early<!--br class="show-on-drill"/--> Education</a></li>
+<li name="grade-school" class="lined-left"><a href="/admissions/grade-school">Grade<!--br class="show-on-drill"/--> School</a></li>
+<li name="high-school" class="lined-left"><a href="/admissions/high-school">High<!--br class="show-on-drill"/--> School</a></li>
+<li name="vocational-school" class="lined-left"><a href="/admissions/vocational-school">Vocational<!--br class="show-on-drill"/--> School</a></li>
 
           </ul>
         </li>
@@ -225,10 +225,10 @@
           <a href="/about/">About <span>&#xf0d7;</span></a>
           <ul>
             <li name="history"><a href="/about/history">History</a></li>
-<li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision-<br class="show-on-drill"/>Goals</a></li>
+<li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision<!--br class="show-on-drill"/-->-Goals</a></li>
 <li name="philosophy" class="lined-left"><a href="/about/philosophy">Philosophy</a></li>
-<li name="logo-hymn" class="lined-left"><a href="/about/logo-hymn">Logo and<br class="show-on-drill"/> Hymn</a></li>
-<li name="our-campus" class="lined-left"><a href="/about/our-campus">Our<br class="show-on-drill"/> Campus</a></li>
+<li name="logo-hymn" class="lined-left"><a href="/about/logo-hymn">Logo &amp;<!--br class="show-on-drill"/--> Hymn</a></li>
+<li name="our-campus" class="lined-left"><a href="/about/our-campus">Our<!--br class="show-on-drill"/--> Campus</a></li>
 <li name="faculty" class="lined-left"><a href="/about/faculty">Faculty</a></li>
 
           </ul>
@@ -438,12 +438,47 @@
 </div>
 </section>
 
-<!--section class="section-fader" id="fader-tagline">
-<div class="container-fluid container-limit">
+<section class="bg-lg" style="padding-top:0">
+  <div class="container-fluid container-limit">
+
+    <div class="row" id="fader-title">
+
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+              <h1>Where heart and mind grow best</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <a>History</a>
+        <a>Mission-Vision-Goals</a>
+        <a>Philosophy</a>
+        </div>
+
+        </div>
+        <style>
+        #fader-title {
+          background: linear-gradient(to right, rgba(241,241,241,0.75) 0%,rgba(241,241,241,0.75) 100%), url('/images/fader-landing.jpg') no-repeat;
+          background-size: cover !important;
+          background-position: right !important;
+        }
+
+        @media (min-width: 768px) {
+          #fader-title {
+            background: linear-gradient(to right, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 40%,rgba(241,241,241,0) 70%,rgba(241,241,241,0) 100%), url('/images/fader-landing.jpg') no-repeat;
+          }
+        }
+      </style>
+
+</div>
+</section>
+
+<!--section class="section-fader">
+<div class="container-fluid container-limit" id="fader-tagline">
 <div class="row">
 <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-12 section-fader-text">
   <h1>Where heart and mind grow best</h1>
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <a>History</a>
+  <a>Mission-Vision-Goals</a>
+  <a>Philosophy</a>
 </div>
 </div>
 </div>
@@ -470,34 +505,37 @@
 		<footer>
 <div class="container container-fluid">
   <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-      <img class="img-responsive" src="/images/logo-min.png"/>
+    <div class="col-lg-4 col-lg-push-8 col-md-4 col-md-push-8 col-sm-5 col-sm-push-7 col-xs-12" style="text-align:right">
+    <!--div class="col-lg-4 col-md-4 col-sm-5 col-xs-12"-->
+
       <p>
         Brgy. 91, Abucay, Tacloban City<br/>
         Leyte, 6500 Philippines<br/>
         (+6353) 325-3464 | (+63) 918-964-6164<br/>
         stefti2001@gmail.com
       </p>
+      <img class="img-responsive" src="/images/logo-min.png"/>
     </div>
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+    <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-7 col-sm-pull-5 col-xs-12">
+    <!--div class="col-lg-8 col-md-8 col-sm-7 col-xs-12"-->
       <h3>Quick Links</h3>
       <ul class="list-col-3">
 <li><a href="/news">News</a></li>
 <li><a href="/about">About</a></li>
 <li name="history"><a href="/about/history">History</a></li>
-<li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision-<br class="show-on-drill"/>Goals</a></li>
+<li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision<!--br class="show-on-drill"/-->-Goals</a></li>
 <li name="philosophy" class="lined-left"><a href="/about/philosophy">Philosophy</a></li>
-<li name="logo-hymn" class="lined-left"><a href="/about/logo-hymn">Logo and<br class="show-on-drill"/> Hymn</a></li>
-<li name="our-campus" class="lined-left"><a href="/about/our-campus">Our<br class="show-on-drill"/> Campus</a></li>
+<li name="logo-hymn" class="lined-left"><a href="/about/logo-hymn">Logo &amp;<!--br class="show-on-drill"/--> Hymn</a></li>
+<li name="our-campus" class="lined-left"><a href="/about/our-campus">Our<!--br class="show-on-drill"/--> Campus</a></li>
 <li name="faculty" class="lined-left"><a href="/about/faculty">Faculty</a></li>
 
 <li><a href="/admissions">Admissions</a></li>
 <!--li name="why-stefti"><a href="/admissions/why-stefti">Why STEFTI?</a></li-->
-<li name="why-stefti"><a href="/admissions/why-stefti">Why<br class="show-on-drill"/> STEFTI</a></li>
-<li name="early-education" class="lined-left"><a href="/admissions/early-education">Early<br class="show-on-drill"/> Education</a></li>
-<li name="grade-school" class="lined-left"><a href="/admissions/grade-school">Grade<br class="show-on-drill"/> School</a></li>
-<li name="high-school" class="lined-left"><a href="/admissions/high-school">High<br class="show-on-drill"/> School</a></li>
-<li name="vocational-school" class="lined-left"><a href="/admissions/vocational-school">Vocational<br class="show-on-drill"/> School</a></li>
+<li name="why-stefti"><a href="/admissions/why-stefti">Why<!--br class="show-on-drill"/--> STEFTI</a></li>
+<li name="early-education" class="lined-left"><a href="/admissions/early-education">Early<!--br class="show-on-drill"/--> Education</a></li>
+<li name="grade-school" class="lined-left"><a href="/admissions/grade-school">Grade<!--br class="show-on-drill"/--> School</a></li>
+<li name="high-school" class="lined-left"><a href="/admissions/high-school">High<!--br class="show-on-drill"/--> School</a></li>
+<li name="vocational-school" class="lined-left"><a href="/admissions/vocational-school">Vocational<!--br class="show-on-drill"/--> School</a></li>
 
 </ul>
 
@@ -516,8 +554,8 @@
 <li name="questions"><a href="/questions">Any Questions</a></li>
 <li name="terms"><a href="/terms">Terms of Use</a></li>
 <!--li name="privacy"><a href="/privacy">Privacy Policy</a></li-->
-<li name="cookie"><a href="/cookie">Cookie Statement</a></li>
-<li name="404"><a href="/404">404</a></li>
+<li name="cookie" class="footer-hide"><a href="/cookie">Cookie Statement</a></li>
+<li name="404" class="footer-hide"><a href="/404">404</a></li>
 
       </ul>
     </div>

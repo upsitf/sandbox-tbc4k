@@ -42,3 +42,15 @@
   );
   pointer-events: none; /* so the text is still selectable */
 }
+
+.slick-prev:before, .slick-next:before {
+  /*font-family: FontAwesome;*/
+}
+
+.slick-prev:before {
+
+}
+
+.slick-next:before {
+
+}

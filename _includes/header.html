@@ -2,7 +2,7 @@
   <div class="custom-header-content">
     <div class="custom-header-brand">
       <a href="{{ site.baseurl }}/">
-        <image src="{{ site.baseurl }}/images/logo-min.png">
+        <image src="{{ site.baseurl }}/images/logo.png">
         <div>
           <h1 class="visible-xs visible-sm">STEFTI</h1>
           <h1 class="hidden-xs hidden-sm">St. Therese</h1>
@@ -17,7 +17,7 @@
         <div></div>
       </a>
     </div>
-    <div class="custom-header-items{% if page.drill %} custom-header-items-drill{% endif %}">
+    <div class="custom-header-items{% if page.drill %} custom-header-items-drill{% endif %}{% if page.focus %} custom-header-items-focus{% endif %}">
       <ul>
         <li id="dropdown-admissions" class="dropdown">
           <a href="{{ site.baseurl }}/admissions/">Admissions <span>&#xf0d7;</span></a>

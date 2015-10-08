@@ -188,7 +188,7 @@ header.navbar.navbar-drill ul li.subheader-active a {
 
 section.page-content {
 	padding-top: 90px;
-	min-height: calc((100vh - 206px) - 39px);
+	min-height: calc((100vh - 220px) - 39px);
 	background-color: #e4e4e4;
 }
 
@@ -729,6 +729,14 @@ padding-bottom: 7px;
 	padding-left: 0;
 }
 
+#faculty-list {
+	list-style: none;
+}
+
+#faculty-list>li {
+	display: inline-block;
+}
+
 #fader-title {
 	min-height: 400px;
 }
@@ -736,6 +744,21 @@ padding-bottom: 7px;
 #fader-title>div {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+#img-logo, #img-portrait {
+	max-width: 300px;
+  width: 100%;
+  margin: auto;
+}
+
+#sidepage-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#sidepage-list li {
+
 }
 
 .container-well#link-map p {
@@ -756,12 +779,19 @@ footer:first-of-type {
 footer:first-of-type img {
 	max-width: 80px;
 	margin-bottom: 10px;
+	margin-left: auto;
+	display: inline-block;
+
 }
 
 footer:first-of-type p {
 	color: white;
 	font-size: 0.8em;
   margin-bottom: 15px;
+	text-align: right;
+	display: inline-block;
+vertical-align: middle;
+/*text-align: left;*/
 }
 
 
@@ -769,6 +799,9 @@ footer:first-of-type h3 {
 	padding-top: 5px;
 	margin-bottom: 0;
 	color: white;
+
+/*
+	text-align: right;*/
 }
 
 footer:first-of-type ul {
@@ -790,6 +823,9 @@ footer:first-of-type ul>li{
 	footer:first-of-type ul {
 	  max-width: 42em;
 		list-style: none;
+
+		/*margin-left: auto;
+		text-align: right;*/
 	}
 	/*
 	footer:first-of-type ul>li{
@@ -834,6 +870,8 @@ footer:first-of-type ul>li>a{
 	text-decoration: none;
 	font-family: Copperplate;
 	font-weight: 100;
+
+
 }
 
 footer:last-of-type {
@@ -858,4 +896,13 @@ footer:last-of-type ul {
 
 footer:last-of-type li {
 	display: inline-block;
+}
+
+footer:last-of-type li a {
+	font-size: 0.8em;
+  margin: 0 0 0 15px;
+}
+
+footer .footer-hide {
+	display: none !important;
 }
