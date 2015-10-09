@@ -810,6 +810,29 @@ padding-bottom: 7px;
 
 }
 
+#new-core>div>div>div>h1 {
+	padding-top: 10px;
+	font-size: 4em;
+	text-align: center;
+}
+
+#new-core>div>div>div>h4 {
+	height: 76px;
+	text-align: center;
+}
+
+#new-core>div>div>div>h4.one-liner {
+  padding-top: 28px;
+}
+
+#new-core>div>div>div>h4.two-liner {
+  padding-top: 19px;
+}
+
+#new-core>div>div>div>p {
+	height: 180px;
+}
+
 .container-well#link-map p {
 	text-align: center;
 }
