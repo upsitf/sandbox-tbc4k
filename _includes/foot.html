@@ -7,6 +7,7 @@
 
 <script type="text/javascript" src="{{ site.baseurl }}/slick/slick.min.js"></script>
 
+{% if page.subpage == 'faculty' %}
 <script type="text/javascript">
   $(document).ready(function(){
     $('.slider-for').slick({
@@ -68,5 +69,15 @@
    focusOnSelect: true
  });
 */
-
+$(document).ready(function(){
+  var hash = window.location.hash;
+  for (index9 = 0; index9 < faculty_array.length; index9++) {
+    //alert('#tab-'+faculty_array[index9]);
+    if ('#tab-'+faculty_array[index9] == hash) {
+      document.getElementById(faculty_array[index9]).click();
+    //  alert(faculty_array[index9]+' clicked.');
+    }
+  }
+});
 </script>
+{% endif %}
