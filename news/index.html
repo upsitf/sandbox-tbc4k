@@ -51,16 +51,16 @@ breadcrumbs:
 <script>
   function toggle_read_more(toggle_show,target) {
     toggle_show.onclick = function(){
-      $(toggle_show).fadeOut(function(){
-        $(target).fadeIn();
+      $(toggle_show).hide(0,function(){
+        $(target).show(0);
       });
     };
   }
 
   function toggle_show_less(toggle_show,target,toggle_hide) {
     toggle_hide.onclick = function(){
-      $(target).fadeOut(function(){
-        $(toggle_show).fadeIn();
+      $(target).hide(0,function(){
+        $(toggle_show).show(0);
       });
     };
   }

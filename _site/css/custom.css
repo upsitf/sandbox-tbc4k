@@ -188,8 +188,13 @@ header.navbar.navbar-drill ul li.subheader-active a {
 
 section.page-content {
 	padding-top: 90px;
-	min-height: calc((100vh - 220px) - 39px);
+	min-height: calc((100vh - 186px) - 36px);
 	background-color: #e4e4e4;
+}
+
+section.page-content>section:last-child,
+section.page-content>section:last-of-type {
+	padding-bottom: 60px;
 }
 
 div.carousel-inner>.item>a>img, div.carousel-inner>.item>img {
@@ -491,7 +496,7 @@ a:last-of-type>.container-fluid.container-dl>div.body, .container-fluid.containe
 .container-fluid.container-well>.container-fluid.container-news-well>h5 {
 	margin-top: 0;
 	font-weight: 100;
-	margin-bottom: 6px;
+	margin-bottom: 3px;
 }
 
 .container-fluid.container-events>.container-fluid.container-event>p,
@@ -689,6 +694,10 @@ form.form-navbar-search input.search-active {
   transition: max-width 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
 }
 
+div.container-fluid.container-well>form.form-inline-search{
+	margin-bottom: 5px;
+}
+
 form.form-inline-search {
 	margin-bottom: 30px;
 }
@@ -717,7 +726,7 @@ padding-bottom: 7px;
 }
 
 #mission~p, #vision~p {
-	line-height: 2em;
+	/*line-height: 2em;*/
 }
 
 #vision {
@@ -727,6 +736,7 @@ padding-bottom: 7px;
 #facilities-list {
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 30px;
 }
 
 #faculty-list {
@@ -759,12 +769,44 @@ padding-bottom: 7px;
   margin: auto;
 }
 
+#img-portrait:after {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to right,
+     rgba(241,241,241, 1) 0%,
+     rgba(241,241,241, 0) 10%,
+     rgba(241,241,241, 0) 90%,
+     rgba(241,241,241, 1) 100%
+  );
+  pointer-events: none; /* so the text is still selectable */
+}
+
 #sidepage-list {
 	list-style: none;
 	padding-left: 0;
 }
 
 #sidepage-list li {
+
+}
+
+#milestones-list, #milestones-list>li>ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#milestones-list>li {
+	margin-bottom: 15px;
+}
+
+#milestones-list>li>h3 {
+	margin-bottom: 0;
+}
+
+#milestones-list>li>ul {
 
 }
 
