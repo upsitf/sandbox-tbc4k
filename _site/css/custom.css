@@ -454,7 +454,10 @@ a:last-of-type>.container-fluid.container-dl>div.body, .container-fluid.containe
 /* END Downloads */
 
 .container-fluid.container-events, .container-fluid.container-ease, .btn-question {
-	box-shadow: 0 5px 0px rgba(0,0,0,0), 0 1px 20px rgba(0,0,0,0.12);
+	/*box-shadow: 0 5px 0px rgba(0,0,0,0), 0 1px 20px rgba(0,0,0,0.12);*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c2c2c2;
 }
 
 .container-fluid.container-events, .container-fluid.container-ease {
@@ -530,6 +533,11 @@ a:last-of-type>.container-fluid.container-dl>div.body, .container-fluid.containe
 	background: white;
 	padding: 15px;
 	box-shadow: 0 5px 0px rgba(0,0,0,0), 0 1px 20px rgba(0,0,0,0.12);
+/*
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c2c2c2;
+	*/
 	margin-bottom: 40px;
 	/*height: 218px;*/
 }
