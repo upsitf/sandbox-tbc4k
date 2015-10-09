@@ -956,3 +956,12 @@ footer:last-of-type li a {
 footer .footer-hide {
 	display: none !important;
 }
+
+nav.container-timeline>div>h3 {
+	margin-bottom: 10px;
+}
+
+nav.container-timeline>div>ul {
+	list-style: none;
+	padding-left: 0;
+}
