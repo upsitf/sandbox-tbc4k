@@ -189,7 +189,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:active,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:hover,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:focus {
-  color: white;
+  color: white !important;
   /*background-color: #232A73;*/
   /*background-color: rgba(255, 255, 255, 0.15);*/
   /*background-color: #2B3389;*/

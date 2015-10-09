@@ -793,20 +793,34 @@ padding-bottom: 7px;
 
 }
 
-#milestones-list, #milestones-list>li>ul {
+.milestones-list, .milestones-list>li>ul {
 	list-style: none;
 	padding-left: 0;
 }
 
-#milestones-list>li {
+.milestones-list>li {
 	margin-bottom: 15px;
 }
 
-#milestones-list>li>h3 {
-	margin-bottom: 0;
+.milestones-list>li a {
+	display: block;
+	text-decoration: none;
+	color: rgb(43, 51, 137);
 }
 
-#milestones-list>li>ul {
+.milestones-list>li h3 {
+	margin-bottom: 0;
+	display: inline;
+}
+
+.milestones-list>li span {
+	font-family: FontAwesome;
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.milestones-list>li>ul {
 
 }
 
