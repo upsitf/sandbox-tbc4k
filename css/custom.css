@@ -738,7 +738,7 @@ padding-bottom: 7px;
 }
 
 #vision {
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 }
 
 #facilities-list {
@@ -872,7 +872,9 @@ padding-bottom: 7px;
 
 footer:first-of-type {
 	padding-top: 30px;
-	background-color: #2b3389;
+	/*background-color: #2b3389;*/
+	background-color: #181E65;
+	padding-bottom: 15px;
 }
 
 footer:first-of-type img {
