@@ -81,3 +81,30 @@ $(document).ready(function(){
 });
 </script>
 {% endif %}
+
+<script>
+
+/*$(document).click(function(event) {
+  if(!$(event.target).closest('#menucontainer').length) {
+      if($('#menucontainer').is(":visible")) {
+          $('#menucontainer').hide()
+      }
+  }
+})
+*/
+
+  $('html').click(function() {
+    $('a.custom-header-toggle').removeClass('focus');
+  });
+
+  $('a.custom-header-toggle').click(function(event){
+    event.stopPropagation();
+    //alert('omg');
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+  });
+</script>

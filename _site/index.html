@@ -194,19 +194,20 @@
       <a href="/">
         <image src="/images/logo.png">
         <div>
-          <h1 class="visible-xs visible-sm">STEFTI</h1>
-          <h3 class="hidden-xs hidden-sm">St. Therese Educational</h3>
-          <h3 class="hidden-xs hidden-sm">Foundation of Tacloban, Inc.</h3>
+          <h1>STEFTI</h1>
+          <h3>St. Therese Educational</h3>
+          <h3>Foundation of Tacloban, Inc.</h3>
         </div>
       </a>
     </div>
-    <div class="custom-header-toggle visible-xs visible-sm">
-      <a>
+    <!--div class="custom-header-toggle visible-xs visible-sm"-->
+      <a class="custom-header-toggle visible-xs visible-sm">
         <div></div>
         <div></div>
         <div></div>
       </a>
-    </div>
+
+    <!--/div-->
     <div class="custom-header-items">
       <ul>
         <li id="dropdown-admissions" class="dropdown">
@@ -574,6 +575,33 @@
 <script type="text/javascript" src="/slick/slick.min.js"></script>
 
 
+
+<script>
+
+/*$(document).click(function(event) {
+  if(!$(event.target).closest('#menucontainer').length) {
+      if($('#menucontainer').is(":visible")) {
+          $('#menucontainer').hide()
+      }
+  }
+})
+*/
+
+  $('html').click(function() {
+    $('a.custom-header-toggle').removeClass('focus');
+  });
+
+  $('a.custom-header-toggle').click(function(event){
+    event.stopPropagation();
+    //alert('omg');
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+  });
+</script>
 
 
 	</body>
