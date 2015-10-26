@@ -523,6 +523,11 @@ header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h3 
 
   header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a {
     display: block;
+    background-color: #2b3389;
+  }
+
+  header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a>span {
+    display: none;
   }
 
   header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a>span {
@@ -532,15 +537,19 @@ header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h3 
   header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a {
     display: block;
     text-decoration: none;
-    background-color: white;
+    /*background-color: white;*/
+    font-size: 1.20em;
     color: #2b3389;
     padding: 8px 12px;
+    border-style: none;
+/*
     border-style: solid;
     border-left-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 0;
     border-top-width: 0;
     border-color: #c2c2c2;
+    */
     margin: 0;
   }
 
@@ -563,7 +572,7 @@ header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h3 
   }
 
   header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>ul>li>a {
-
+    border-style: none !important;
   }
 
   header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill {

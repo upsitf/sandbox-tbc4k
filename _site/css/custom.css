@@ -533,6 +533,7 @@ a:last-of-type>.container-fluid.container-dl>div.body, .container-fluid.containe
 	background: white;
 	padding: 15px;
 	box-shadow: 0 5px 0px rgba(0,0,0,0), 0 1px 20px rgba(0,0,0,0.12);
+	max-width: 480px;
 /*
 	border-style: solid;
 	border-width: 1px;
@@ -632,9 +633,31 @@ section.section-masthead>div.container-fluid>div.row h1 small {
 	color: #e4e4e4;
 }
 
+img.float-right,
+img.float-left {
+	width: 100%;
+	/*max-width: 240px;*/
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	img.float-right,
+	img.float-left {
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
 @media (min-width: 768px) {
-	img.float-right { width: 240px; height:auto; float: right; /*clear: left;*/ margin: 0 0 0 10px;}
-	img.float-left { width: 240px; height:auto; float: left; /*clear: right;*/ margin: 0 10px 0 0;}
+	img.float-right,
+	img.float-left {
+		max-width: 280px;
+		height:auto;
+	}
+	img.float-right {float: right; /*clear: left;*/ margin-left: 10px;}
+	img.float-left {float: left; /*clear: right;*/ margin-right: 10px;}
 }
 
 img.img-margin-bottom {
@@ -666,6 +689,7 @@ button.btn-default.btn-block.btn-question {
 	border-style: none;
 	border-radius: 0;
 	margin-bottom: 30px;
+	font-size: 1.25em;
 }
 
 @media (min-width: 768px) {
@@ -895,6 +919,7 @@ footer:first-of-type p {
 	text-align: right;
 	display: inline-block;
 	padding-top: 22px;
+	padding-bottom: 22px;
 /*vertical-align: middle;*/
 /*text-align: left;*/
 }
@@ -1036,4 +1061,8 @@ nav.container-timeline>div>ul {
 
 #fader-title a:last-of-type {
 	margin-right: 0;
+}
+
+#vision, #goals {
+	margin-top: 30px;
 }
