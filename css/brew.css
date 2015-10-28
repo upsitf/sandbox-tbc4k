@@ -10,7 +10,8 @@ header.custom-header {
   left: 0;
   width: 100%;
   /*background-color: #2b3389;*/
-  background-color: #181E65;
+  /*background-color: #181E65;*/
+  background-color: #435886;
   height: 90px;
   z-index: 16;
 }
@@ -109,7 +110,8 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul {
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul {
-  top: 8px;
+  /*top: 8px;*/
+  top: 10px;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li {
@@ -288,7 +290,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   position: relative;
   float: right;
   /*max-width: 485px;*/
-  margin-top: 6px;
+  margin-top: 8px;
   /*margin-top: -7px;*/
   text-align: right;
 }
@@ -311,7 +313,8 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
   padding: 0 4px 0 10px;
   font-family: Voldemooort;
   font-weight: 100;
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
+  font-size: 1.2em;
   line-height: 1.1em;
   text-decoration: none;
   color: #BDBDBD;
@@ -500,6 +503,7 @@ header.custom-header>div.custom-header-content>div.custom-header-brand>a>div>h3 
   }
 
   header.custom-header>div.custom-header-content>a.custom-header-toggle.focus~div.custom-header-items {
+    height: calc(100vh - 90px);
     max-height: 300px;
     overflow-y: auto;
   }
