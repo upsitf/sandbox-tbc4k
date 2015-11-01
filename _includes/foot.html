@@ -33,42 +33,8 @@
       arrows: false
     });
 
-/*
-    $('.carousel-slick-1').slick({
-     slidesToShow: 1,
-     slidesToScroll: 1,
-     arrows: false,
-     fade: true,
-     asNavFor: '.carousel-slick-2'
-    });
-    $('.carousel-slick-2').slick({
-     slidesToShow: 3,
-     slidesToScroll: 1,
-     asNavFor: '.carousel-slick-1',
-     dots: true,
-     centerMode: true,
-     focusOnSelect: true
-    });
-*/
   });
 
-/*
-  $('.slider-for').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: false,
-   fade: true,
-   asNavFor: '.slider-nav'
- });
- $('.slider-nav').slick({
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   asNavFor: '.slider-for',
-   dots: true,
-   centerMode: true,
-   focusOnSelect: true
- });
-*/
 $(document).ready(function(){
   var hash = window.location.hash;
   for (index9 = 0; index9 < faculty_array.length; index9++) {
@@ -82,16 +48,36 @@ $(document).ready(function(){
 </script>
 {% endif %}
 
-<script>
+{% if page.subpage == 'philosophy' %}
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      //slidesToScroll: 1,
+      //arrows: false,
+      //variableWidth: true,
+      fade: true,
+      centerMode: true,
+      swipeToSlide: true,
+      asNavFor: '.slider-nav',
+    //  autoplay: true,
+  autoplaySpeed: 5000
+    });
 
-/*$(document).click(function(event) {
-  if(!$(event.target).closest('#menucontainer').length) {
-      if($('#menucontainer').is(":visible")) {
-          $('#menucontainer').hide()
-      }
-  }
-})
-*/
+    $('.slider-nav').slick({
+      asNavFor: '.slider-for',
+      focusOnSelect: true,
+      variableWidth: true,
+      slidesToShow: 10,
+      arrows: false
+    });
+
+  });
+
+</script>
+{% endif %}
+
+<script>
 
   $('html').click(function() {
     $('a.custom-header-toggle').removeClass('focus');

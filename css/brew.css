@@ -263,11 +263,12 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>ul>
   text-decoration: none;
   background-color: white;
   color: #2b3389;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-style: solid;
   border-left-width: 1px;
   border-right-width: 1px;
-  border-bottom-width: 0;
+  /*border-bottom-width: 0;*/
+  border-bottom-width: 1px;
   border-top-width: 0;
   border-color: #c2c2c2;
 }
