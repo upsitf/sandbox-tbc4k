@@ -93,10 +93,11 @@
   /*background-color: #2B3389;*/
 }
 
-.slick-custom-2.slider-for img {
-  /*width: 100%;*/
+.slick-custom-2.slider-for .slick-slide>div {
+  max-width: calc(100% - 52px);
   margin: auto;
-  max-height: 720px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .slick-custom-2.slider-nav div.slick-slide {
