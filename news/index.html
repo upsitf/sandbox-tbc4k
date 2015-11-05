@@ -1,4 +1,5 @@
 ---
+title: News
 layout: main-nocrumb
 focus: true
 breadcrumbs:
@@ -13,42 +14,132 @@ breadcrumbs:
 <section class="bg-dg">
   <div class="container-fluid container-limit">
   <div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+    <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+      <nav class="container-timeline" data-spy="affix" data-offset-top="0" data-offset-bottom="285">
+        <!--div>
+          <h3>Recent News</h3>
+          <ul>
+            <li><a>News Headline One</a></li>
+            <li><a>News Headline Two</a></li>
+            <li><a>News Headline Three</a></li>
+          </ul>
+        </div-->
+        <div>
+          <h3>Archive</h3>
+          <ul>
+            <li>
+              <a>2015&nbsp;<span>&#xf0da;</span></a>
+              <ul style="display:none">
+                <li><a>November</a></li>
+                <li><a>October</a></li>
+                <li><a>September</a></li>
+                <li><a>August</a></li>
+                <li><a>July</a></li>
+                <li><a>June</a></li>
+                <li><a>May</a></li>
+                <li><a>April</a></li>
+                <li><a>March</a></li>
+                <li><a>February</a></li>
+                <li><a>January</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>2014&nbsp;<span>&#xf0da;</span></a>
+              <ul style="display:none">
+                <li><a>December</a></li>
+                <li><a>November</a></li>
+                <li><a>October</a></li>
+                <li><a>September</a></li>
+                <li><a>August</a></li>
+                <li><a>July</a></li>
+                <li><a>June</a></li>
+                <li><a>May</a></li>
+                <li><a>April</a></li>
+                <li><a>March</a></li>
+                <li><a>February</a></li>
+                <li><a>January</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>2013&nbsp;<span>&#xf0da;</span></a>
+              <ul style="display:none">
+                <li><a>December</a></li>
+                <li><a>November</a></li>
+                <li><a>October</a></li>
+                <li><a>September</a></li>
+                <li><a>August</a></li>
+                <li><a>July</a></li>
+                <li><a>June</a></li>
+                <li><a>May</a></li>
+                <li><a>April</a></li>
+                <li><a>March</a></li>
+                <li><a>February</a></li>
+                <li><a>January</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>2012&nbsp;<span>&#xf0da;</span></a>
+              <ul style="display:none">
+                <li><a>December</a></li>
+                <li><a>November</a></li>
+                <li><a>October</a></li>
+                <li><a>September</a></li>
+                <li><a>August</a></li>
+                <li><a>July</a></li>
+                <li><a>June</a></li>
+                <li><a>May</a></li>
+                <li><a>April</a></li>
+                <li><a>March</a></li>
+                <li><a>February</a></li>
+                <li><a>January</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
 
       {% include breadcrumbs-inner.html %}
 
       <h1>News</h1>
-      {% include item-news-more.html %}
-      {% include item-news-more.html %}
-      {% include item-news-more.html %}
-
+      {% include item-news-titled.html %}
+      {% include item-news-titled.html %}
+      {% include item-news-titled.html %}
+      {% include item-news-titled.html %}
+      {% include item-news-titled.html %}
+      {% include item-news-titled.html %}
 
     </div>
-  <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
-    <nav class="container-timeline" data-spy="affix" data-offset-top="0" data-offset-bottom="285">
-      <div>
-        <h3>Recent News</h3>
-        <ul>
-          <li><a>News Headline One</a></li>
-          <li><a>News Headline Two</a></li>
-          <li><a>News Headline Three</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Archive</h3>
-        <ul>
-          <li><a>October 2015</a></li>
-          <li><a>September 2015</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 
   </div>
   </div>
 </section>
 
 <script>
+
+  var years_list = document.querySelectorAll(".container-timeline>div>ul>li>a");
+  //alert(milestones_list.length);
+  for (index8 = 0; index8 < years_list.length; index8++) {
+    years_list[index8].onclick = function(){
+      //alert(this.nextElementSibling.style.display);
+      if (this.nextElementSibling.style.display == 'none') {
+        //alert('Flag one');
+        this.nextElementSibling.style.display = 'initial';
+        this.getElementsByTagName('span')[0].innerHTML = '&#xf0d7;';
+      }
+      else if (this.nextElementSibling.style.display == 'initial') {
+        //alert('Flag two');
+        this.nextElementSibling.style.display = 'none';
+        this.getElementsByTagName('span')[0].innerHTML = '&#xf0da;';
+      }
+    };
+  }
+
+</script>
+
+<!--script>
   function toggle_read_more(toggle_show,target) {
     toggle_show.onclick = function(){
       $(toggle_show).hide(0,function(){
@@ -73,4 +164,4 @@ breadcrumbs:
     toggle_read_more(news_article_toggle_show,news_article_content);
     toggle_show_less(news_article_toggle_show,news_article_content,news_article_toggle_hide);
   }
-</script>
+</script-->

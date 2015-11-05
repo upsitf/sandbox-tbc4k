@@ -56,10 +56,11 @@ $(document).ready(function(){
       //slidesToScroll: 1,
       //arrows: false,
       //variableWidth: true,
-      fade: true,
+      //fade: true,
       centerMode: true,
       swipeToSlide: true,
       asNavFor: '.slider-nav',
+      infinite: true,
     //  autoplay: true,
   autoplaySpeed: 5000
     });
@@ -76,6 +77,8 @@ $(document).ready(function(){
 
 </script>
 {% endif %}
+
+
 
 <script>
 
@@ -94,3 +97,80 @@ $(document).ready(function(){
     }
   });
 </script>
+
+<script>
+
+/* NAVIGATION HEADER*/
+
+var didScroll = false;
+
+
+//var content = document.getElementsByClassName('page-content')[0];
+//var content_bcr = content.getBoundingClientRect();
+var navbar = document.getElementsByClassName('custom-header')[0];
+var toggle = document.getElementsByClassName('custom-header-toggle')[0];
+
+{% if page.title == 'News' %}
+var affix = document.querySelector('nav.container-timeline>div');
+{% endif %}
+
+window.onscroll = doOnScroll;
+
+var position = $(window).scrollTop(); // should start at 0
+
+function doOnScroll() {
+  var scroll = $(window).scrollTop();
+  if ($(window).scrollTop() <= 90) {
+    //alert('less than 90');
+    $(navbar).removeClass('custom-header-hide');
+    {% if page.title == 'News' %}
+      $(affix).removeClass('container-timeline-pull');
+    {% endif %}
+  }
+  else {
+    if (scroll > position) {
+      //if (Math.abs(scroll-position) > 20) {
+        if (!$(toggle).hasClass('focus')) {
+          //alert('more than 90, more than 30 scroll, downward');
+          $(navbar).addClass('custom-header-hide');
+          {% if page.title == 'News' %}
+            $(affix).addClass('container-timeline-pull');
+          {% endif %}
+        }
+      //}
+    }
+    else {
+      //alert('more than 90, upward');
+      $(navbar).removeClass('custom-header-hide');
+      {% if page.title == 'News' %}
+        $(affix).removeClass('container-timeline-pull');
+      {% endif %}
+    }
+    position = scroll;
+  }
+}
+
+/*
+function doOnScroll() {
+    didScroll = true;
+    jumbotron_bcr = jumbotron.getBoundingClientRect();
+    //navbar_bcr = navbar.getBoundingClientRect();
+    if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (!(hasClass(navbar,'colorize'))) {
+        navbar.classList.add('colorize');
+      }
+    }
+    else {
+      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
+        navbar.classList.remove('colorize');
+      }
+    }
+}
+*/
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+ </script>

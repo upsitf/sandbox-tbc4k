@@ -8,7 +8,7 @@ breadcrumbs:
   - Logo and Hymn
 ---
 
-<section class="bg-dg section-text">
+<section class="bg-dg section-text" id="nonfader-logo">
   <div class="container-fluid container-limit">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -21,10 +21,10 @@ breadcrumbs:
 <section class="bg-dg section-text">
   <div class="container-fluid container-limit"-->
   <div class="row">
-    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-      <img class="img-responsive img-margin-bottom" id="img-logo" src="{{ site.baseurl }}/images/logo.png">
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+      <img class="img-responsive img-margin-bottom" id="img-logo" src="{{ site.baseurl }}/images/logo-nopad.png">
     </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
 <p>The STEFTI logo is depicted
 by a red rose near a flame
 amidst a background of blue.</p>
@@ -59,7 +59,7 @@ May heaven smile kindly on our efforts.</p>
     </div>
 </div></div></section>
 
-<section class="bg-lg section-text">
+<section class="bg-lg section-text" id="fader-therese">
   <div class="container-fluid container-limit">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -72,10 +72,11 @@ May heaven smile kindly on our efforts.</p>
 <section class="bg-lg section-text">
   <div class="container-fluid container-limit"-->
   <div class="row">
-    <div class="col-lg-5 col-lg-push-7 col-md-5 col-md-push-7 col-sm-5 col-sm-push-7 col-xs-12">
+    <!--div class="col-lg-5 col-lg-push-7 col-md-5 col-md-push-7 col-sm-5 col-sm-push-7 col-xs-12">
       <div class="overlay-white"><img class="img-responsive img-margin-bottom" id="img-portrait" src="{{ site.baseurl }}/images/st_therese.png"></div>
     </div>
-    <div class="col-lg-7 col-lg-pull-5 col-md-7 col-md-pull-5 col-sm-7 col-sm-pull-5 col-xs-12 list-col-2">
+    <div class="col-lg-7 col-lg-pull-5 col-md-7 col-md-pull-5 col-sm-7 col-sm-pull-5 col-xs-12 list-col-2"-->
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 list-col-2">
 <p>Dear St. Therese<br/>
 Sweet St. Therese<br/>
 A flower blooming in God’s love<br/>
@@ -104,3 +105,18 @@ In all our days.</p>
 
     </div>
 </div></div></section>
+
+<style>
+  #fader-therese {
+    background: linear-gradient(to right, rgba(228,228,228,0.75) 0%,rgba(228,228,228,0.75) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+    background-size: cover !important;
+    background-position: right !important;
+    padding-top: 50px;
+  }
+
+  @media (min-width: 768px) {
+    #fader-therese {
+      background: linear-gradient(to right, rgba(228,228,228,1) 0%,rgba(228,228,228,1) 40%,rgba(228,228,228,0) 70%,rgba(228,228,228,0) 100%), url('{{ site.baseurl }}/images/fader-landing.jpg') no-repeat;
+    }
+  }
+</style>

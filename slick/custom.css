@@ -19,7 +19,7 @@
 .slick-custom-1.slider-for img {
   /*width: 100%;*/
   margin: auto;
-  max-height: 720px;
+  max-height: 480px;
 }
 
 .slick-custom-1.slider-nav div img {
@@ -98,10 +98,12 @@
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
 
 .slick-custom-2.slider-nav div.slick-slide {
-  font-size: 2em;
+  font-size: 3em;
   font-family: Copperplate;
 }
 

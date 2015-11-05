@@ -152,7 +152,24 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a:not(.dropdown-active),
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a:link:not(.dropdown-active),
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a:not(.dropdown-active),
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a:not(.dropdown-active) {
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a:link:not(.dropdown-active),
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a.dropdown-active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown:hover>a.dropdown-active:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown:hover>a.dropdown-active:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a.dropdown-active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a.dropdown-active:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a.dropdown-active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a.dropdown-active:link>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a:not(.dropdown-active)>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown:hover>a:link:not(.dropdown-active)>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a:not(.dropdown-active)>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown:hover>a:link:not(.dropdown-active)>span
+ {
   /*color: #464646;
   background-color: white;*/
   color: #FFFFFF;
@@ -194,7 +211,43 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a:focus,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:active,
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:hover,
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:focus {
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:focus,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a.dropdown-active:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items>ul>li.dropdown>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li.dropdown>a.dropdown-active:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a.dropdown-active:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a.dropdown-active:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a.dropdown-active:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li.dropdown>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a:focus>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:active>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:hover>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li.dropdown>a.dropdown-active:focus>span {
   color: white !important;
   /*background-color: #232A73;*/
   /*background-color: rgba(255, 255, 255, 0.15);*/
@@ -205,6 +258,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a>span {
   font-family: FontAwesome;
   font-size: 0.75em;
+  color: white;
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill>ul>li>a {
@@ -217,7 +271,9 @@ header.custom-header>div.custom-header-content>div.custom-header-items.custom-he
 }
 
 header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a:not(.dropdown-active),
-header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:not(.dropdown-active) {
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:not(.dropdown-active),
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-drill.custom-header-items-focus>ul>li>a:not(.dropdown-active)>span,
+header.custom-header>div.custom-header-content>div.custom-header-items.custom-header-items-focus>ul>li>a:not(.dropdown-active)>span {
   color: #bdbdbd;
 }
 
@@ -632,4 +688,17 @@ div.custom-header-items>div.custom-header-drill br.show-on-drill {
 
 footer br.show-on-drill {
   display: none;
+}
+
+/* JS LELS */
+header.custom-header {
+  top: 0px;
+  -webkit-transition: top 0.25s; /* Safari */
+  transition: top 0.25s;
+}
+
+header.custom-header.custom-header-hide {
+  top: -90px;
+  -webkit-transition: top 0.25s; /* Safari */
+  transition: top 0.25s;
 }
