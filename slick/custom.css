@@ -19,7 +19,7 @@
 .slick-custom-1.slider-for img {
   /*width: 100%;*/
   margin: auto;
-  max-height: 480px;
+  height: 480px;
 }
 
 .slick-custom-1.slider-nav div img {
@@ -48,8 +48,8 @@
 
 .slick-custom-1 .slick-prev:before, .slick-custom-1 .slick-next:before {
   font-family: HelveticaNeue;
-  -webkit-filter: invert(100%);
-    filter: invert(100%);
+  -webkit-filter: invert(85%);
+    filter: invert(85%);
 }
 
 .slick-custom-1 .slick-prev:before {
@@ -94,7 +94,7 @@
 }
 
 .slick-custom-2.slider-for .slick-slide>div {
-  max-width: calc(100% - 52px);
+  max-width: calc(100%);
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;

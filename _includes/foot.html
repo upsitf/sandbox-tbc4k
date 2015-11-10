@@ -62,6 +62,7 @@ $(document).ready(function(){
       asNavFor: '.slider-nav',
       infinite: true,
     //  autoplay: true,
+    speed: 250,
   autoplaySpeed: 5000
     });
 
@@ -95,6 +96,32 @@ $(document).ready(function(){
     else {
       $(this).addClass('focus');
     }
+  });
+
+  $('#dropdown-admissions>a:nth-of-type(2)').click(function(event){
+    event.stopPropagation();
+    //alert('omg1');
+
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+
+  });
+
+  $('#dropdown-about>a:nth-of-type(2)').click(function(event){
+    event.stopPropagation();
+    //alert('omg2');
+
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+
   });
 </script>
 

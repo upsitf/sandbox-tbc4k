@@ -84,6 +84,7 @@
       <ul>
         <li id="dropdown-admissions" class="dropdown">
           <a href="/admissions/">Admissions <span>&#xf0d7;</span></a>
+          <a>&#xf0da;</a>
           <ul>
             <!--li name="why-stefti"><a href="/admissions/why-stefti">Why STEFTI?</a></li-->
 <li name="why-stefti"><a href="/admissions/why-stefti">Why<!--br class="show-on-drill"/--> STEFTI</a></li>
@@ -96,6 +97,7 @@
         </li>
         <li id="dropdown-about" class="dropdown">
           <a href="/about/">About <span>&#xf0d7;</span></a>
+          <a>&#xf0da;</a>
           <ul>
             <li name="history"><a href="/about/history">History</a></li>
 <li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision<!--br class="show-on-drill"/-->-Goals</a></li>
@@ -253,18 +255,18 @@
 <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
   <h3>Events</h3>
   <div class="container-fluid container-events">
-    <div class="container-fluid container-event">
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
-    <div class="container-fluid container-event">
+    </a>
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
-    <div class="container-fluid container-event">
+    </a>
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
+    </a>
   </div>
 </div>
 </div>
@@ -316,7 +318,7 @@
 </div>
 </section>
 
-<section class="bg-lg" style="padding-top:0" id="fader-title">
+<section class="bg-lg fader-therese" id="fader-title">
   <div class="container-fluid container-limit">
 
     <div class="row">
@@ -325,9 +327,15 @@
               <h1>Where heart and mind grow best</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-        <a href="/about/history">History</a>
-        <a href="/about/mission-vision">Mission-Vision-Goals</a>
-        <a href="/about/philosophy">Philosophy</a>
+        <ul class="">
+          <li name="history"><a href="/about/history">History</a></li>
+<li name="mission-vision" class="lined-left"><a href="/about/mission-vision">Mission-Vision<!--br class="show-on-drill"/-->-Goals</a></li>
+<li name="philosophy" class="lined-left"><a href="/about/philosophy">Philosophy</a></li>
+<li name="logo-hymn" class="lined-left"><a href="/about/logo-hymn">Logo &amp;<!--br class="show-on-drill"/--> Hymn</a></li>
+<li name="our-campus" class="lined-left"><a href="/about/our-campus">Our<!--br class="show-on-drill"/--> Campus</a></li>
+<li name="faculty" class="lined-left"><a href="/about/faculty">Faculty</a></li>
+
+        </ul>
         </div>
 
         </div>
@@ -473,6 +481,32 @@
     else {
       $(this).addClass('focus');
     }
+  });
+
+  $('#dropdown-admissions>a:nth-of-type(2)').click(function(event){
+    event.stopPropagation();
+    //alert('omg1');
+
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+
+  });
+
+  $('#dropdown-about>a:nth-of-type(2)').click(function(event){
+    event.stopPropagation();
+    //alert('omg2');
+
+    if ($(this).hasClass('focus')) {
+      $(this).removeClass('focus');
+    }
+    else {
+      $(this).addClass('focus');
+    }
+
   });
 </script>
 

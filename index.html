@@ -97,18 +97,18 @@ layout: main
 <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
   <h3>Events</h3>
   <div class="container-fluid container-events">
-    <div class="container-fluid container-event">
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
-    <div class="container-fluid container-event">
+    </a>
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
-    <div class="container-fluid container-event">
+    </a>
+    <a class="container-fluid container-event">
       <h5>21 Sep 2015</h5>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-    </div>
+    </a>
   </div>
 </div>
 </div>
@@ -160,7 +160,7 @@ layout: main
 </div>
 </section>
 
-<section class="bg-lg" style="padding-top:0" id="fader-title">
+<section class="bg-lg fader-therese" id="fader-title">
   <div class="container-fluid container-limit">
 
     <div class="row">
@@ -169,9 +169,9 @@ layout: main
               <h1>Where heart and mind grow best</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-        <a href="{{ site.baseurl }}/about/history">History</a>
-        <a href="{{ site.baseurl }}/about/mission-vision">Mission-Vision-Goals</a>
-        <a href="{{ site.baseurl }}/about/philosophy">Philosophy</a>
+        <ul class="">
+          {% include sitemap-about.html %}
+        </ul>
         </div>
 
         </div>
