@@ -14,6 +14,7 @@
 
 .slick-custom-1.slider-for {
   /*background-color: #2B3389;*/
+
 }
 
 .slick-custom-1.slider-for img {
@@ -22,9 +23,22 @@
   height: 480px;
 }
 
+.slick-custom-1.slider-nav {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .slick-custom-1.slider-nav div img {
   max-width: 100px;
   max-height: 100px;
+}
+
+.slick-custom-1.slider-nav div>div>div>div {
+  width: 100px;
+  height: 75px;
+  background-size: cover;
+  background-position: center;
 }
 
 .slick-custom-1.slider-nav:after {
@@ -34,10 +48,10 @@
   width: 100%;
   content: "";
   background: linear-gradient(to right,
-     rgba(228,228,228, 1) 0%,
-     rgba(228,228,228, 0) 20%,
-     rgba(228,228,228, 0) 80%,
-     rgba(228,228,228, 1) 100%
+     rgba(255,255,255, 1) 1%,
+     rgba(255,255,255, 0) 40%,
+     rgba(255,255,255, 0) 60%,
+     rgba(255,255,255, 1) 99%
   );
   pointer-events: none; /* so the text is still selectable */
 }

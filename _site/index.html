@@ -489,9 +489,11 @@
 
     if ($(this).hasClass('focus')) {
       $(this).removeClass('focus');
+      this.innerHTML = "&#xf0da";
     }
     else {
       $(this).addClass('focus');
+      this.innerHTML = "&#xf0d7;";
     }
 
   });
@@ -502,13 +504,17 @@
 
     if ($(this).hasClass('focus')) {
       $(this).removeClass('focus');
+      this.innerHTML = "&#xf0da";
     }
     else {
       $(this).addClass('focus');
+      this.innerHTML = "&#xf0d7;";
     }
 
   });
 </script>
+
+
 
 <script>
 
@@ -578,6 +584,8 @@ setInterval(function() {
     }
 }, 100);
  </script>
+
+ 
 
 
 	</body>

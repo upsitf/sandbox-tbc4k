@@ -104,9 +104,11 @@ $(document).ready(function(){
 
     if ($(this).hasClass('focus')) {
       $(this).removeClass('focus');
+      this.innerHTML = "&#xf0da";
     }
     else {
       $(this).addClass('focus');
+      this.innerHTML = "&#xf0d7;";
     }
 
   });
@@ -117,13 +119,19 @@ $(document).ready(function(){
 
     if ($(this).hasClass('focus')) {
       $(this).removeClass('focus');
+      this.innerHTML = "&#xf0da";
     }
     else {
       $(this).addClass('focus');
+      this.innerHTML = "&#xf0d7;";
     }
 
   });
 </script>
+
+{% if page.title == 'News' %}
+<!--
+{% endif %}
 
 <script>
 
@@ -201,3 +209,7 @@ setInterval(function() {
     }
 }, 100);
  </script>
+
+ {% if page.title == 'News' %}
+ -->
+ {% endif %}
