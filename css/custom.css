@@ -223,7 +223,7 @@ div.carousel-caption {
 	/*max-width: 920px;*/
 	max-width: 1080px;
 	font-weight: 100;
-	line-height: 0.7em;
+	line-height: 0.8em;
 }
 
 ol.carousel-indicators {
@@ -1445,7 +1445,8 @@ nav.container-timeline>div.container-timeline-pull {
 a:hover p,
 a:hover.container-news div.body h2,
 a:hover.container-news-well h5 {
-	color: #3d57a5 !important;
+	/*color: #3d57a5 !important;*/
+	color: rgba(51, 51, 51, 0.7) !important;
 }
 
 h4>span.core-red {
@@ -1466,7 +1467,7 @@ a.container-fluid.container-news p {
 
 @media (max-width: 768px) {
 	.container-news-full {
-		margin-bottom: 40px;
+		margin-bottom: 40px !important;
 	}
 }
 
