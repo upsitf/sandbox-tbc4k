@@ -1480,3 +1480,11 @@ a.container-fluid.container-news p {
 			margin-bottom: 25px;
 	}
 }
+
+#faculty-content h3 {
+	margin-bottom: 0;
+}
+
+#faculty-content>div>div {
+	padding-bottom: 20px;
+}
