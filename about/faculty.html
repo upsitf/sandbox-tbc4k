@@ -10,11 +10,18 @@ breadcrumbs:
 ---
 
 
-<section class="bg-wh section-text">
+<section class="bg-wh">
   <div class="container-fluid container-limit">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1>Faculty</h1>
+
+</div></div></div></section>
+
+<section class="bg-wh" style="background-color:black;padding-top:15px;">
+  <div class="container-fluid container-limit">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
       <ul id="faculty-list">
 
@@ -430,6 +437,10 @@ breadcrumbs:
   for (index = 0; index < faculty_list.length; index++) {
       faculty_list[index].onclick = function(){
         //document.getElementById("facilities-content").innerHTML = this.nextElementSibling.innerHTML;
+        for (index1 = 0; index1 < faculty_list.length; index1++) {
+          faculty_list[index1].className = faculty_list[index1].className.replace(/\bactive\b/,'');
+        }
+        this.className = this.className + " active";
         var replace_for = this.nextElementSibling.getElementsByTagName('div');
         var replace_nav = this.nextElementSibling.nextElementSibling.getElementsByTagName('div');
 

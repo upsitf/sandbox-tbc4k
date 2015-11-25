@@ -76,8 +76,8 @@ breadcrumbs:
 
   <a>
     <div id="link-map" class="container-fluid container-well hidden-xs">
-      <p>View our <br class="hidden-sm hidden-xs"/>campus map</p>
       <img class="img-responsive" src="{{ site.baseurl }}/images/map.png" alt="...">
+      <p>View our <br class="hidden-sm hidden-xs"/>campus map</p>
     </div>
   </a>
 </div>
@@ -86,10 +86,12 @@ breadcrumbs:
 </div>
 
 <div class="col-xs-12 visible-xs">
-  <div id="link-map" class="container-fluid container-well">
-    <p>View our <br class="hidden-sm hidden-xs"/>campus map</p>
-    <img class="img-responsive" src="{{ site.baseurl }}/images/map.png" alt="...">
-  </div>
+  <a>
+    <div id="link-map" class="container-fluid container-well">
+      <img class="img-responsive" src="{{ site.baseurl }}/images/map.png" alt="...">
+      <p>View our campus map</p>
+    </div>
+  </a>
 </div>
 
 
@@ -101,6 +103,11 @@ breadcrumbs:
   var facilities_list = document.querySelectorAll("ul#facilities-list>li>a");
   for (index = 0; index < facilities_list.length; index++) {
       facilities_list[index].onclick = function(){
+        this.className = this.className + " active";
+        for (index2 = 0; index2 < facilities_list.length; index2++) {
+          facilities_list[index2].className = facilities_list[index2].className.replace(/\bactive\b/,'');
+        }
+        this.className = this.className + " active";
         //document.getElementById("facilities-content").innerHTML = this.nextElementSibling.innerHTML;
         var replace = this.nextElementSibling.innerHTML;
         $("#facilities-content").fadeOut('fast', function() {
@@ -109,5 +116,6 @@ breadcrumbs:
       }
   }
   document.getElementById("facilities-content").innerHTML = facilities_list[0].nextElementSibling.innerHTML;
-  facilities_list[0].class = facilities_list[0].class + " active";
+  facilities_list[0].className = facilities_list[0].className + " active";
+  //alert(facilities_list[0].class);
 </script>

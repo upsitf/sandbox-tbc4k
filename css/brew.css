@@ -386,11 +386,11 @@ header.custom-header>div.custom-header-content>div.custom-header-items>div.custo
 header.custom-header>div.custom-header-content>div.custom-header-items>div.custom-header-drill>ul>li>a:link {
   display: block;
   position: relative;
-  padding: 0 4px 0 10px;
+  padding: 0 4px 0 8px;
   font-family: Voldemooort;
   font-weight: 100;
   /*font-size: 1.25em;*/
-  font-size: 1.2em;
+  font-size: 1.125em;
   line-height: 1.1em;
   text-decoration: none;
   color: #BDBDBD;
@@ -496,8 +496,8 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
 
   header.custom-header>div.custom-header-content>a.custom-header-toggle {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     float: right;
     border-radius: 100vh;
     position: relative;
@@ -505,15 +505,15 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
     border-style: solid;
     border-width: 2px;
     border-color: white;
-    top: 10px;
+    top: 15px;
   }
 
   header.custom-header>div.custom-header-content>a.custom-header-toggle>div {
     height: 2px;
     background-color: white;
     position: absolute;
-    width: 40px;
-    margin: 0 13px;
+    width: 36px;
+    margin: 0 10px;
   }
 
   header.custom-header>div.custom-header-content>a.custom-header-toggle>div:first-of-type {
@@ -635,7 +635,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
     width: 45px !important;
     display: inline-block !important;
     /*background-color: #2b3389;*/
-    background-color: white;
+    background-color: #e8e8e8;
     font-family: FontAwesome;
     padding: 11px 19px 9px 10px !important;
   }
