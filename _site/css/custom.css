@@ -193,7 +193,7 @@ header.navbar.navbar-drill ul li.subheader-active a {
 section.page-content {
 	border-width: 90px 0 0 0;
   border-style: solid;
-  border-color: #3d57a5;
+  border-color: #586daf;
 	min-height: calc((100vh - 186px) - 36px);
 	background-color: #e4e4e4;
 }
@@ -804,7 +804,7 @@ ul.list-spaced {
 }
 
 ul.list-col-2.list-spaced>li, ul.list-spaced>li {
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 button.btn-default.btn-block.btn-question {
@@ -886,7 +886,7 @@ padding-bottom: 7px;
 }
 
 #vision {
-	/*margin-top: 25px;*/
+	margin-top: 15px;
 }
 
 #facilities-list {
@@ -1102,7 +1102,7 @@ footer:first-of-type {
 	padding-top: 30px;
 	/*background-color: #2b3389;*/
 	/*background-color: #181E65;*/
-	background-color: #3d57a5;
+	background-color: #586daf;
 	padding-bottom: 15px;
 }
 
@@ -1229,7 +1229,7 @@ footer:first-of-type ul>li>a{
 footer:last-of-type {
 	/*background-color: #232A73;*/
 	/*background-color: #2b3389;*/
-	background-color: #3d57a5;
+	background-color: #586daf;
 }
 
 footer:last-of-type h4,
@@ -1454,4 +1454,28 @@ h4>span.core-red {
 
 #corevalues p {
 	line-height: 1.5em;
+}
+
+a.container-fluid.container-news p {
+	color: #333;
+}
+
+/*a.container-fluid.container-news:hover p {
+	color: #333;
+}*/
+
+@media (max-width: 768px) {
+	.container-news-full {
+		margin-bottom: 40px;
+	}
+}
+
+.container-news-full h2 {
+	margin-top: 0;
+}
+
+@media (max-width: 768px) {
+	#corevalues .col-lg-2>div {
+			margin-bottom: 25px;
+	}
 }

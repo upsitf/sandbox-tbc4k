@@ -17,10 +17,23 @@
 
 }
 
+.section-slick {
+    height: 480px;
+}
+
 .slick-custom-1.slider-for img {
   /*width: 100%;*/
   margin: auto;
-  height: 480px;
+  max-height: 480px;
+}
+
+@media (max-width: 768px) {
+  .section-slick {
+    height: 320px;
+  }
+  .slick-custom-1.slider-for img {
+    max-height: 320px;
+  }
 }
 
 .slick-custom-1.slider-nav {

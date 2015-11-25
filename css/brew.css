@@ -11,7 +11,7 @@ header.custom-header {
   width: 100%;
   /*background-color: #2b3389;*/
   /*background-color: #181E65;*/
-  background-color: #3d57a5;
+  background-color: #586daf;
   height: 90px;
   z-index: 16;
 }
@@ -584,7 +584,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
 
   header.custom-header>div.custom-header-content>a.custom-header-toggle.focus~div.custom-header-items {
     height: calc(100vh - 90px);
-    max-height: 300px;
+    max-height: calc(100vh - 90px);
     overflow-y: auto;
   }
 
@@ -618,8 +618,12 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
     header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:first-of-type {
       background-color: white;
     }
-    header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a, header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:link {
+    header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a,
+    header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:link {
       color: #333;
+      border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #ddd;
     }
   }
 
@@ -655,7 +659,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
     font-size: 1.20em;
     color: #2b3389;
     padding: 8px 12px;
-    border-style: none;
+    /*border-style: none;*/
     padding: 10px;
     font-size: 1.25em;
 
