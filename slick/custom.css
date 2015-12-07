@@ -17,7 +17,7 @@
 
 }
 
-.section-slick {
+.section-slick:not(.section-slick-reset) {
     height: 480px;
 }
 
@@ -40,6 +40,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 .slick-custom-1.slider-nav div img {
@@ -61,10 +62,10 @@
   width: 100%;
   content: "";
   background: linear-gradient(to right,
-     rgba(255,255,255, 1) 1%,
-     rgba(255,255,255, 0) 40%,
-     rgba(255,255,255, 0) 60%,
-     rgba(255,255,255, 1) 99%
+     rgba(0,0,0, 1) 1%,
+     rgba(0,0,0, 0) 40%,
+     rgba(0,0,0, 0) 60%,
+     rgba(0,0,0, 1) 99%
   );
   pointer-events: none; /* so the text is still selectable */
 }
