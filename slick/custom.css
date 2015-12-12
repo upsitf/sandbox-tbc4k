@@ -62,10 +62,10 @@
   width: 100%;
   content: "";
   background: linear-gradient(to right,
-     rgba(0,0,0, 1) 1%,
-     rgba(0,0,0, 0) 40%,
-     rgba(0,0,0, 0) 60%,
-     rgba(0,0,0, 1) 99%
+     rgba(17,17,17, 1) 1%,
+     rgba(17,17,17, 0) 40%,
+     rgba(17,17,17, 0) 60%,
+     rgba(17,17,17, 1) 99%
   );
   pointer-events: none; /* so the text is still selectable */
 }
