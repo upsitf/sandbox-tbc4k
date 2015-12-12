@@ -502,7 +502,7 @@ header.custom-header>div.custom-header-content>div.custom-header-items>ul>li>a:n
     border-radius: 100vh;
     position: relative;
     background: none;
-    border-style: solid;
+    /*border-style: solid;*/
     border-width: 2px;
     border-color: white;
     top: 15px;
