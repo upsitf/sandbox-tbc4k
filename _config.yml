@@ -1,6 +1,6 @@
 # Site settings
-title: St. Therese Educational Foundation Tacloban, Inc.
-baseurl: http://klmendoza1.github.io/sandbox-stefti
+title: "Tech Boot Camp for Kids + Teens"
+baseurl: http://klmendoza1.github.io/sandbox-tbc4k
 
 # Build settings
 markdown: kramdown
