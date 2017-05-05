@@ -3,3 +3,16 @@
     max-width: 960px;
 	}
 }
+
+.embed-sizer {
+  max-width: 640px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .embed-sizer {
+    max-width: none;
+    margin-left: -30px;
+    margin-right: -30px;
+    width: calc(100% + 60px);
+  }
+}

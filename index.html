@@ -1,6 +1,176 @@
 ---
 layout: main
-static: no
+
+dataClassesSAMPLE:
+ - id: "aspnet"
+   categoryId: "networktech"   #string
+   days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 23, 2017"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 3, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
+
+
+
+dataClasses:
+ - id: "scratch"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "robotics"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2B"
+   dateStart: "May 15"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 19, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "raspberrypi"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "dva2"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "webdev"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+
+
+dataClassesLegacy:
+ - id: "codecombat"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "ibooks"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "gamesalad"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+
+
+dataBatches:
+ - id: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+ - id: "2B"
+   dateStart: "May 15"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "19, 2017"      #string format = [stringMonth] [intDay], [intYear]
+ - id: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+
+   
+dataClassOfferings:
+ - name: "Basic Programming"
+   id: "basicprog"
+   list:
+    - name: "Tech Fun 1: Create Your Own Stories and Games with Scratch"
+      id: "scratch"
+      icon: ""
+      descriptionShort: "Make your own stories and games as you learn the basics of programming!"
+      description: ""
+      file: ""
+    - name: "Code Combat: Save the World with Programming"
+      id: "codecombat"
+      icon: ""
+      descriptionShort: "Learn the basics of programming while solving mazes and fighting monsters!"
+      description: ""
+      file: ""
+ - name: "Advanced Programming"
+   id: "advprog"
+   list:
+    - name: "The Art of Making Robots"
+      id: "robotics"
+      icon: ""
+      descriptionShort: "Build your own robot! Prepare to get messy with tools, parts and code."
+      description: ""
+      file: ""
+    - name: "A Taste of Raspberry Pi"
+      id: "raspberrypi"
+      icon: ""
+      descriptionShort: "Discover the boundless potential of this credit card-sized computer!"
+      description: ""
+      file: ""
+ - name: "Digital Arts"
+   id: "digiarts"
+   list:
+    - name: "Digital Visual Arts 1"
+      id: "dva1"
+      icon: ""
+      descriptionShort: "Unleash the artist in you with various digital tools for creativity!"
+      description: ""
+      file: ""
+    - name: "Digital Visual Arts 2"
+      id: "dva2"
+      icon: ""
+      descriptionShort: "Unleash your creativity further with animation, advanced techniques and more!"
+      description: ""
+      file: ""
+ - name: "Web Technology"
+   id: "webtech"
+   list:
+    - name: "How to Build and Monetize a Website"
+      id: "webdev"
+      icon: ""
+      descriptionShort: "Be the next web rockstar! Design and code your own website from scratch."
+      description: ""
+      file: ""
+
+
 ---
 
 <section class="section-jumbotron">
@@ -13,9 +183,9 @@ static: no
 	</div>
 </section>
 
-<section class="section-body">
+<section class="section-body" style="background-color:#a2c94a">
 
-	<section>
+	<!--section>
 		<div class="container-fluid container-fluid-max">
 			<div class="row">
 				<div class="col-lg-12">
@@ -44,88 +214,182 @@ static: no
 				</div>
 			</div>
 		</div>
-	</section>
+	</section-->
 
 	<section>
 		<div class="container-fluid container-fluid-max">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 text-center">
 					<h1>
 						Our May 2017 Classes
 						<small>All classes at Php 9,000 each</small>
 					</h1>
 
+					<!--
+
+					{% for eachbatch in page.dataBatches %}
+
+					{% assign count = 0 %}
+					{% for eachclass in page.dataClasses %}
+					{% if eachclass.dateBatch == eachbatch.id %}
+					{% assign count = count | plus: 1 %}
+					{% endif %}
+					{% endfor %}
+
+					{% if count > 0 %}
+
 					<section>
 						<h2>
-							Batch 2A
-							<small>May 8 to 12, 2017</small>
+							Batch {{ eachbatch.id }}
+							<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
 						</h2>
 
+						{% assign ongoing = false %}
+						{% assign subcount = 0 %}
+						{% assign subcountFirst = true %}
+						{% assign offset = 0 %}
+
+						{% for eachclass in page.dataClasses %}
+						
+						{% if ongoing == false %}
+						{% assign tester = count | minus: 3 %}
+						{% if tester == 0 or tester >= 2 %}
+						{% assign subcount = 3 %}
+						{% assign offset = 0 %}
+						{% elsif tester == 1 or tester == -1 %}
+						{% assign subcount = 2 %}
+						{% assign offset = 2 %}
+						{% else %}
+						{% assign subcount = 1 %}
+						{% assign offset = 4 %}
+						{% endif %}
+						{% endif %}
+
+						{% if eachclass.dateBatch == eachbatch.id %}
+
+						{% if ongoing == false %}
 						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3><span>Tech Fun 1:</span> Create Your Own Stories and Games with <span>Scratch</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-								<span></span>
+						{% assign ongoing = true %}
+						{% assign subcountFirst = true %}
+						{% endif %}
+
+
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if subcountFirst == true and offset > 0 %} col-lg-offset-{{ offset }} col-md-offset-{{ offset }} col-sm-offset-{{ offset }} col-xs-offset-0{% endif %}">
+								{% include unit-class.html %}
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3><span>Code Combat:</span> Save the World with Programming</h3>
-								<p>Lorem ipsum dolor sit amet</p>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3><span>Digital Visual Arts 1</span> <span>For Kids</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-							</div>
+							{% assign subcount = subcount | minus: 1 %}
+							{% assign subcountFirst = false %}
+
+						{% if subcount <= 0 %}
 						</div>
+						{% assign ongoing = false %}
+						{% endif %}
+
+						{% endif %}
+
+						{% endfor %}
+
 					</section>
+					{% endif %}
+
+					{% endfor %}
+
+					-->
+					<div class="row">
+
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0"><section>
+							<h2>
+								{% assign eachbatch = page.dataBatches[0] %}
+								Batch {{ eachbatch.id }}
+								<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+							</h2>
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									{% assign eachclass = page.dataClasses[0] %}
+									{% include unit-class.html %}
+								</div>
+							</div>
+						</section></div>
+
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><section>
+							<h2>
+								{% assign eachbatch = page.dataBatches[1] %}
+								Batch {{ eachbatch.id }}
+								<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+							</h2>
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									{% assign eachclass = page.dataClasses[1] %}
+									{% include unit-class.html %}
+								</div>
+							</div>
+						</section></div>
+
+					</div>
 
 					<section>
+
 						<h2>
-							Batch 2B
-							<small>May 15 to 19, 2017</small>
+							{% assign eachbatch = page.dataBatches[2] %}
+							Batch {{ eachbatch.id }}
+							<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
 						</h2>
 
 						<div class="row">
-							<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12">
-								<img>
-								<h3>The Art of <span>Making Robots</span> <span>For Teens</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-								<span></span>
-							</div>
-						</div>
-					</section>
 
-					<section>
-						<h2>
-							Batch 2C
-							<small>May 22 to 26, 2017</small>
-						</h2>
+							{% for eachnum in (2...4) %}
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								{% assign eachclass = page.dataClasses[eachnum] %}
+								{% include unit-class.html %}
+							</div>
+							{% endfor %}
 
-						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3>A Taste of <span>Raspberry Pi</span> <span>Recommended for Teens</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-								<span></span>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3><span>Digital Visual Arts 2</span> <span>For Teens</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<img>
-								<h3>How to Build and Monetize a <span>Website</span></h3>
-								<p>Lorem ipsum dolor sit amet</p>
-							</div>
 						</div>
+
 					</section>
 
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section><h1 class="hidden">About TBC4K</h1>
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+
+				<div class="col-lg-6">
+					<div class="embed-sizer" style="/*margin-top:40px;*/">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div id="fb-root"></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return;js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-href="https://www.facebook.com/tbc4k/videos/1674089692884682/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/tbc4k/videos/1674089692884682/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tbc4k/videos/1674089692884682/">IT is for kids too!</a><p>This summer, TBC4K returns to give kids and teens a fun-filled experience learning all about the digital world. Our program is all about developing IT skills and having fun at the same time! Programming, digital art, game design, and robotics - you name IT, Kids can do IT! REGISTER NOW: http://tbc4k.upsitf.org</p>Posted by <a href="https://www.facebook.com/tbc4k/">TBC4K - Tech Boot Camp for Kids + Teens</a> on Wednesday, March 22, 2017</blockquote></div>
+            </div>
+            <small class="small-caption">Y4iT 2015 Video Montage</small>
+          </div>
+				</div>
+
+				<div>
+					<span>Let your kid's imagination run wild!</span>
+					<p>We aim to introduce students to a wide array of IT courses especially designed for kids and teens. Courses offered include Robotics, Programming, Digital Arts, Blogging, and many more. Classes involve a lot of hands-on activities to promote learning and allow students, young as they are, to have a feel of how it is to be in the field of IT. Join us and experience learning new stuff the fun and exciting way only here at TBC4K!</p>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+	<section>
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+				<div class="col-lg-12">
+					<a class="btn btn-default">Register</a>
+				</div>	
+			</div>
+		</div>
+
 	</section>
 
 </section>

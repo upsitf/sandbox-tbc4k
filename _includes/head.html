@@ -20,12 +20,25 @@
 	<meta name="msapplication-config" content="{{ site.baseurl }}/icons/browserconfig.xml?v=NmEMM2vkv0">
 	<meta name="theme-color" content="#2f9e51">
 
+	<!-- OPEN GRAPH METADATA -->
+  <meta property="og:title" content="{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.baseurl }}" />
+  <meta property="og:image" content="http://" /> <!-- DON'T FORGET! -->
+  <meta property="og:description" content="" />
+  <meta property="og:determiner" content="" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/shared-footer.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	{% include css-fonts.html %}
+
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/lean.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
 	

@@ -1,8 +1,14 @@
 # Site settings
 title: "Tech Boot Camp for Kids + Teens"
-baseurl: http://klmendoza1.github.io/sandbox-tbc4k
+titleAlt: "TBC4K"
+
+
+#baseurl: http://klmendoza1.github.io/sandbox-tbc4k
+baseurl: http://toffmendoza.me/sandbox-tbc4k
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 # baseurl:
+
+

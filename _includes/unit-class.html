@@ -1,0 +1,11 @@
+{% for eachclassoffgroup in page.dataClassOfferings %}
+{% for eachclassoff in eachclassoffgroup.list %}
+{% if eachclassoff.id == eachclass.id %}
+<img>
+<h3>{{ eachclassoff.name }}</h3>
+<p>{{ eachclassoff.descriptionShort }}</p>
+<span></span>
+{% break %}
+{% endif %}
+{% endfor %}
+{% endfor %}
