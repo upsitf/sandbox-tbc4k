@@ -11,4 +11,24 @@ markdown: kramdown
 permalink: pretty
 # baseurl:
 
+urlRegForm: "https://sitf.typeform.com/to/ZlAfde"
+urlRegFormMini: "http://bit.ly/tbc4k2017reg2"
+urlRegFormLocalAppend: "/register"
 
+urlFacebook: "https://www.facebook.com/tbc4k"
+urlTwitter: "https://twitter.com/upsitf"
+
+urlTBC4K: "http://tbc4k.upsitf.org"
+urlTBC4KFacebook: "https://facebook.com/tbc4k"
+
+contactAddress:
+ - "Rm. 303 Vidal Tan Hall"
+ - "Quirino Ave. cor. Velasquez St."
+ - "UP Diliman, Quezon City"
+contactHours:
+ - "8am to 5pm"
+contactEmail: "tbc4k@upsitf.org"
+contactLandlineMain: (02) 788 5898
+contactLandlineSub: (02) 436 2217
+contactFax: (02) 920 2036
+contactMobile: 0917 563 5682

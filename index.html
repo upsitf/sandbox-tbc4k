@@ -118,19 +118,18 @@ dataClassOfferings:
  - name: "Basic Programming"
    id: "basicprog"
    list:
-    - name: "Tech Fun 1: Create Your Own Stories and Games with Scratch"
-      nameShorthand: "Tech Fun 1: Scratch Programming"
-      nameDescriptive: "Scratch Programming"
+    - name: "Tech Fun 1: Scratch Programming"
+      nameDescriptive: "Scratch"
       id: "scratch"
       icon: "art_mascot-scratch-square.png"
       photo: "art_mascot-scratch-min-shadow.png"
-      descriptionShort: "Make your own stories and games as you learn the basics of programming!"
+      descriptionShort: "Learn the basics of programming as you make your own stories and games!"
       description:
        - "Drag and modify blocks of code to show, hide, or animate objects within the canvas! Take it to the next level: create your fighting game, or animate a short film! Share it online with the Scratch community for the world to see. The possibilities are endless!"
        - "Scratch is a block-based programming language designed for young learners. This course teaches kids the fundamentals of logic, procedural and object-oriented programming, and conditional statements, among many other basic computer science concepts."
        - "The course discusses tips and tricks on writing code while allowing the kids to appreciate the possibilities in store in developing programs in the future. The visual nature of Scratch also allows them to have fun while giving them the power to give life to their imagination through creating their own programs, stories, and games."
        - "This course is ideal for kids who plan to take the Robotics course."
-      technology: ""
+      technology: "Scratch"
       file: ""
     - name: "CodeCombat: Save the World with Programming"
       nameDescriptive: "CodeCombat"
@@ -352,7 +351,7 @@ dataClassOfferings:
 					-->
 					<div class="row">
 
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0"><section>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0"><section class="section-batch">
 							<h2>
 								{% assign eachbatch = page.dataBatches[0] %}
 								Batch {{ eachbatch.id }}
@@ -367,7 +366,7 @@ dataClassOfferings:
 							</div>
 						</section></div>
 
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><section>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><section class="section-batch">
 							<h2>
 								{% assign eachbatch = page.dataBatches[1] %}
 								Batch {{ eachbatch.id }}
@@ -384,7 +383,7 @@ dataClassOfferings:
 
 					</div>
 
-					<section>
+					<section class="section-batch">
 
 						<h2>
 							{% assign eachbatch = page.dataBatches[2] %}
@@ -405,10 +404,11 @@ dataClassOfferings:
 
 					</section>
 
-					<span>Class hours are from 8:00 AM to 12:00 NN</span>
-					<span>No need to bring anything as course fee includes snacks and free usage of equipment during class hours</span>
+					<span style="display:block">Class hours are from 8:00 AM to 12:00 NN</span>
+					<span style="display:block;margin-bottom: 15px;">No need to bring anything as course fee includes snacks and free usage of equipment during class hours</span>
 
-					<a class="btn btn-default btn-register">Register</a>
+					<a class="btn btn-default btn-register" style="margin-bottom: 10px;">Register Now</a>
+					<span style="display:block;margin-bottom: 45px;">or remember this link for later: <a href="http://bit.ly/tbc4k2017reg2">bit.ly/tbc4k2017reg2</a></span>
 
 				</div>
 			</div>
@@ -433,7 +433,7 @@ dataClassOfferings:
 				</div>
 
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<span>Let your kid's imagination run wild!</span>
+					<span style="display: inline-block;font-size: 2.5em;line-height: 1em;margin-bottom: 15px;">Let your kid's imagination run wild!</span>
 					<p>We aim to introduce students to a wide array of IT courses especially designed for kids and teens. Courses offered include Robotics, Programming, Digital Arts, Blogging, and many more. Classes involve a lot of hands-on activities to promote learning and allow students, young as they are, to have a feel of how it is to be in the field of IT. Join us and experience learning new stuff the fun and exciting way only here at TBC4K!</p>
 				</div>
 
@@ -484,6 +484,8 @@ dataClassOfferings:
 								{% for eachparagraph in eachclassoff.description %}
 									<p>{{ eachparagraph }}</p>
 								{% endfor %}
+
+								<span class="span-technology"><span>Technology:</span> <ul>{% for eachtechnology in eachclassoff.technology %}<li>{{ eachtechnology }}</li>{% endfor %}<ul></span>
 
 								{% if eachclassoff.id == "dva1" %}
 								<!--

@@ -10,6 +10,24 @@
 	}
 }
 
+.section-jumbotron,
+.section-body>section {
+	padding-top: 45px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.section-batch h2 {
+	margin-bottom: 20px;
+}
+
+.div-class {
+	margin-bottom: 15px;
+}
+
 .img-icon {
 	max-width: 180px;
 	margin-left: auto;
@@ -34,4 +52,18 @@
 .btn.btn-default.btn-register {
 	font-size: 2.5em;
 	padding: 1px 18px;
+}
+
+.span-technology ul {
+	list-style: none;
+	display: inline;
+	padding-left: 0;
+}
+
+.span-technology li {
+	display: inline;
+}
+
+.span-technology li:not(:last-of-type)::after {
+	content: ", ";
 }

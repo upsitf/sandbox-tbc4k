@@ -1,10 +1,12 @@
 {% for eachclassoffgroup in page.dataClassOfferings %}
 {% for eachclassoff in eachclassoffgroup.list %}
 {% if eachclassoff.id == eachclass.id %}
-<img class="img-responsive img-circle img-icon" src="{{ site.baseurl }}/images/icons/{{ eachclassoff.icon }}"/>
-<h3>{{ eachclassoff.name }}</h3>
-<p>{{ eachclassoff.descriptionShort }}</p>
-<span></span>
+<div class="div-class">
+	<img class="img-responsive img-circle img-icon" src="{{ site.baseurl }}/images/icons/{{ eachclassoff.icon }}"/>
+	<h3>{{ eachclassoff.name }}</h3>
+	<p>{{ eachclassoff.descriptionShort }}</p>
+	<span></span>
+</div>
 {% break %}
 {% endif %}
 {% endfor %}
