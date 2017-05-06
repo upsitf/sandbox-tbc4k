@@ -89,7 +89,7 @@ small {
 	/*box-shadow: 8px 8px #a92c42;*/
 
 	background-color: #ec626c;
-	box-shadow: 4px 4px #a92c42
+	box-shadow: 4px 4px #a92c42;
 
 	-webkit-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
 	-moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
