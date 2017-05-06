@@ -410,8 +410,11 @@ dataClassOfferings:
 					<span style="display:block">Class hours are from 8:00 AM to 12:00 NN</span>
 					<span style="display:block;margin-bottom: 15px;">No need to bring anything as course fee includes snacks and free usage of equipment during class hours</span>
 
-					<a href="{{ site.urlRegForm }}" class="btn btn-default btn-register" style="margin-bottom: 10px;">Register Now</a>
-					<span style="display:block;margin-bottom: 45px;">or remember this link for later: <a href="{{ site.urlRegFormMini }}">{{ site.urlRegFormMiniDisplay }}</a></span>
+					<a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register" style="margin-bottom:10px;">Register Now</a>
+					<span style="display:block;margin-bottom: 45px;">or remember this link for later:
+            <!--a href="{{ site.urlRegFormMini }}" target="_blank" >{{ site.urlRegFormMiniDisplay }}</a-->
+            <a href="{{ site.baseurl }}{{ site.urlRegFormLocalAppend }}" target="_blank" >{{ site.urlDisplay }}{{ site.urlRegFormLocalAppend }}</a>
+          </span>
 
 				</div>
 			</div>
@@ -515,8 +518,11 @@ dataClassOfferings:
 					</section>
 					{% endfor %}
 
-					<a href="{{ site.urlRegForm }}" class="btn btn-default btn-register" style="display:table;margin-left:auto;margin-right:auto;margin-bottom:10px;">Register Now</a>
-					<span style="display:block;margin-bottom:45px;text-align:center;">or remember this link for later: <a href="{{ site.urlRegFormMini }}">{{ site.urlRegFormMiniDisplay }}</a></span>
+					<a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register" style="display:table;margin-left:auto;margin-right:auto;margin-bottom:10px;">Register Now</a>
+					<span style="display:block;margin-bottom:45px;text-align:center;">or remember this link for later:
+            <!--a href="{{ site.urlRegFormMini }}" target="_blank" >{{ site.urlRegFormMiniDisplay }}</a-->
+            <a href="{{ site.baseurl }}{{ site.urlRegFormLocalAppend }}" target="_blank" >{{ site.urlDisplay }}{{ site.urlRegFormLocalAppend }}</a>
+          </span>
 
 				</div>	
 			</div>
