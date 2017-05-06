@@ -4,7 +4,8 @@ titleAlt: "TBC4K"
 
 
 #baseurl: http://klmendoza1.github.io/sandbox-tbc4k
-baseurl: http://toffmendoza.me/sandbox-tbc4k
+#baseurl: http://toffmendoza.me/sandbox-tbc4k
+baseurl: http://tbc4k.upsitf.org
 
 # Build settings
 markdown: kramdown
