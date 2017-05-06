@@ -484,7 +484,8 @@ dataClassOfferings:
 								<div class="col-lg-10">
 									<h3>
 										{{ eachclassoff.name }}{% if eachclassoff.id == "dva1" %} and 2{% endif %}
-										<small>{{ eachclassoffgroup.name }}{% if eachclassoff.nameDescriptive %} - {{ eachclassoff.nameDescriptive }}{% endif %}</small>
+										<!--small>{{ eachclassoffgroup.name }}{% if eachclassoff.nameDescriptive %} - {{ eachclassoff.nameDescriptive }}{% endif %}</small-->
+										{% if eachclassoff.nameDescriptive %}<small>{{ eachclassoff.nameDescriptive }}</small>{% endif %}
 									</h3>
 									{% for eachparagraph in eachclassoff.description %}
 										<p>{{ eachparagraph }}</p>
