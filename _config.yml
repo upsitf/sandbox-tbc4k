@@ -11,8 +11,10 @@ markdown: kramdown
 permalink: pretty
 # baseurl:
 
+urlDisplay: "tbc4k.upsitf.org"
 urlRegForm: "https://sitf.typeform.com/to/ZlAfde"
 urlRegFormMini: "http://bit.ly/tbc4k2017reg2"
+urlRegFormMiniDisplay: "bit.ly/tbc4k2017reg2"
 urlRegFormLocalAppend: "/register"
 
 urlFacebook: "https://www.facebook.com/tbc4k"

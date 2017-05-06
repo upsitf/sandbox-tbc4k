@@ -63,7 +63,14 @@ small {
 .section-green h1 small,
 .section-green h2,
 .section-green h2 small,
-.section-green h3 {
+.section-green h3,
+.section-green h3 small,
+.section-green h4,
+.section-green h4 small,
+.section-green h5,
+.section-green h5 small,
+.section-green h6,
+.section-green h6 small {
 	color: #233f1f;
 }
 
@@ -75,11 +82,36 @@ small {
 	border-style: none;
 	border-radius: 0;
 	color: white;
-	background-color: #ec626c;
 	text-transform: uppercase;
 	font-family: 'Montserrat' !important;
 	font-weight: 500;
+
+	/*box-shadow: 8px 8px #a92c42;*/
+
+	background-color: #ec626c;
+	box-shadow: 0px 0px #a92c42
+
+	-webkit-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	-moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	-o-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+}
+
+.btn.btn-default.btn-register:hover,
+.btn.btn-default.btn-register:focus {
+
+	/*
+	background-color: #a92c42;
+	box-shadow: 0px 0px #a92c42;
+	*/
+
+	background-color: #ec626c;
 	box-shadow: 8px 8px #a92c42;
+
+	-webkit-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	-moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	-o-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+	transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
 }
 
 .img-icon {
