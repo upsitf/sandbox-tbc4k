@@ -1,0 +1,119 @@
+---
+dataClasses:
+ - id: "scratch"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "robotics"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2B"
+   dateStart: "May 15"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 19, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "raspberrypi"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "dva2"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "webdev"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+
+dataBatches:
+ - id: "2A"
+   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+ - id: "2B"
+   dateStart: "May 15"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "19, 2017"      #string format = [stringMonth] [intDay], [intYear]
+ - id: "2C"
+   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+---
+
+<div class="row">
+
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0"><section class="section-batch">
+		<h2>
+			{% assign eachbatch = page.dataBatches[0] %}
+			Batch {{ eachbatch.id }}
+			<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+		</h2>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				{% assign eachclass = page.dataClasses[0] %}
+				{% include unit-class.html %}
+			</div>
+		</div>
+	</section></div>
+
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><section class="section-batch">
+		<h2>
+			{% assign eachbatch = page.dataBatches[1] %}
+			Batch {{ eachbatch.id }}
+			<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+		</h2>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				{% assign eachclass = page.dataClasses[1] %}
+				{% include unit-class.html %}
+			</div>
+		</div>
+	</section></div>
+
+</div>
+
+<section class="section-batch">
+
+	<h2>
+		{% assign eachbatch = page.dataBatches[2] %}
+		Batch {{ eachbatch.id }}
+		<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+	</h2>
+
+	<div class="row">
+
+		{% for eachnum in (2...4) %}
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			{% assign eachclass = page.dataClasses[eachnum] %}
+			{% include unit-class.html %}
+		</div>
+		{% endfor %}
+
+	</div>
+
+</section>
