@@ -5,7 +5,7 @@ titleAlt: "TBC4K"
 
 #baseurl: http://klmendoza1.github.io/sandbox-tbc4k
 baseurl: http://toffmendoza.me/sandbox-tbc4k
-#baseurl: http://tbc4k.upsitf.org
+#baseurl: https://tbc4k.upsitf.org
 
 # Build settings
 markdown: kramdown
@@ -21,7 +21,7 @@ urlRegFormLocalAppend: "/register"
 urlFacebook: "https://www.facebook.com/tbc4k"
 urlTwitter: "https://twitter.com/upsitf"
 
-urlTBC4K: "http://tbc4k.upsitf.org"
+urlTBC4K: "https://tbc4k.upsitf.org"
 urlTBC4KFacebook: "https://facebook.com/tbc4k"
 
 contactAddress:

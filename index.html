@@ -24,8 +24,18 @@ dataClasses:
    timeStart: "8 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
    dateBatch: "3A"
-   dateStart: "May 8"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "May 12, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "June 19"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "23, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "dva2"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "3A"
+   dateStart: "June 19"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "23, 2017"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "9,000"         #double with commas and 2 decimal places
  - id: "raspberrypi"
    status: "Ongoing"
@@ -34,8 +44,8 @@ dataClasses:
    timeStart: "8 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
    dateBatch: "3B"
-   dateStart: "May 15"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "May 19, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "June 26"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "30, 2017"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "9,000"         #double with commas and 2 decimal places
  - id: "dvp"
    status: "Ongoing"
@@ -44,8 +54,8 @@ dataClasses:
    timeStart: "8 AM"                #string format = [intTime] [AM/PM]
    timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
    dateBatch: "3B"
-   dateStart: "May 22"     #string format = [stringMonth] [intDay], [intYear]
-   dateEnd: "May 26, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   dateStart: "June 26"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "30, 2017"      #string format = [stringMonth] [intDay], [intYear]
    rateRegular: "9,000"         #double with commas and 2 decimal places
 
 
@@ -315,43 +325,26 @@ dataClassOfferings:
 
 					-->
 
-					<div class="row">
+          {% for eachbatch in page.dataBatches %}
+          {% assign emptybatch = true %}
+          <section class="section-batch">
 
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><section class="section-batch">
-							<h2>
-								{% assign eachbatch = page.dataBatches[0] %}
-								Batch {{ eachbatch.id }}
-								<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
-							</h2>
+            <h2>
+              Batch {{ eachbatch.id }}
+              <small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+            </h2>
 
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									{% assign eachclass = page.dataClasses[0] %}
-									{% include unit-class.html %}
-								</div>
-							</div>
-						</section></div>
+  					<div class="row">
+              {% for eachclass in page.dataClasses %}{% if eachclass.dateBatch == eachbatch.id %}
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if emptybatch == true %} col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0{% endif %}">
+                {% assign eachclass = page.dataClasses[eachnum] %}
+                {% include unit-class.html %}
+              </div>
+              {% assign emptybatch = false %}{% endif %}{% endfor %}
+            </div>
 
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><section class="section-batch">
-							<h2>
-								{% assign eachbatch = page.dataBatches[1] %}
-								Batch {{ eachbatch.id }}
-								<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
-							</h2>
-
-							<div class="row">
-
-                {% for eachnum in (1...2) %}
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  {% assign eachclass = page.dataClasses[eachnum] %}
-                  {% include unit-class.html %}
-                </div>
-                {% endfor %}
-
-							</div>
-						</section></div>
-
-					</div>
+          </section>
+          {% endfor %}
 
 
 					<span style="display:block">Class hours are from 8:00 AM to 12:00 NN</span>
