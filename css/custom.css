@@ -1,13 +1,43 @@
+.img-jumbotron-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+	.img-jumbotron-logo {
+	    margin-bottom: 20px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    margin-top: -20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.img-jumbotron-logo {
+		width: 100%;
+	    max-width: 480px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.div-jumbotron-text  {
+		margin-top: 340px;
+	}
+}
+
 .span-copy-main,
 .span-copy-main>* {
+
 	display:block;
-	font-family: 'Montserrat' !important;
-	font-weight: 700;
+	font-family: house-slant, sans-serif !important;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: white;	
 }
 
 .span-copy-main {
+	margin-bottom: -0.25em;
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -31,6 +61,7 @@
 	.span-copy-main {
 		font-size: 2em;
     line-height: 1em;
+    margin-bottom: 10px;
 	}
 
 	.span-copy-main>span {
@@ -45,8 +76,89 @@ h1 {
 	text-transform: uppercase;
 }
 
+h1.h1-title {
+	color: white !important;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+	font-weight: 400;
+	font-size: 7em;
+    margin-top: -20px;
+	margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+	h1.h1-title {
+		margin-top: 0;
+		/*margin-bottom: 20px;*/
+	}
+}
+
+@media (max-width: 768px) {
+	h1.h1-title {
+		font-size: 4em;
+	}
+}
+
 h1,h2 {
 	font-weight: 900;
+}
+
+.p-copy {
+	color: #233f1f;
+	font-weight: 600;
+    font-size: 1.25em;
+    display: table;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    /*text-shadow: 2px 2px 8px rgba(0,0,0,0.15);*/
+}
+
+
+
+@media (max-width: 768px) {
+	.p-copy {
+		max-width: 480px;
+	    font-size: 1em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.img-jumbotron-mascot {
+		margin-left:-300px;
+		width:calc(100% + 300px);
+		max-width:calc(100% + 300px);
+	}
+}
+
+@media (max-width: 1200px) {
+	.div-jumbotron-mascot {
+		height: 500px;
+	    overflow-y: hidden;
+	    padding-left: 0;
+	    padding-right: 0;
+	    width: calc(100% + 30px);
+	    margin-left: -15px;
+	    margin-right: -15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.div-jumbotron-mascot {
+		height: 480px;
+	    overflow-y: hidden;
+	    padding-left: 0;
+	    padding-right: 0;
+	    width: calc(100% + 30px);
+	    margin-left: -15px;
+	    margin-right: -15px;
+	}
+
+	.img-jumbotron-mascot {
+		margin-left:-300px;
+		width:calc(100% + 300px);
+		max-width:calc(100% + 300px);
+	}
 }
 
 small {
@@ -56,7 +168,7 @@ small {
 }
 
 .section-green {
-	background-color:#a2c94a
+	background-color: #67b459;
 }
 
 .section-green h1,
@@ -84,7 +196,7 @@ small {
 	color: white;
 	text-transform: uppercase;
 	font-family: 'Montserrat' !important;
-	font-weight: 500;
+	font-weight: 600;
 
 	/*box-shadow: 8px 8px #a92c42;*/
 
@@ -95,6 +207,11 @@ small {
 	-moz-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
 	-o-transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
 	transition: background-color 250ms ease-out, box-shadow 250ms ease-out;
+}
+
+.btn.btn-default.btn-register>* {
+	font-family: 'Montserrat' !important;
+	font-weight: 600;
 }
 
 .btn.btn-default.btn-register:hover,

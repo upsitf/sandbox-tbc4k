@@ -1,0 +1,473 @@
+---
+layout: main
+
+dataClassesSAMPLE:
+ - id: "aspnet"
+   categoryId: "networktech"   #string
+   days: "Three (3)"                 #string format = [stringNumber] ([intNumber])
+   day: "Sunday"                  #string
+   timeStart: "9 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "5 PM"                  #string format = [intTime] [AM/PM]
+   dateStart: "April 23, 2017"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "May 3, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+   rateEarlyAcadGov: "4,500"    #double with commas and 2 decimal places
+   rateEarlyIndusCorpo: "6,300"          #double with commas and 2 decimal places
+
+
+
+dataClasses:
+ - id: "scratch"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "3A"
+   dateStart: "June 19"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "23, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "dva2"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "3A"
+   dateStart: "June 19"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "23, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "raspberrypi"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "3B"
+   dateStart: "June 26"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "30, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+ - id: "dvp"
+   status: "Ongoing"
+   days: "Five (5)"                 #string format = [stringNumber] ([intNumber])
+   day: "Monday to Friday"                  #string
+   timeStart: "8 AM"                #string format = [intTime] [AM/PM]
+   timeEnd: "12 NN"                  #string format = [intTime] [AM/PM]
+   dateBatch: "3B"
+   dateStart: "June 26"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "30, 2017"      #string format = [stringMonth] [intDay], [intYear]
+   rateRegular: "9,000"         #double with commas and 2 decimal places
+
+
+dataClassesLegacy:
+ - id: "codecombat"
+ - id: "ibooks"
+ - id: "gamesalad"
+
+
+dataBatches:
+ - id: "3A"
+   dateStart: "June 19"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "23, 2017"      #string format = [stringMonth] [intDay], [intYear]
+ - id: "3B"
+   dateStart: "June 26"     #string format = [stringMonth] [intDay], [intYear]
+   dateEnd: "30, 2017"      #string format = [stringMonth] [intDay], [intYear]
+
+   
+dataClassOfferings:
+ - name: "Basic Programming"
+   id: "basicprog"
+   list:
+    - name: "Tech Fun 1: Scratch Programming"
+      nameDescriptive: "Scratch"
+      id: "scratch"
+      icon: "art_mascot-scratch-square.png"
+      photo: "art_mascot-scratch-min-shadow.png"
+      descriptionShort: "Learn the basics of programming as you make your own stories and games!"
+      description:
+       - "Drag and modify blocks of code to show, hide, or animate objects within the canvas! Take it to the next level: create your fighting game, or animate a short film! Share it online with the Scratch community for the world to see. The possibilities are endless!"
+       - "Scratch is a block-based programming language designed for young learners. This course teaches kids the fundamentals of logic, procedural and object-oriented programming, and conditional statements, among many other basic computer science concepts."
+       - "The course discusses tips and tricks on writing code while allowing the kids to appreciate the possibilities in store in developing programs in the future. The visual nature of Scratch also allows them to have fun while giving them the power to give life to their imagination through creating their own programs, stories, and games."
+       - "This course is ideal for kids who plan to take the Robotics course."
+      technology: "Scratch"
+      file: ""
+    - name: "CodeCombat: Save the World with Programming"
+      nameDescriptive: "CodeCombat"
+      id: "codecombat"
+      icon: "art_mascot-codecombat-square.png"
+      photo: "art_mascot-codecombat-min-shadow.png"
+      descriptionShort: "Learn the basics of programming while solving mazes and fighting invaders!"
+      description:
+       - "Build your empire with code! Navigate through mazes, manage your people and defend your land using functions. See how computing concepts come alive by playing a game! Learning has never been more fun!"
+       - "CodeCombat is a web-based game that uses text-based coding languages. This course teaches basic to advanced concepts in programming through gamification. From simple arithmetic to complex function creation, CodeCombat puts a twist to classic coding by introducing a live interface wherein kids can see the effects of the changes they make in their code simultaneously."
+       - "The course discusses tips and tricks on writing code while allowing the kids to appreciate the possibilities in store in developing programs in the future. The visual nature of CodeCombat also allows them to have fun while giving them the power to give life to their imagination through creating their own programs, stories, and games."
+       - "This course is ideal for kids who plan to take the Robotics course."
+      technology:
+       - "CodeCombat"
+      file: ""
+ - name: "Advanced Programming"
+   id: "advprog"
+   list:
+    - name: "The Art of Making Robots"
+      nameDescriptive: "Robotics"
+      id: "robotics"
+      icon: "art_mascot-robotics-square.png"
+      photo: "art_mascot-robotics-min-shadow.png"
+      descriptionShort: "Build your own robot and bring it to life with tools, parts and code."
+      description:
+       - "See your code come to life in the real world! Program your own robot, complete with mechanical parts and sensors, and make it navigate through terrain and obstacles. Awesome things happen when code and machines come together!"
+       - "In this course, the students are introduced to more advanced computing concepts, using affordable and accessible robots. It involves programming and hands-on exercises leading to create an autonomous machine. We will guide our students from design, programming, building the chassis, and adding intelligence to the machine."
+       - "This course encourages the use of imagination and creativity while empowering them to execute what they imagine. It also strengthens the value of independence as they each create robots on their own with supervision from their teacher."
+       - "Note: Because of the steep learning curve for this class, it is recommended (though not required) that the student must satisfy at least one (1) of the following: a) the student has taken at least one (1) of our Basic Programming classes prior to taking this class; b) the student has a strong grasp of the basic concepts of programming (i.e. loops, functions, conditional statements); c) the student is at least 12 years old."
+      technology: "MiniBot or Arduino, under teacher's discretion"
+      file: ""
+    - name: "A Taste of Raspberry Pi"
+      nameDescriptive: "Raspberry Pi"
+      id: "raspberrypi"
+      icon: "art_mascot-raspberrypi-square.png"
+      photo: "art_mascot-raspberrypi-min-shadow.png"
+      descriptionShort: "Discover the boundless potential of this pocket-sized computer!"
+      description:
+       - "We're all used to seeing large computing machines like desktop and laptop computers. But what can you do with a fully-functional computer that fits in your pocket?"
+       - "Raspberry Pi is a relatively cheap compact computer module that allows enthusiasts to customize their own platform for practical applications. Aside from being physically lightweight, it is also comes with a light but powerful operating system for basic functions like playing music and movies, playing games, and coding."
+       - "This course enhances learning through engaging and fun activities in computer science and game development. Using this device will expose them to numerous applications that will allow them to imagine solutions to real life problems and possibly even implement them."
+       - "Note: It is recommended (though not required) that the student must satisfy at least one (1) of the following: a) the student has taken at least one (1) of our Basic Programming classes prior to taking this class; b) the student has a strong grasp of the basic concepts of programming (i.e. loops, functions, conditional statements); c) the student is at least 12 years old."
+      technology:
+       - "Raspberry Pi"
+       - "Scratch"
+       - "Sonic Pi"
+       - "Minecraft Pi"
+       - "Python"
+      file: ""
+ - name: "Digital Arts"
+   id: "digiarts"
+   list:
+    - name: "Digital Visual Arts 1"
+      id: "dva1"
+      icon: "art_mascot-dva-square.png"
+      photo: "art_mascot-dva-min-shadow.png"
+      descriptionShort: "Unleash the artist in you with various digital tools for creativity!"
+      description:
+       - "Ever wondered how cartoons are made? How about those awesome graphics that you see in sci-fi movies? Welcome to the world of digital arts! Embark on a creative journey of illustration, character design, photo manipulation, and more!"
+       - "This course teaches students how to use GIMP, a free image manipulation software used to draw, paint, and edit photos. They will learn about Inkscape, a program used in the production of vector art for cartoons, animation, poster design, and layouting, among others. Students will also get a chance to experience and be mentored in Adobe Photoshop, the most popular image processing software, and Adobe Illustrator, a dynamic and powerful vector imaging software."
+       - "Not only will students of this course know their way around software, but they will also be closely guided by our teacher on topics such as character design, color theory, layouting, and other basic concepts in graphic arts and graphic design."
+      technology:
+       - "GIMP"
+       - "Inkscape"
+       - "Adobe Creative Suite/Cloud"
+      file: ""
+    - name: "Digital Visual Arts 2"
+      id: "dva2"
+      icon: "art_mascot-dva-square.png"
+      photo: "art_mascot-dva-min-shadow.png"
+      descriptionShort: "Continue to unleash your creativity with animation, advanced illustration techniques and more!"
+      description: ""
+      technology:
+       - "GIMP"
+       - "Adobe Creative Suite/Cloud"
+      file: ""
+    - name: "Digital Video Production"
+      id: "dvp"
+      icon: "art_mascot-dvp-square.png"
+      photo: "art_mascot-dvp-min-shadow.png"
+      descriptionShort: "From production to post-processing, learn what it takes to make your very own short film!"
+      description:
+       - "In this television era, it helps to have the know-how of influencing people through multimedia. Films have long been used as a form of expression, a medium for information and a tool for persuasion. Multiple elements, including visuals and sounds, come together to produce a memorable experience that is a feast for the senses."
+       - "Share your story to the world creatively! Shoot videos like the pros and learn the basics of storyboarding, videography and more."
+       - "This course shall teach students to direct and produce their own videographic content. From the paper to the big screen, the students will be given hands-on experience on writing their own story, shooting, and editing. They will also be taught about theory and technical knowledge on video, e.g. rule of thirds, sound design."
+      technology:
+       - "Adobe Creative Suite/Cloud, specifically Premiere Pro and After Effects"
+      file: ""
+ - name: "Web Technology"
+   id: "webtech"
+   list:
+    - name: "How to Build and Monetize a Website"
+      nameDescriptive: "Web Development"
+      id: "webdev"
+      icon: "art_mascot-webdev-square.png"
+      photo: "art_mascot-webdev-min-shadow.png"
+      descriptionShort: "Be the next web rockstar! Design and code your own website from scratch."
+      description:
+       - "Be part of the limitless network that is the World Wide Web! Share your thoughts by making your own blog. Create your personal website or portfolio. Or maybe even dream big and make the next Facebook or Twitter. This is where it all starts!"
+       - "This course teaches the basics of web development, from markup to styling or scripting. Necessary skills in web design such as layouting, typography, color theory, and user interaction will also be discussed. This course encourages students to think of creative ways to present content and share it to the world. By the end of the course, students will be able to make their own interactive website from scratch."
+      technology:
+       - "HTML5"
+       - "CSS3"
+       - "JavaScript"
+      file: ""
+
+
+---
+
+<section class="section-jumbotron" style="background: #e2d4e8 url('{{ site.baseurl }}/images/art_clouds-batch3.png');background-size:cover;background-repeat:no-repeat;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-0 col-xs-offset-0 text-center">
+				<span class="span-copy-main">Let your kid's imagination <span>run wild!</span></span>
+				<img class="img-responsive" src="{{ site.baseurl }}/images/logo_tbc4k-web.png" style="margin-left:auto;margin-right:auto;    margin-bottom: -100px;"/>
+
+			</div>
+		</div>
+	</div>
+	<div style="height:90px;background-image:url('{{ site.baseurl }}/images/art_grass-repeat.png');background-repeat:repeat-x;background-size:480px 90px"></div>
+</section>
+
+<section class="section-body section-green">
+
+	<!--section>
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Updates</h1>
+
+					<h2>
+						Room Assignments
+						<small>Batch 1C - April 24 to 28, 2017</small>
+					</h2>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							
+						</div>
+					</div>
+
+					<h2>
+						Batch 2 (May 2017) of classes
+						<small>Now open for registration!</small>
+					</h2>
+					<p>Sign up now at <a>bit.ly/tbc4k2017reg2</a>.</p>
+
+				</div>
+			</div>
+		</div>
+	</section-->
+
+	<section class="section-green">
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1>
+						Our June 2017 Classes
+						<small>All classes at Php 9,000 each</small>
+					</h1>
+
+					<!--
+
+					{% for eachbatch in page.dataBatches %}
+
+					{% assign count = 0 %}
+					{% for eachclass in page.dataClasses %}
+					{% if eachclass.dateBatch == eachbatch.id %}
+					{% assign count = count | plus: 1 %}
+					{% endif %}
+					{% endfor %}
+
+					{% if count > 0 %}
+
+					<section>
+						<h2>
+							Batch {{ eachbatch.id }}
+							<small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+						</h2>
+
+						{% assign ongoing = false %}
+						{% assign subcount = 0 %}
+						{% assign subcountFirst = true %}
+						{% assign offset = 0 %}
+
+						{% for eachclass in page.dataClasses %}
+						
+						{% if ongoing == false %}
+						{% assign tester = count | minus: 3 %}
+						{% if tester == 0 or tester >= 2 %}
+						{% assign subcount = 3 %}
+						{% assign offset = 0 %}
+						{% elsif tester == 1 or tester == -1 %}
+						{% assign subcount = 2 %}
+						{% assign offset = 2 %}
+						{% else %}
+						{% assign subcount = 1 %}
+						{% assign offset = 4 %}
+						{% endif %}
+						{% endif %}
+
+						{% if eachclass.dateBatch == eachbatch.id %}
+
+						{% if ongoing == false %}
+						<div class="row">
+						{% assign ongoing = true %}
+						{% assign subcountFirst = true %}
+						{% endif %}
+
+
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if subcountFirst == true and offset > 0 %} col-lg-offset-{{ offset }} col-md-offset-{{ offset }} col-sm-offset-{{ offset }} col-xs-offset-0{% endif %}">
+								{% include unit-class.html %}
+							</div>
+							{% assign subcount = subcount | minus: 1 %}
+							{% assign subcountFirst = false %}
+
+						{% if subcount <= 0 %}
+						</div>
+						{% assign ongoing = false %}
+						{% endif %}
+
+						{% endif %}
+
+						{% endfor %}
+
+					</section>
+					{% endif %}
+
+					{% endfor %}
+
+					-->
+
+          {% for eachbatch in page.dataBatches %}
+          {% assign emptybatch = true %}
+          <section class="section-batch">
+
+            <h2>
+              Batch {{ eachbatch.id }}
+              <small>{{ eachbatch.dateStart }} to {{ eachbatch.dateEnd }}</small>
+            </h2>
+
+  					<div class="row">
+              {% for eachclass in page.dataClasses %}{% if eachclass.dateBatch == eachbatch.id %}
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12{% if emptybatch == true %} col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0{% endif %}">
+                {% assign eachclass = page.dataClasses[eachnum] %}
+                {% include unit-class.html %}
+              </div>
+              {% assign emptybatch = false %}{% endif %}{% endfor %}
+            </div>
+
+          </section>
+          {% endfor %}
+
+
+					<span style="display:block">Class hours are from 8:00 AM to 12:00 NN</span>
+					<span style="display:block;margin-bottom: 15px;">No need to bring anything as course fee includes snacks and free usage of equipment during class hours</span>
+
+					<a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register" style="margin-bottom:10px;">Register Now</a>
+					<span style="display:block;margin-bottom: 45px;">or remember this link for later:
+            <!--a href="{{ site.urlRegFormMini }}" target="_blank" >{{ site.urlRegFormMiniDisplay }}</a-->
+            <a href="{{ site.baseurl }}{{ site.urlRegFormLocalAppend }}" target="_blank" >{{ site.urlDisplay }}{{ site.urlRegFormLocalAppend }}</a>
+          </span>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-blue" style=""><h1 class="hidden">About TBC4K</h1>
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+					<!-- Embed YouTube player here -->
+          <div class="embed-sizer" style="margin-bottom:45px;*/">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!--iframe class="embed-responsive-item" width="100%" src="https://www.youtube.com/embed/PWVx1pfzAZw" frameborder="0" allowfullscreen></iframe-->
+              <div id="fb-root"></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3"; fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="https://www.facebook.com/tbc4k/videos/1674089692884682/"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tbc4k/videos/1674089692884682/"><a href="https://www.facebook.com/tbc4k/videos/1674089692884682/">IT is for kids too!</a><p>Programming, digital art, game design, and robotics - you name IT, kids can do IT! REGISTER NOW: http://tbc4k.upsitf.org</p>Posted by <a href="https://www.facebook.com/tbc4k/">TBC4K - Tech Boot Camp for Kids + Teens</a> on Wednesday, March 22, 2017</blockquote></div></div>
+            </div>
+            <small class="small-caption">TBC4K 2016 Video Montage</small>
+          </div>
+
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<span style="display: inline-block;font-size: 2.5em;line-height: 1em;margin-bottom: 15px;">Let your kid's imagination run wild!</span>
+					<p>We aim to introduce students to a wide array of IT courses especially designed for kids and teens. Courses offered include Robotics, Programming, Digital Arts, Blogging, and many more. Classes involve a lot of hands-on activities to promote learning and allow students, young as they are, to have a feel of how it is to be in the field of IT. Join us and experience learning new stuff the fun and exciting way only here at TBC4K!</p>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+	<!--section>
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+				<div class="col-lg-12">
+					<a class="btn btn-default">Course Descriptions</a>
+					<a class="btn btn-default btn-register">Register</a>
+				</div>	
+			</div>
+		</div>
+	</section-->
+
+
+	<section class="section-green">
+		<div class="container-fluid container-fluid-max">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>
+						Choose Your Adventure!
+						<small>Our Complete List of Class Offerings</small>
+					</h1>
+
+
+					{% for eachclassoffgroup in page.dataClassOfferings %}
+					<section>
+						<h2>{{ eachclassoffgroup.name }}</h2>
+
+						{% for eachclassoff in eachclassoffgroup.list %}
+
+						{% if eachclassoff.id != "dva2" %}
+						<section class="section-offering">
+							<div class="row">
+								
+								<div class="col-lg-2">
+									<img src="{{ site.baseurl }}/images/icons/{{ eachclassoff.photo }}" class="img-responsive"/>
+								</div>
+								<div class="col-lg-10">
+									<h3>
+										{{ eachclassoff.name }}{% if eachclassoff.id == "dva1" %} and 2{% endif %}
+										<!--small>{{ eachclassoffgroup.name }}{% if eachclassoff.nameDescriptive %} - {{ eachclassoff.nameDescriptive }}{% endif %}</small-->
+										{% if eachclassoff.nameDescriptive %}<small>{{ eachclassoff.nameDescriptive }}</small>{% endif %}
+									</h3>
+									{% for eachparagraph in eachclassoff.description %}
+										<p>{{ eachparagraph }}</p>
+									{% endfor %}
+
+									<span class="span-technology"><span>Technology:</span> <ul>{% for eachtechnology in eachclassoff.technology %}<li>{{ eachtechnology }}</li>{% endfor %}</ul></span>
+
+									{% if eachclassoff.id == "dva1" %}
+									<!--
+									{% assign indexDva2 = forloop.index0 | plus: 1 %}
+									<h3>{{ eachclassoffgroup.list[indexDva2].name }}</h3>
+									{% for eachparagraph in eachclassoffgroup.list[indexDva2].description %}
+										<p>{{ eachparagraph }}</p>
+									{% endfor %}
+									-->
+									{% endif %}
+
+
+								</div>
+								
+							</div>
+						</section>
+						{% endif %}
+
+						{% endfor %}
+
+					</section>
+					{% endfor %}
+
+					<a href="{{ site.urlRegForm }}" target="_blank" class="btn btn-default btn-register" style="display:table;margin-left:auto;margin-right:auto;margin-bottom:10px;">Register Now</a>
+					<span style="display:block;margin-bottom:45px;text-align:center;">or remember this link for later:
+            <!--a href="{{ site.urlRegFormMini }}" target="_blank" >{{ site.urlRegFormMiniDisplay }}</a-->
+            <a href="{{ site.baseurl }}{{ site.urlRegFormLocalAppend }}" target="_blank" >{{ site.urlDisplay }}{{ site.urlRegFormLocalAppend }}</a>
+          </span>
+
+				</div>	
+			</div>
+		</div>
+
+	</section>
+
+</section>
